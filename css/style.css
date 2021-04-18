@@ -10,8 +10,7 @@ img {
 }
 
 .banner {
-  background-color: #e3efff;
-  background: linear-gradient(350deg, #e3efff, #e3efff00);
+  background: linear-gradient(-45deg, #abcfff, #ffffff);
 }
 .banner .head {
   font-size: 5rem;
@@ -19,6 +18,16 @@ img {
   line-height: 1;
   text-transform: uppercase;
   text-shadow: 5px 3px darkgrey;
+}
+.banner .head .head-bar {
+  display: inline-block;
+  margin-bottom: 12px;
+  background-color: #f2f2f2;
+  background: linear-gradient(90deg, #f2f2f2, white);
+  padding-left: 100px;
+  padding-right: 10px;
+  transform: translate(-100px, 0);
+  box-shadow: -3px 3px WHITE;
 }
 .banner h1 {
   font-family: "Raleway", sans-serif;
@@ -32,6 +41,7 @@ img {
   font-family: "Raleway", sans-serif;
   font-size: 1.8rem;
   margin-bottom: 10px;
+  text-shadow: 1px 1px white;
 }
 
 .previous-clients .flex-images {
@@ -46,6 +56,11 @@ img {
 }
 
 @media (max-width: 992px) {
+  .banner {
+    background: #e3efff;
+    padding-top: 10px;
+  }
+
   .mountain {
     max-width: 65%;
     text-align: center;
