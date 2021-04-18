@@ -30,14 +30,17 @@ img {
 
 .banner {
   background-color: #e3efff;
+  background: linear-gradient(350deg, #e3efff, #e3efff00);
+  // background: linear-gradient(45deg, #e3efff, transparent);
 
-
+  // background: linear-gradient(350deg, #76b0ff, #e3efff00);
   .head {
     font-size: 5rem;
     font-family: 'Raleway Dots', cursive;
     line-height: 1;
     text-transform: uppercase;
     // transition: font-size 0.2s;
+    text-shadow: 5px 3px darkgrey;
   }
 
   h1 {
@@ -87,6 +90,14 @@ img {
 
   // Large devices (desktops, 992px and up)
   @media (max-width: 992px) {
+
+
+    .mountain {
+      max-width: 65%;
+      text-align: center;
+      margin-top: 50px;
+    }
+
 
   }
 
