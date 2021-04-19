@@ -2,6 +2,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@200&display=swap");
+html {
+  font-family: "Raleway", sans-serif;
+}
+
+body .head-bar {
+  margin-bottom: 12px;
+  background-color: #f2f2f2;
+  background: linear-gradient(90deg, #f2f2f2, white);
+  box-shadow: -3px 3px white;
+  font-size: 5rem;
+  text-align: center;
+  font-family: "Poppins", cursive;
+  text-transform: uppercase;
+  text-shadow: 5px 3px darkgrey;
+}
+
 section {
   padding: 100px 0;
 }
@@ -11,9 +27,25 @@ img {
   image-rendering: pixelated;
 }
 
+.top-border {
+  display: flex;
+  height: 10px;
+}
+.top-border [class^=third] {
+  flex: 1;
+}
+.top-border .third-1 {
+  background-color: #b4c6de;
+}
+.top-border .third-2 {
+  background-color: #42406c;
+}
+.top-border .third-3 {
+  background-color: #f4d2d1;
+}
+
 .banner {
-  background: linear-gradient(-45deg, white, #abcfff, #ffffff);
-  background: linear-gradient(17deg, white, #abcfff, #ffffff);
+  background: linear-gradient(17deg, #e3efff, #abcfff, #e3efff);
 }
 .banner .head {
   font-size: 5rem;
@@ -27,8 +59,6 @@ img {
 .banner .head .head-bar {
   display: inline-block;
   margin-bottom: 12px;
-  background-color: #f2f2f2;
-  background: linear-gradient(90deg, #f2f2f2, white);
   padding-left: 100px;
   padding-right: 10px;
   transform: translate(-100px, 0);
@@ -50,6 +80,12 @@ img {
   text-shadow: 1px 1px white;
 }
 
+.previous-clients {
+  font-family: "Raleway", sans-serif;
+}
+.previous-clients .head-bar {
+  text-align: center;
+}
 .previous-clients .flex-images {
   display: flex;
   flex-wrap: wrap;
@@ -64,13 +100,18 @@ img {
 @media (max-width: 992px) {
   .banner {
     background: #e3efff;
-    padding-top: 10px;
+    padding-top: 25px;
+    padding-bottom: 55px;
+    overflow-x: hidden;
+  }
+  .banner .grow-your-business {
+    margin-top: 35px;
   }
 
   .mountain {
     max-width: 65%;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 35px;
   }
 }
 @media (max-width: 1200px) {
