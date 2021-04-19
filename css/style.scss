@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@200&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400&display=swap');
+
 html {
   font-family: 'Raleway', sans-serif;
 }
@@ -23,6 +26,16 @@ body {
 
 section {
   padding: 100px 0;
+}
+
+blockquote {
+  padding: 50px;
+  margin-bottom: 100px;
+  font-family: 'Cormorant Upright', sans-serif;
+  font-size: 3rem;
+  font-style: italic;
+  letter-spacing: -1.5px;
+  font-weight: lighter;
 }
 
 img {
@@ -63,9 +76,9 @@ img {
     .head-bar {
       display: inline-block;
       margin-bottom: 12px;
-      padding-left: 100px;
+      // padding-left: 100px;
       padding-right: 10px;
-      transform: translate(-100px, 0);
+      // transform: translate(-100px, 0);
       box-shadow: -3px 3px white;
     }
   }
@@ -92,9 +105,13 @@ img {
 
 .previous-clients {
   font-family: 'Raleway', sans-serif;
+  font-size: 1.8rem;
 
   .head-bar {
     text-align: center;
+    background: none;
+    background-color: #f2f2f2;
+    margin-bottom: 150px !important;
   }
 
   .flex-images {
@@ -110,47 +127,44 @@ img {
   }
 }
 
-    // Extra small devices (portrait phones, less than 576px)
-  // No media query since this is the default in Bootstrap
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
 
-  // Small devices (landscape phones, 576px and up)
-  @media (max-width: 576px) {
+}
 
-  }
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
 
-  // Medium devices (tablets, 768px and up)
-  @media (max-width: 768px) {
+}
 
-  }
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) {
+  .banner {
+    background: #e3efff;
+    padding-top: 25px;
+    padding-bottom: 55px;
+    overflow-x: hidden;
 
-  // Large devices (desktops, 992px and up)
-  @media (max-width: 992px) {
-    .banner {
-      background: #e3efff;
-      padding-top: 25px;
-      padding-bottom: 55px;
-      overflow-x: hidden;
-
-      .grow-your-business {
-        margin-top: 35px;
-      }
-    }
-
-    .mountain {
-      max-width: 65%;
-      text-align: center;
+    .grow-your-business {
       margin-top: 35px;
     }
-
   }
 
-  // Extra large devices (large desktops, 1200px and up)
-  @media (max-width: 1200px) {
-    @at-root html {
-      font-size: 85%;
-    }
+  .mountain {
+    max-width: 65%;
+    text-align: center;
+    margin-top: 35px;
   }
 
-  @media (min-width: 1201px) {
+}
 
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) {
+  @at-root html {
+    font-size: 85%;
   }
+}
+
+@media (min-width: 1201px) {
+
+}

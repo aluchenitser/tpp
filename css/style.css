@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400&display=swap");
 html {
   font-family: "Raleway", sans-serif;
 }
@@ -20,6 +22,16 @@ body .head-bar {
 
 section {
   padding: 100px 0;
+}
+
+blockquote {
+  padding: 50px;
+  margin-bottom: 100px;
+  font-family: "Cormorant Upright", sans-serif;
+  font-size: 3rem;
+  font-style: italic;
+  letter-spacing: -1.5px;
+  font-weight: lighter;
 }
 
 img {
@@ -59,9 +71,7 @@ img {
 .banner .head .head-bar {
   display: inline-block;
   margin-bottom: 12px;
-  padding-left: 100px;
   padding-right: 10px;
-  transform: translate(-100px, 0);
   box-shadow: -3px 3px white;
 }
 .banner h1 {
@@ -82,9 +92,13 @@ img {
 
 .previous-clients {
   font-family: "Raleway", sans-serif;
+  font-size: 1.8rem;
 }
 .previous-clients .head-bar {
   text-align: center;
+  background: none;
+  background-color: #f2f2f2;
+  margin-bottom: 150px !important;
 }
 .previous-clients .flex-images {
   display: flex;
