@@ -39,6 +39,7 @@ blockquote {
   letter-spacing: -1.5px;
   font-weight: lighter;
   margin: 0;
+  padding: 0 15px;
 }
 
 img {
@@ -115,6 +116,7 @@ body {
   section.previous-clients {
     font-family: 'Raleway', sans-serif;
     font-size: 1.8rem;
+    background: linear-gradient(17deg, #e3efff, #abcfff00, #e3efff);
 
     .head-bar {
       text-align: left;
@@ -146,23 +148,25 @@ body {
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-  .banner {
-    background: #e3efff;
-    padding-top: 25px;
-    padding-bottom: 55px;
-    overflow-x: hidden;
+  body {
+    section {
+      margin: 150px 0;
+    }
 
-    .grow-your-business {
-      margin-top: 35px;
+    section.banner {
+      padding: 100px 0;
+
+      .grow-your-business {
+        margin-top: 35px;
+      }
+
+      .mountain {
+        max-width: 75%;
+        text-align: center;
+        // margin-top: 35px;
+      }
     }
   }
-
-  .mountain {
-    max-width: 65%;
-    text-align: center;
-    margin-top: 35px;
-  }
-
 }
 
 // Extra large devices (large desktops, 1200px and up)
