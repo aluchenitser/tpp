@@ -47,7 +47,6 @@ img {
   image-rendering: pixelated;
 }
 
-
 /* ------ SECTIONS ------ */
 /* ------ SECTIONS ------ */
 /* ------ SECTIONS ------ */
@@ -128,6 +127,25 @@ body {
     .international-picture {
       width: 75%;
       margin: 50px auto;
+    }
+  }
+
+  section.services-offered {
+    font-family: 'Raleway', sans-serif;
+
+    .top-h2 {
+      margin-top: 0px;
+    }
+
+    h2 {
+      font-size: 2.4rem;
+      text-align: center;
+      margin: 35px 0;
+    }
+
+    p {
+      font-size: 1.8rem;
+      margin-bottom: 30px;
     }
   }
 }

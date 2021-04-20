@@ -113,6 +113,21 @@ body section.pacific-pace .international-picture {
   width: 75%;
   margin: 50px auto;
 }
+body section.services-offered {
+  font-family: "Raleway", sans-serif;
+}
+body section.services-offered .top-h2 {
+  margin-top: 0px;
+}
+body section.services-offered h2 {
+  font-size: 2.4rem;
+  text-align: center;
+  margin: 35px 0;
+}
+body section.services-offered p {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
 
 @media (min-width: 768px) {
   html {
