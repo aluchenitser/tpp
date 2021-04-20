@@ -113,6 +113,9 @@ body section.pacific-pace .international-picture {
   width: 75%;
   margin: 50px auto;
 }
+body section.pacific-pace p, body section.pacific-pace ul {
+  text-shadow: 1px 1px white;
+}
 body section.services-offered {
   font-family: "Raleway", sans-serif;
 }
@@ -128,17 +131,31 @@ body section.services-offered p {
   font-size: 1.8rem;
   margin-bottom: 30px;
 }
+body section.services-offered hr.little-hr {
+  display: none;
+}
 
 @media (min-width: 768px) {
-  body section.services-offered {
-    font-family: "Raleway", sans-serif;
+  body section.services-offered .service {
+    padding: 0 25px;
   }
-  body section.services-offered .top-h2 {
-    margin-top: 35px;
-  }
-  body section.services-offered p {
+  body section.services-offered .service p {
+    height: 180px;
     font-size: 1.2rem;
     text-align: center;
+  }
+  body section.services-offered .service p:last-of-type {
+    margin-top: 50px;
+  }
+  body section.services-offered .service .top-h2 {
+    margin-top: 35px;
+  }
+  body section.services-offered .service h2 {
+    font-size: 2rem;
+  }
+  body section.services-offered .service hr.little-hr {
+    display: block;
+    width: 35%;
   }
 
   html {
