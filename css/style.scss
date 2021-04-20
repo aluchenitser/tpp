@@ -110,6 +110,10 @@ body {
       text-shadow: 1px 1px white;
       // transition: font-size 0.2s;
     }
+
+    .mountain {
+      max-width: 350px;
+    }
   }
 
   section.pacific-pace {
@@ -172,7 +176,7 @@ body {
         padding: 0 25px;
 
         p {
-          height: 180px;
+          height: 210px;
           font-size: 1.2rem;
           text-align: center;
 
@@ -218,6 +222,14 @@ body {
         max-width: 75%;
         text-align: center;
         // margin-top: 35px;
+      }
+    }
+
+    section.services-offered {
+      .service {
+        p {
+          height: 160px;
+        }
       }
     }
 

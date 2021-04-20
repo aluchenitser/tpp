@@ -98,6 +98,9 @@ body section.banner .grow-your-business {
   margin-bottom: 40px;
   text-shadow: 1px 1px white;
 }
+body section.banner .mountain {
+  max-width: 350px;
+}
 body section.pacific-pace {
   padding: 50px 0;
   font-family: "Raleway", sans-serif;
@@ -140,7 +143,7 @@ body section.services-offered hr.little-hr {
     padding: 0 25px;
   }
   body section.services-offered .service p {
-    height: 180px;
+    height: 210px;
     font-size: 1.2rem;
     text-align: center;
   }
@@ -172,6 +175,9 @@ body section.services-offered hr.little-hr {
   body section.banner .mountain {
     max-width: 75%;
     text-align: center;
+  }
+  body section.services-offered .service p {
+    height: 160px;
   }
   body section.quote {
     margin: 150px 0;
