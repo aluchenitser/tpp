@@ -98,19 +98,18 @@ body section.banner .grow-your-business {
   margin-bottom: 40px;
   text-shadow: 1px 1px white;
 }
-body section.previous-clients {
+body section.pacific-pace {
+  padding: 50px 0;
   font-family: "Raleway", sans-serif;
   font-size: 1.8rem;
   background: linear-gradient(17deg, #e3efff, #abcfff00, #e3efff);
 }
-body section.previous-clients .head-bar {
+body section.pacific-pace .head-bar {
   text-align: left;
-  background: none;
-  background-color: #f2f2f2;
-  font-size: 4rem;
+  font-size: 4.5rem;
   display: inline-block;
 }
-body section.previous-clients .international-picture {
+body section.pacific-pace .international-picture {
   width: 75%;
   margin: 50px auto;
 }
