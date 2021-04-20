@@ -130,14 +130,22 @@ body section.services-offered p {
 }
 
 @media (min-width: 768px) {
+  body section.services-offered {
+    font-family: "Raleway", sans-serif;
+  }
+  body section.services-offered .top-h2 {
+    margin-top: 35px;
+  }
+  body section.services-offered p {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
   html {
     font-size: 85%;
   }
 }
 @media (min-width: 992px) {
-  body section {
-    margin: 150px 0;
-  }
   body section.banner {
     padding: 100px 0;
   }
@@ -147,6 +155,9 @@ body section.services-offered p {
   body section.banner .mountain {
     max-width: 75%;
     text-align: center;
+  }
+  body section.quote {
+    margin: 150px 0;
   }
 }
 @media (min-width: 1200px) {

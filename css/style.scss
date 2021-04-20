@@ -112,6 +112,10 @@ body {
     }
   }
 
+  section.quote {
+
+  }
+
   section.pacific-pace {
     padding: 50px 0;
     font-family: 'Raleway', sans-serif;
@@ -158,6 +162,22 @@ body {
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+  body {
+    section.services-offered {
+      font-family: 'Raleway', sans-serif;
+
+
+      .top-h2 {
+        margin-top: 35px;
+      }
+
+      p {
+        font-size: 1.2rem;
+        text-align: center;
+      }
+    }
+  }
+
   @at-root html {
     font-size: 85%;
   }
@@ -166,9 +186,6 @@ body {
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   body {
-    section {
-      margin: 150px 0;
-    }
 
     section.banner {
       padding: 100px 0;
@@ -182,6 +199,10 @@ body {
         text-align: center;
         // margin-top: 35px;
       }
+    }
+
+    section.quote {
+      margin: 150px 0;
     }
   }
 }
