@@ -63,7 +63,7 @@ body .top-deco .third-3 {
   background-color: #f4d2d1;
 }
 body section.banner {
-  background: linear-gradient(17deg, #e3efff, #abcfff, #e3efff);
+  background: linear-gradient(17deg, #e3efff, #abcfff00, #e3efff);
   margin-top: 0;
   padding-top: 20px;
   padding-bottom: 70px;
@@ -110,7 +110,7 @@ body section.previous-clients .head-bar {
 }
 body section.previous-clients .international-picture {
   width: 75%;
-  margin: 30px auto;
+  margin: 50px auto;
 }
 
 @media (min-width: 768px) {
