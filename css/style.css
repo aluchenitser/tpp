@@ -6,9 +6,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400&display=swap");
 html {
   font-family: "Raleway", sans-serif;
+  font-size: 60%;
 }
 
-body .head-bar {
+/* ------ GENERAL ------ */
+/* ------ GENERAL ------ */
+/* ------ GENERAL ------ */
+.head-bar {
   margin-bottom: 12px;
   background-color: #f2f2f2;
   background: linear-gradient(90deg, #f2f2f2, white);
@@ -21,17 +25,16 @@ body .head-bar {
 }
 
 section {
-  padding: 100px 0;
+  margin: 50px 0;
 }
 
 blockquote {
-  padding: 50px;
-  margin-bottom: 100px;
   font-family: "Cormorant Upright", sans-serif;
   font-size: 3rem;
   font-style: italic;
   letter-spacing: -1.5px;
   font-weight: lighter;
+  margin: 0;
 }
 
 img {
@@ -39,27 +42,32 @@ img {
   image-rendering: pixelated;
 }
 
-.top-border {
+/* ------ SECTIONS ------ */
+/* ------ SECTIONS ------ */
+/* ------ SECTIONS ------ */
+body .top-deco {
   display: flex;
   height: 10px;
 }
-.top-border [class^=third] {
+body .top-deco [class^=third] {
   flex: 1;
 }
-.top-border .third-1 {
+body .top-deco .third-1 {
   background-color: #b4c6de;
 }
-.top-border .third-2 {
+body .top-deco .third-2 {
   background-color: #42406c;
 }
-.top-border .third-3 {
+body .top-deco .third-3 {
   background-color: #f4d2d1;
 }
-
-.banner {
+body section.banner {
   background: linear-gradient(17deg, #e3efff, #abcfff, #e3efff);
+  margin-top: 0;
+  padding-top: 20px;
+  padding-bottom: 70px;
 }
-.banner .head {
+body section.banner .head {
   font-size: 5rem;
   font-family: "Raleway Dots", cursive;
   font-family: "Montserrat", cursive;
@@ -68,13 +76,13 @@ img {
   text-transform: uppercase;
   text-shadow: 5px 3px darkgrey;
 }
-.banner .head .head-bar {
+body section.banner .head .head-bar {
   display: inline-block;
   margin-bottom: 12px;
   padding-right: 10px;
   box-shadow: -3px 3px white;
 }
-.banner h1 {
+body section.banner h1 {
   font-family: "Raleway", sans-serif;
   font-weight: 100;
   font-size: 1.8rem;
@@ -82,36 +90,39 @@ img {
   left: 2px;
   text-shadow: 1px 1px white;
 }
-.banner .grow-your-business {
-  margin-top: 45px;
+body section.banner .grow-your-business {
+  margin-top: 25px;
   font-family: "Raleway", sans-serif;
   font-size: 1.8rem;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   text-shadow: 1px 1px white;
 }
-
-.previous-clients {
+body section.previous-clients {
   font-family: "Raleway", sans-serif;
   font-size: 1.8rem;
 }
-.previous-clients .head-bar {
+body section.previous-clients .head-bar {
   text-align: center;
   background: none;
   background-color: #f2f2f2;
-  margin-bottom: 150px !important;
 }
-.previous-clients .flex-images {
+body section.previous-clients .flex-images {
   display: flex;
   flex-wrap: wrap;
   width: 75%;
   margin: 0 auto;
 }
-.previous-clients .flex-images > div {
+body section.previous-clients .flex-images > div {
   flex-basis: 25%;
   text-align: center;
 }
 
-@media (max-width: 992px) {
+@media (min-width: 768px) {
+  html {
+    font-size: 85%;
+  }
+}
+@media (min-width: 992px) {
   .banner {
     background: #e3efff;
     padding-top: 25px;
@@ -128,9 +139,9 @@ img {
     margin-top: 35px;
   }
 }
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   html {
-    font-size: 85%;
+    font-size: 100%;
   }
 }
 
