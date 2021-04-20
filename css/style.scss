@@ -25,6 +25,7 @@ html {
   font-family: "Poppins", cursive;
   text-transform: uppercase;
   text-shadow: 5px 3px darkgrey;
+  padding-right: 10px;
 }
 
 section {
@@ -87,7 +88,6 @@ body {
       .head-bar {
         display: inline-block;
         margin-bottom: 12px;
-        padding-right: 10px;
         box-shadow: -3px 3px white;
       }
     }
@@ -117,21 +117,16 @@ body {
     font-size: 1.8rem;
 
     .head-bar {
-      text-align: center;
+      text-align: left;
       background: none;
       background-color: #f2f2f2;
+      font-size: 4rem;
+      display: inline-block;
     }
 
-    .flex-images {
-      display: flex;
-      flex-wrap: wrap;
+    .international-picture {
       width: 75%;
-      margin: 0 auto;
-
-      > div {
-        flex-basis: 25%;
-        text-align: center;
-      }
+      margin: 30px auto;
     }
   }
 }

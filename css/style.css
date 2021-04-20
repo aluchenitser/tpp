@@ -22,6 +22,7 @@ html {
   font-family: "Poppins", cursive;
   text-transform: uppercase;
   text-shadow: 5px 3px darkgrey;
+  padding-right: 10px;
 }
 
 section {
@@ -79,7 +80,6 @@ body section.banner .head {
 body section.banner .head .head-bar {
   display: inline-block;
   margin-bottom: 12px;
-  padding-right: 10px;
   box-shadow: -3px 3px white;
 }
 body section.banner h1 {
@@ -102,19 +102,15 @@ body section.previous-clients {
   font-size: 1.8rem;
 }
 body section.previous-clients .head-bar {
-  text-align: center;
+  text-align: left;
   background: none;
   background-color: #f2f2f2;
+  font-size: 4rem;
+  display: inline-block;
 }
-body section.previous-clients .flex-images {
-  display: flex;
-  flex-wrap: wrap;
+body section.previous-clients .international-picture {
   width: 75%;
-  margin: 0 auto;
-}
-body section.previous-clients .flex-images > div {
-  flex-basis: 25%;
-  text-align: center;
+  margin: 30px auto;
 }
 
 @media (min-width: 768px) {
