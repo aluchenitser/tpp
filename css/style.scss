@@ -219,13 +219,16 @@ body {
       justify-content: space-evenly;
 
       button {
-        background-color: white;
-        color: black;
-        padding: 15px 20px;
-        border: 2px solid #f4d2d1;
-        border-radius: 20px;
-
+        // background-color: white;
+        background-color: #42406c;
+        color: #f4d2d1;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border: none;
+        border-radius: 10px;
+        font-size: 14px;
         min-width: 125px;
+        font-weight: bold;
         // font-size: 14px;
       }
     }
