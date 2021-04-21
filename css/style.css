@@ -117,6 +117,15 @@ body section.pacific-pace .international-picture {
 body section.pacific-pace p, body section.pacific-pace ul {
   text-shadow: 1px 1px white;
 }
+body section.pacific-pace .pacific-pace-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body section.pacific-pace .pacific-pace-right .suggested-industries {
+  display: inline-block;
+  margin: 20px auto 0 auto;
+}
 body section.services-offered {
   font-family: "Raleway", sans-serif;
   background-image: url("../img/patterns/dot-grid.png");
@@ -159,6 +168,9 @@ body section.services-offered hr.little-hr {
   body section.services-offered .service hr.little-hr {
     display: block;
     width: 35%;
+  }
+  body section.pacific-pace .pacific-pace-right {
+    align-items: flex-start;
   }
 
   html {
