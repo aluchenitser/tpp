@@ -25,10 +25,6 @@ html {
   padding-right: 10px;
 }
 
-section {
-  margin: 50px 0;
-}
-
 blockquote {
   font-family: "Cormorant Upright", sans-serif;
   font-size: 3rem;
@@ -66,8 +62,7 @@ body .top-deco .third-3 {
 body section.banner {
   background: linear-gradient(17deg, #e3efff, #abcfff00, #e3efff);
   margin-top: 0;
-  padding-top: 20px;
-  padding-bottom: 70px;
+  padding: 20px 0;
 }
 body section.banner .head {
   font-size: 5rem;
@@ -99,10 +94,13 @@ body section.banner .grow-your-business {
   text-shadow: 1px 1px white;
 }
 body section.banner .mountain {
-  max-width: 350px;
+  max-width: 250px;
+}
+body section.quote {
+  padding: 100px 0;
 }
 body section.pacific-pace {
-  padding: 50px 0;
+  padding: 20px 0;
   font-family: "Raleway", sans-serif;
   font-size: 1.8rem;
   background: linear-gradient(17deg, #e3efff, #abcfff00, #e3efff);
@@ -114,25 +112,27 @@ body section.pacific-pace .head-bar {
 }
 body section.pacific-pace .international-picture {
   width: 75%;
-  margin: 50px auto;
+  margin: 35px auto;
 }
 body section.pacific-pace p, body section.pacific-pace ul {
   text-shadow: 1px 1px white;
 }
 body section.services-offered {
   font-family: "Raleway", sans-serif;
+  background-image: url("../img/patterns/dot-grid.png");
+  padding: 20px 0;
 }
 body section.services-offered .top-h2 {
-  margin-top: 0px;
+  margin-top: 10px;
 }
 body section.services-offered h2 {
   font-size: 2.4rem;
   text-align: center;
-  margin: 35px 0;
+  margin: 20px 0;
 }
 body section.services-offered p {
-  font-size: 1.8rem;
-  margin-bottom: 30px;
+  font-size: 1.6rem;
+  margin-bottom: 16px;
 }
 body section.services-offered hr.little-hr {
   display: none;
@@ -151,7 +151,7 @@ body section.services-offered hr.little-hr {
     margin-top: 50px;
   }
   body section.services-offered .service .top-h2 {
-    margin-top: 35px;
+    margin-top: 20px;
   }
   body section.services-offered .service h2 {
     font-size: 2rem;
@@ -180,7 +180,7 @@ body section.services-offered hr.little-hr {
     height: 160px;
   }
   body section.quote {
-    margin: 150px 0;
+    padding: 150px 0;
   }
 }
 @media (min-width: 1200px) {
