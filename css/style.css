@@ -62,7 +62,7 @@ body .top-deco .third-3 {
 body section.banner {
   background: linear-gradient(17deg, #e3efff, #abcfff00, #e3efff);
   margin-top: 0;
-  padding: 20px 0;
+  padding: 20px 0 50px 0;
 }
 body section.banner .head {
   font-size: 5rem;
@@ -98,9 +98,27 @@ body section.banner .mountain {
 }
 body section.quote {
   padding: 100px 0;
+  background-image: url("../img/audience_1920.jpg");
+  text-align: center;
+}
+body section.quote div.line {
+  display: block;
+  padding-right: 10px;
+  margin-bottom: 15px;
+}
+body section.quote div.line span {
+  display: inline-block;
+  font-size: 18px;
+  background-color: white;
+  font-style: italic;
+  padding: 0 5px;
+  font-family: "Raleway", sans-serif;
+}
+body section.quote div.line:last-of-type {
+  margin-bottom: 0;
 }
 body section.pacific-pace {
-  padding: 20px 0;
+  padding: 50px 0;
   font-family: "Raleway", sans-serif;
   font-size: 1.8rem;
   background: linear-gradient(17deg, #e3efff, #abcfff00, #e3efff);
@@ -147,7 +165,7 @@ body section.services-offered hr.little-hr {
   display: none;
 }
 body section.cta {
-  padding: 20px 0;
+  padding: 20px 0 30px 0;
   font-family: "Raleway", sans-serif;
   font-size: 1.8rem;
   background: linear-gradient(17deg, #e3efff, #abcfff00, #e3efff);
@@ -164,14 +182,22 @@ body section.cta h2.h2-top {
 body section.cta .buttons-row {
   margin: 20px 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 body section.cta .buttons-row button {
-  min-width: 100px;
+  background-color: white;
+  color: black;
+  padding: 15px 20px;
+  border: 2px solid #f4d2d1;
+  border-radius: 20px;
+  min-width: 125px;
 }
 body section.cta p {
   font-size: 1.6rem;
   margin-bottom: 16px;
+}
+body .footer img {
+  max-width: 100%;
 }
 
 @media (min-width: 768px) {
