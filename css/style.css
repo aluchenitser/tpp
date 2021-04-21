@@ -256,6 +256,18 @@ body .footer img {
   html {
     font-size: 100%;
   }
+
+  body section.banner h1 {
+    font-size: 1.3rem;
+    margin-top: 5px !important;
+  }
+  body section.banner ul {
+    font-size: 1.3rem;
+  }
+  body section.quote div.line span {
+    font-size: 4rem;
+    padding-right: 30px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

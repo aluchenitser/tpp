@@ -332,6 +332,29 @@ body {
   @at-root html {
     font-size: 100%;
   }
+
+    body {
+    section.banner {
+      h1 {
+        font-size: 1.3rem;
+        margin-top: 5px !important;
+      }
+
+      ul {
+        font-size: 1.3rem;
+      }
+    }
+
+    section.quote {
+
+      div.line {
+        span {
+          font-size: 4rem;
+          padding-right: 30px;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 1201px) {
