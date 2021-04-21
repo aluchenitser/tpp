@@ -114,6 +114,7 @@ body section.quote div.line span {
   padding: 0 5px;
   font-family: "Raleway", sans-serif;
   color: black;
+  text-shadow: 1px 1px #ffc9fb;
 }
 body section.quote div.line:last-of-type {
   margin-bottom: 0;
