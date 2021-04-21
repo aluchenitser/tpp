@@ -173,6 +173,39 @@ body {
       display: none;
     }
   }
+
+  section.cta {
+    padding: 20px 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.8rem;
+    background: linear-gradient(17deg, #e3efff, #abcfff00, #e3efff);
+    text-shadow: 1px 1px white;
+
+    h2 {
+      font-size: 2.4rem;
+      text-align: center;
+      margin: 20px 0;
+
+      &.h2-top {
+        margin-top: 10px;
+      }
+    }
+
+    .buttons-row {
+      margin: 20px 0;
+      display: flex;
+      justify-content: space-around;
+
+      button {
+        min-width: 100px;
+      }
+    }
+
+    p {
+      font-size: 1.6rem;
+      margin-bottom: 16px;
+    }
+  }
 }
 
 

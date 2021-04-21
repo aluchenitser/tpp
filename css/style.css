@@ -146,6 +146,33 @@ body section.services-offered p {
 body section.services-offered hr.little-hr {
   display: none;
 }
+body section.cta {
+  padding: 20px 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.8rem;
+  background: linear-gradient(17deg, #e3efff, #abcfff00, #e3efff);
+  text-shadow: 1px 1px white;
+}
+body section.cta h2 {
+  font-size: 2.4rem;
+  text-align: center;
+  margin: 20px 0;
+}
+body section.cta h2.h2-top {
+  margin-top: 10px;
+}
+body section.cta .buttons-row {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-around;
+}
+body section.cta .buttons-row button {
+  min-width: 100px;
+}
+body section.cta p {
+  font-size: 1.6rem;
+  margin-bottom: 16px;
+}
 
 @media (min-width: 768px) {
   body section.services-offered .service {
