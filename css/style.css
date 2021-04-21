@@ -43,20 +43,20 @@ img {
 /* ------ SECTIONS ------ */
 /* ------ SECTIONS ------ */
 /* ------ SECTIONS ------ */
-body .top-deco {
+body .vertical-bookends {
   display: flex;
   height: 10px;
 }
-body .top-deco [class^=third] {
+body .vertical-bookends [class^=third] {
   flex: 1;
 }
-body .top-deco .third-1 {
+body .vertical-bookends .third-1 {
   background-color: #b4c6de;
 }
-body .top-deco .third-2 {
+body .vertical-bookends .third-2 {
   background-color: #42406c;
 }
-body .top-deco .third-3 {
+body .vertical-bookends .third-3 {
   background-color: #f4d2d1;
 }
 body section.banner {
@@ -97,8 +97,12 @@ body section.banner .mountain {
   max-width: 250px;
 }
 body section.quote {
-  padding: 100px 0;
-  background-image: url("../img/audience_1920.jpg");
+  padding: 250px 0;
+  background-image: url("../img/children_1920.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  image-rendering: -webkit-optimize-contrast;
   text-align: center;
 }
 body section.quote div.line {
@@ -119,7 +123,7 @@ body section.quote div.line:last-of-type {
   margin-bottom: 0;
 }
 body section.pacific-pace {
-  padding: 60px 0;
+  padding: 60px 0 35px 0;
   font-family: "Raleway", sans-serif;
   font-size: 1.8rem;
   background: linear-gradient(17deg, #e3efff, #abcfff00, #e3efff);
