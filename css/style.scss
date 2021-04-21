@@ -40,8 +40,10 @@ blockquote {
 
 img {
   max-width: 100%;
-  image-rendering: pixelated;
+  image-rendering: -webkit-optimize-contrast;  // improves render for mac Chrome
 }
+
+
 
 /* ------ SECTIONS ------ */
 /* ------ SECTIONS ------ */
@@ -118,12 +120,11 @@ body {
 
     div.line {
       display: block;
-      padding-right: 10px;
       margin-bottom: 15px;
 
       span {
         display: inline-block;
-        font-size: 18px;
+        font-size: 2.1rem;
         background-color: white;
         font-style: italic;
         padding: 0 5px;
@@ -153,6 +154,7 @@ body {
     .international-picture {
       width: 75%;
       margin: 35px auto;
+      image-rendering: -webkit-optimize-contrast;  // improves render for mac Chrome
     }
 
     p, ul {
@@ -222,7 +224,7 @@ body {
       button {
         // background-color: white;
         background-color: #42406c;
-        color: #f4d2d1;
+        color: white;
         padding-top: 8px;
         padding-bottom: 8px;
         border: none;
