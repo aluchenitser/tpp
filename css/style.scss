@@ -116,8 +116,8 @@ body {
   section.quote {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    height: 580px;
+    justify-content: space-around;
+    height: 680px;
 
     background-image: url('../img/children_1920.jpg');
     background-size: cover;
@@ -133,7 +133,7 @@ body {
 
       span {
         display: inline-block;
-        font-size: 2.2rem;
+        font-size: 2.6rem;
         background-color: white;
         font-style: italic;
         padding: 0 5px;
@@ -199,12 +199,26 @@ body {
     }
 
     p {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
+      line-height: 1.7;
       margin-bottom: 16px;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
     }
 
     hr.little-hr {
       display: none;
+    }
+
+    hr.littler-hr {
+      width: 15%;
+      height: 2px;
+      margin-top: 20px;
+      margin-bottom: 25px;
+      border-width: 2px;
+      border-color: #7bb3ff;
     }
   }
 
