@@ -69,7 +69,7 @@ body {
   section.banner {
     background: linear-gradient(17deg, #e3efff, #abcfff00, #e3efff);
     margin-top: 0;
-    padding: 20px 0 50px 0;
+    padding: 20px 0 60px 0;
 
     .head {
       font-size: 5rem;
@@ -128,6 +128,7 @@ body {
         font-style: italic;
         padding: 0 5px;
         font-family: 'Raleway', sans-serif;
+        color: black;
       }
 
       &:last-of-type {
@@ -137,7 +138,7 @@ body {
   }
 
   section.pacific-pace {
-    padding: 50px 0;
+    padding: 60px 0;
     font-family: 'Raleway', sans-serif;
     font-size: 1.8rem;
     background: linear-gradient(17deg, #e3efff, #abcfff00, #e3efff);
@@ -196,7 +197,7 @@ body {
   }
 
   section.cta {
-    padding: 20px 0 30px 0;
+    padding: 20px 0 40px 0;
     font-family: 'Raleway', sans-serif;
     font-size: 1.8rem;
     background: linear-gradient(17deg, #e3efff, #abcfff00, #e3efff);
