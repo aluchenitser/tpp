@@ -211,6 +211,12 @@ body section.say-hello h2 {
 body section.say-hello .buttons-row {
   margin: 20px 0;
 }
+body section.say-hello .buttons-row p {
+  width: 80%;
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 0 auto 24px auto;
+}
 body section.say-hello .buttons-row button {
   background-color: #42406c;
   color: white;
@@ -222,12 +228,6 @@ body section.say-hello .buttons-row button {
   width: 90%;
   font-weight: bold;
   cursor: pointer;
-}
-body section.say-hello .buttons-row p {
-  width: 80%;
-  text-align: center;
-  font-size: 1.8rem;
-  margin: 0 auto 16px auto;
 }
 body .footer {
   display: flex;

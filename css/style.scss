@@ -247,6 +247,13 @@ body {
     .buttons-row {
       margin: 20px 0;
 
+      p {
+        width: 80%;
+        text-align: center;
+        font-size: 1.8rem;
+        margin: 0 auto 24px auto;
+      }
+
       button {
         background-color: #42406c;
         color: white;
@@ -258,12 +265,6 @@ body {
         width: 90%;
         font-weight: bold;
         cursor: pointer;
-      }
-      p {
-        width: 80%;
-        text-align: center;
-        font-size: 1.8rem;
-        margin: 0 auto 16px auto;
       }
     }
   }
