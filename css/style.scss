@@ -43,12 +43,9 @@ img {
   image-rendering: -webkit-optimize-contrast;  // improves render for mac Chrome
 }
 
-.no-whitespace {
+.no-wrap {
   white-space: nowrap;
 }
-
-
-
 
 /* ------ SECTIONS ------ */
 /* ------ SECTIONS ------ */
@@ -154,7 +151,7 @@ body {
   }
 
   section.pacific-pace {
-    padding: 60px 0 35px 0;
+    padding: 40px 0 35px 0;
     font-family: 'Raleway', sans-serif;
     font-size: 1.8rem;
     background: linear-gradient(17deg, #e3efff, #abcfff00, #e3efff);
@@ -167,11 +164,17 @@ body {
 
     .international-picture {
       width: 75%;
-      margin: 35px auto;
+      margin: 30px auto 35px auto;
       image-rendering: -webkit-optimize-contrast;  // improves render for mac Chrome
     }
 
-    p, ul {
+    p {
+      text-shadow: 1px 1px white;
+      text-align: center;
+      width: 80%;
+    }
+
+    ul {
       text-shadow: 1px 1px white;
     }
 
@@ -194,7 +197,7 @@ body {
     padding: 20px 0;
 
     .top-h2 {
-      margin-top: 10px;
+      margin-top: 20px;
     }
 
     h2 {
@@ -227,7 +230,7 @@ body {
     }
   }
 
-  section.cta {
+  section.say-hello {
     padding: 20px 0 40px 0;
     font-family: 'Raleway', sans-serif;
     line-height: 1.6;
@@ -257,8 +260,10 @@ body {
         cursor: pointer;
       }
       p {
+        width: 80%;
+        text-align: center;
         font-size: 1.8rem;
-        margin-bottom: 16px;
+        margin: 0 auto 16px auto;
       }
     }
   }

@@ -40,7 +40,7 @@ img {
   image-rendering: -webkit-optimize-contrast;
 }
 
-.no-whitespace {
+.no-wrap {
   white-space: nowrap;
 }
 
@@ -130,7 +130,7 @@ body section.quote div.line:last-of-type {
   margin-bottom: 0;
 }
 body section.pacific-pace {
-  padding: 60px 0 35px 0;
+  padding: 40px 0 35px 0;
   font-family: "Raleway", sans-serif;
   font-size: 1.8rem;
   background: linear-gradient(17deg, #e3efff, #abcfff00, #e3efff);
@@ -142,10 +142,15 @@ body section.pacific-pace .head-bar {
 }
 body section.pacific-pace .international-picture {
   width: 75%;
-  margin: 35px auto;
+  margin: 30px auto 35px auto;
   image-rendering: -webkit-optimize-contrast;
 }
-body section.pacific-pace p, body section.pacific-pace ul {
+body section.pacific-pace p {
+  text-shadow: 1px 1px white;
+  text-align: center;
+  width: 80%;
+}
+body section.pacific-pace ul {
   text-shadow: 1px 1px white;
 }
 body section.pacific-pace .pacific-pace-right {
@@ -163,7 +168,7 @@ body section.services-offered {
   padding: 20px 0;
 }
 body section.services-offered .top-h2 {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 body section.services-offered h2 {
   font-size: 2.4rem;
@@ -190,7 +195,7 @@ body section.services-offered hr.littler-hr {
   border-width: 2px;
   border-color: #7bb3ff;
 }
-body section.cta {
+body section.say-hello {
   padding: 20px 0 40px 0;
   font-family: "Raleway", sans-serif;
   line-height: 1.6;
@@ -198,15 +203,15 @@ body section.cta {
   text-shadow: 1px 1px white;
   text-align: center;
 }
-body section.cta h2 {
+body section.say-hello h2 {
   font-size: 2.4rem;
   text-align: center;
   margin: 20px 0 30px 0;
 }
-body section.cta .buttons-row {
+body section.say-hello .buttons-row {
   margin: 20px 0;
 }
-body section.cta .buttons-row button {
+body section.say-hello .buttons-row button {
   background-color: #42406c;
   color: white;
   padding-top: 8px;
@@ -218,9 +223,11 @@ body section.cta .buttons-row button {
   font-weight: bold;
   cursor: pointer;
 }
-body section.cta .buttons-row p {
+body section.say-hello .buttons-row p {
+  width: 80%;
+  text-align: center;
   font-size: 1.8rem;
-  margin-bottom: 16px;
+  margin: 0 auto 16px auto;
 }
 body .footer {
   display: flex;
