@@ -208,26 +208,34 @@ body section.cta .buttons-row {
   justify-content: space-evenly;
 }
 body section.cta .buttons-row button {
-  background-color: #fa8f00;
+  background-color: #42406c;
   color: white;
   padding-top: 8px;
   padding-bottom: 8px;
   border: none;
   border-radius: 10px;
-  font-size: 14px;
-  min-width: 125px;
+  font-size: 16px;
+  width: 100%;
   font-weight: bold;
-  text-shadow: 1px 1px black;
   cursor: pointer;
-  text-shadow: 1px 1px black;
-  box-shadow: 1px 1px 1px black;
 }
 body section.cta p {
   font-size: 1.8rem;
   margin-bottom: 16px;
 }
-body .footer img {
-  max-width: 100%;
+body .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../img/wet_fall_asphalt.jpg") center/530px;
+  height: 320px;
+  image-rendering: -webkit-optimize-contrast;
+}
+body .footer span {
+  color: white;
+  font-size: 10rem;
+  font-family: "Raleway", cursive;
+  text-shadow: 3px 3px black;
 }
 
 @media (min-width: 768px) {
