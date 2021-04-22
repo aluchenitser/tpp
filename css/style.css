@@ -40,6 +40,10 @@ img {
   image-rendering: -webkit-optimize-contrast;
 }
 
+.no-whitespace {
+  white-space: nowrap;
+}
+
 /* ------ SECTIONS ------ */
 /* ------ SECTIONS ------ */
 /* ------ SECTIONS ------ */
@@ -197,15 +201,10 @@ body section.cta {
 body section.cta h2 {
   font-size: 2.4rem;
   text-align: center;
-  margin: 20px 0;
-}
-body section.cta h2.h2-top {
-  margin-top: 10px;
+  margin: 20px 0 30px 0;
 }
 body section.cta .buttons-row {
   margin: 20px 0;
-  display: flex;
-  justify-content: space-evenly;
 }
 body section.cta .buttons-row button {
   background-color: #42406c;
@@ -215,11 +214,11 @@ body section.cta .buttons-row button {
   border: none;
   border-radius: 10px;
   font-size: 16px;
-  width: 100%;
+  width: 90%;
   font-weight: bold;
   cursor: pointer;
 }
-body section.cta p {
+body section.cta .buttons-row p {
   font-size: 1.8rem;
   margin-bottom: 16px;
 }

@@ -43,6 +43,11 @@ img {
   image-rendering: -webkit-optimize-contrast;  // improves render for mac Chrome
 }
 
+.no-whitespace {
+  white-space: nowrap;
+}
+
+
 
 
 /* ------ SECTIONS ------ */
@@ -233,23 +238,13 @@ body {
     h2 {
       font-size: 2.4rem;
       text-align: center;
-      margin: 20px 0;
-
-      &.h2-top {
-        margin-top: 10px;
-      }
+      margin: 20px 0 30px 0;
     }
 
     .buttons-row {
       margin: 20px 0;
-      display: flex;
-      justify-content: space-evenly;
 
       button {
-        // background-color: white;
-        // background-color: #42406c;
-        // background-color: #ff1eee;
-        // background-color: #fa8f00;
         background-color: #42406c;
         color: white;
         padding-top: 8px;
@@ -257,16 +252,14 @@ body {
         border: none;
         border-radius: 10px;
         font-size: 16px;;
-        width: 100%;
+        width: 90%;
         font-weight: bold;
         cursor: pointer;
-
       }
-    }
-
-    p {
-      font-size: 1.8rem;
-      margin-bottom: 16px;
+      p {
+        font-size: 1.8rem;
+        margin-bottom: 16px;
+      }
     }
   }
 
