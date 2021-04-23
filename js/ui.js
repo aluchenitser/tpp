@@ -9,3 +9,7 @@ window.addEventListener("scroll", e => {
     stickyElement.classList.remove('stuck')
   }
 })
+
+document.getElementById('toggler').addEventListener('change', e => {
+  document.body.classList.toggle('mobile-menu-open', e.target.checked);
+})

@@ -9,6 +9,10 @@ html {
   font-size: 60%;
 }
 
+body.mobile-menu-open {
+  overflow: hidden;
+}
+
 /* ------ GENERAL ------ */
 /* ------ GENERAL ------ */
 /* ------ GENERAL ------ */
@@ -72,10 +76,20 @@ body section.mobile-menu {
   transition: transform 0.2s;
   z-index: 2;
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-family: "Raleway", cursive;
+}
+body section.mobile-menu div {
+  padding: 30px 0;
 }
 body #toggler {
   position: absolute;
   visibility: hidden;
+  z-index: 10;
 }
 body #toggler:checked + section.mobile-menu {
   transform: translate(0, 0);
@@ -90,7 +104,7 @@ body section.sticky {
   background: #e3effc;
   /* Fallback for older browsers without RGBA-support */
   background: rgba(227, 239, 252, 0.6);
-  z-index: 1;
+  z-index: 3;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -98,9 +112,20 @@ body section.sticky {
   font-size: 26px;
   transition: background-color 1s;
 }
+body section.sticky .fa-bars, body section.sticky .logo {
+  transition: color 0.2s;
+}
 body section.sticky.stuck {
   background: #e3effc;
 }
+body.mobile-menu-open section.sticky {
+  background-color: #42406c;
+  transition: background-color 0.2s;
+}
+body.mobile-menu-open section.sticky .fa-bars, body.mobile-menu-open section.sticky .logo {
+  color: white;
+}
+
 body section.banner {
   background: linear-gradient(17deg, #e3efff, #abcfff00, #e3efff);
   margin-top: 0;
@@ -279,7 +304,7 @@ body .footer span {
   color: white;
   font-size: 10rem;
   font-family: "Raleway", cursive;
-  text-shadow: 3px 3px black;
+  text-shadow: 1px 1px #f4d2d1, 4px 4px black;
 }
 
 @media (min-width: 768px) {

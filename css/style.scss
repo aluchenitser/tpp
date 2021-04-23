@@ -11,6 +11,12 @@ html {
   font-size: 60%;
 }
 
+body {
+  &.mobile-menu-open {
+    overflow: hidden;
+  }
+}
+
 /* ------ GENERAL ------ */
 /* ------ GENERAL ------ */
 /* ------ GENERAL ------ */
@@ -79,17 +85,27 @@ body {
     transition: transform 0.2s;
     z-index: 2;
     position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-family: 'Raleway', cursive;
+
+    div {
+      padding: 30px 0;
+    }
   }
 
   #toggler {
     position: absolute;
     visibility: hidden;
+    z-index: 10;
 
     &:checked + section.mobile-menu {
       transform: translate(0, 0);
     }
   }
-
 
   section.sticky {
     position: sticky;
@@ -101,7 +117,7 @@ body {
 
     background: rgb(227, 239, 252); /* Fallback for older browsers without RGBA-support */
     background: rgba(227, 239, 252, 0.6);
-    z-index: 1;
+    z-index: 3;
 
     display: flex;
     align-items: center;
@@ -110,8 +126,20 @@ body {
     font-size: 26px;
     transition: background-color 1s;
 
+    .fa-bars, .logo {
+      transition: color 0.2s;
+    }
+
     &.stuck {
       background: rgba(227, 239, 252, 1);
+    }
+
+    @at-root body.mobile-menu-open section.sticky {
+      background-color: #42406c;
+      transition: background-color 0.2s;
+      .fa-bars, .logo {
+        color: white;
+      }
     }
   }
 
@@ -328,7 +356,7 @@ body {
       color: white;
       font-size: 10rem;
       font-family: 'Raleway', cursive;
-      text-shadow: 3px 3px black;
+      text-shadow: 1px 1px #f4d2d1, 4px 4px black;
     }
   }
 }
