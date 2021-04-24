@@ -276,9 +276,9 @@ body {
 
     padding: 20px 0;
 
-    .top-h2 {
-      margin-top: 20px;
-    }
+    // .top-h2 {
+    //   margin-top: 20px;
+    // }
 
     h2 {
       font-size: 2.4rem;
@@ -414,67 +414,67 @@ body {
   }
 }
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-  body {
+// // Large devices (desktops, 992px and up)
+// @media (min-width: 992px) {
+//   body {
 
-    section.banner {
-      padding: 100px 0;
+//     section.banner {
+//       padding: 100px 0;
 
-      .grow-your-business {
-        margin-top: 35px;
-      }
+//       .grow-your-business {
+//         margin-top: 35px;
+//       }
 
-      .mountain {
-        max-width: 75%;
-        text-align: center;
-        // margin-top: 35px;
-      }
-    }
+//       .mountain {
+//         max-width: 75%;
+//         text-align: center;
+//         // margin-top: 35px;
+//       }
+//     }
 
-    section.services-offered {
-      .service {
-        p {
-          height: 160px;
-        }
-      }
-    }
+//     section.services-offered {
+//       .service {
+//         p {
+//           height: 160px;
+//         }
+//       }
+//     }
 
-    section.quote {
-      padding: 150px 0;
-    }
-  }
-}
+//     section.quote {
+//       padding: 150px 0;
+//     }
+//   }
+// }
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-  @at-root html {
-    font-size: 100%;
-  }
+// // Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) {
+//   @at-root html {
+//     font-size: 100%;
+//   }
 
-    body {
-    section.banner {
-      h1 {
-        font-size: 1.3rem;
-        margin-top: 5px !important;
-      }
+//     body {
+//     section.banner {
+//       h1 {
+//         font-size: 1.3rem;
+//         margin-top: 5px !important;
+//       }
 
-      ul {
-        font-size: 1.3rem;
-      }
-    }
+//       ul {
+//         font-size: 1.3rem;
+//       }
+//     }
 
-    section.quote {
+//     section.quote {
 
-      div.line {
-        span {
-          font-size: 4rem;
-          padding-right: 30px;
-        }
-      }
-    }
-  }
-}
+//       div.line {
+//         span {
+//           font-size: 4rem;
+//           padding-right: 30px;
+//         }
+//       }
+//     }
+//   }
+// }
 
-@media (min-width: 1201px) {
-}
+// @media (min-width: 1201px) {
+// }

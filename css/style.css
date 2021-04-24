@@ -233,9 +233,6 @@ body .services-offered {
   background-image: url("../img/patterns/dot-grid.png");
   padding: 20px 0;
 }
-body .services-offered .top-h2 {
-  margin-top: 20px;
-}
 body .services-offered h2 {
   font-size: 2.4rem;
   text-align: center;
@@ -336,41 +333,6 @@ body .footer img {
 
   html {
     font-size: 85%;
-  }
-}
-@media (min-width: 992px) {
-  body section.banner {
-    padding: 100px 0;
-  }
-  body section.banner .grow-your-business {
-    margin-top: 35px;
-  }
-  body section.banner .mountain {
-    max-width: 75%;
-    text-align: center;
-  }
-  body section.services-offered .service p {
-    height: 160px;
-  }
-  body section.quote {
-    padding: 150px 0;
-  }
-}
-@media (min-width: 1200px) {
-  html {
-    font-size: 100%;
-  }
-
-  body section.banner h1 {
-    font-size: 1.3rem;
-    margin-top: 5px !important;
-  }
-  body section.banner ul {
-    font-size: 1.3rem;
-  }
-  body section.quote div.line span {
-    font-size: 4rem;
-    padding-right: 30px;
   }
 }
 
