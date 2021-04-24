@@ -405,8 +405,24 @@ body {
       }
     }
 
-    .pacific-pace .pacific-pace-right {
-      align-items: flex-start;
+    .pacific-pace {
+      padding-top: 100px;
+      padding-bottom: 100px;
+
+      .international-picture {
+        width: 85%;
+      }
+
+      .pacific-pace-right {
+        align-items: flex-start;
+        margin-top: 40px;
+
+        p {
+          text-align: left;
+          margin-left: 20px;
+          margin-top: 20px;
+        }
+      }
     }
   }
 
