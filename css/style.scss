@@ -44,8 +44,6 @@ img {
   white-space: nowrap;
 }
 
-
-
 body {
   .vertical-bookends {
     display: flex;
@@ -65,6 +63,9 @@ body {
     }
    }
 
+  /* ------ MOBILE ------ */
+  /* ------ MOBILE ------ */
+  /* ------ MOBILE ------ */
 
   #menu-toggle {
     position: absolute;
@@ -116,7 +117,7 @@ body {
     justify-content: space-between;
     padding: 0 15px;
     font-size: 26px;
-    transition: background-color 1s;
+    transition: background-color 0.2s;
 
     .fa-bars, .happy-eyes {
       transition: color 0.2s;
@@ -146,9 +147,9 @@ body {
     }
   }
 
-/* ------ SECTIONS ------ */
-/* ------ SECTIONS ------ */
-/* ------ SECTIONS ------ */
+    /* ------ SECTIONS ------ */
+    /* ------ SECTIONS ------ */
+    /* ------ SECTIONS ------ */
 
   .intro {
     background: linear-gradient(17deg, #e3efff, #abcfff00, #e3efff);
@@ -276,10 +277,6 @@ body {
 
     padding: 20px 0;
 
-    // .top-h2 {
-    //   margin-top: 20px;
-    // }
-
     h2 {
       font-size: 2.4rem;
       text-align: center;
@@ -311,7 +308,7 @@ body {
   }
 
   .say-hello {
-    padding: 20px 0 60px 0;
+    padding: 20px 0 80px 0;
     font-family: 'Raleway', sans-serif;
     line-height: 1.6;
     background: linear-gradient(17deg, #e3efff, #abcfff00, #e3efff);
@@ -325,7 +322,6 @@ body {
     }
 
     .buttons-row {
-      margin: 20px 0;
 
       p {
         width: 80%;
@@ -374,37 +370,42 @@ body {
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   body {
-    section.services-offered {
+    .intro {
+      padding-top: 60px;
+    }
+
+    .quote {
+      height: 1180px;
+    }
+
+    .services-offered {
+      padding-bottom: 44px;
+
       .service {
         padding: 0 25px;
 
+        &:last-of-type {
+          max-width: 500px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
         p {
-          height: 210px;
           font-size: 1.2rem;
           text-align: center;
-
 
           &:last-of-type {
             margin-top: 50px;
           }
         }
 
-        .top-h2 {
-          margin-top: 20px;
-        }
-
         h2 {
           font-size: 2rem;
-        }
-
-        hr.little-hr {
-          display: block;
-          width: 35%;
         }
       }
     }
 
-    section.pacific-pace .pacific-pace-right {
+    .pacific-pace .pacific-pace-right {
       align-items: flex-start;
     }
   }

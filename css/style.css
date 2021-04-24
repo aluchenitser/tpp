@@ -39,6 +39,9 @@ img {
 }
 
 body {
+  /* ------ MOBILE ------ */
+  /* ------ MOBILE ------ */
+  /* ------ MOBILE ------ */
   /* ------ SECTIONS ------ */
   /* ------ SECTIONS ------ */
   /* ------ SECTIONS ------ */
@@ -104,7 +107,7 @@ body nav.sticky {
   justify-content: space-between;
   padding: 0 15px;
   font-size: 26px;
-  transition: background-color 1s;
+  transition: background-color 0.2s;
 }
 body nav.sticky .fa-bars, body nav.sticky .happy-eyes {
   transition: color 0.2s;
@@ -259,7 +262,7 @@ body .services-offered hr.littler-hr {
   border-color: #7bb3ff;
 }
 body .say-hello {
-  padding: 20px 0 60px 0;
+  padding: 20px 0 80px 0;
   font-family: "Raleway", sans-serif;
   line-height: 1.6;
   background: linear-gradient(17deg, #e3efff, #abcfff00, #e3efff);
@@ -270,9 +273,6 @@ body .say-hello h2 {
   font-size: 2.4rem;
   text-align: center;
   margin: 20px 0 30px 0;
-}
-body .say-hello .buttons-row {
-  margin: 20px 0;
 }
 body .say-hello .buttons-row p {
   width: 80%;
@@ -306,28 +306,34 @@ body .footer img {
 }
 
 @media (min-width: 768px) {
-  body section.services-offered .service {
+  body .intro {
+    padding-top: 60px;
+  }
+  body .quote {
+    height: 1180px;
+  }
+  body .services-offered {
+    padding-bottom: 44px;
+  }
+  body .services-offered .service {
     padding: 0 25px;
   }
-  body section.services-offered .service p {
-    height: 210px;
+  body .services-offered .service:last-of-type {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body .services-offered .service p {
     font-size: 1.2rem;
     text-align: center;
   }
-  body section.services-offered .service p:last-of-type {
+  body .services-offered .service p:last-of-type {
     margin-top: 50px;
   }
-  body section.services-offered .service .top-h2 {
-    margin-top: 20px;
-  }
-  body section.services-offered .service h2 {
+  body .services-offered .service h2 {
     font-size: 2rem;
   }
-  body section.services-offered .service hr.little-hr {
-    display: block;
-    width: 35%;
-  }
-  body section.pacific-pace .pacific-pace-right {
+  body .pacific-pace .pacific-pace-right {
     align-items: flex-start;
   }
 
