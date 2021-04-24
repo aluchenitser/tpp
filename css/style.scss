@@ -128,8 +128,16 @@ body {
     font-size: 26px;
     transition: background-color 1s;
 
-    .fa-bars, .logo {
+    .fa-bars, .happy-eyes {
       transition: color 0.2s;
+      width: 30px;
+    }
+
+    .happy-eyes {
+      transition: fill 0.2s;
+      fill: #42406c;
+      position: relative;
+      top: -3px;
     }
 
     &.stuck {
@@ -139,8 +147,12 @@ body {
     @at-root body.mobile-menu-open section.sticky {
       background-color: #42406c;
       transition: background-color 0.2s;
-      .fa-bars, .logo {
+      .fa-bars {
         color: white;
+      }
+
+      .happy-eyes {
+        fill: white;
       }
     }
   }
@@ -353,13 +365,10 @@ body {
     height: 320px;
     image-rendering: -webkit-optimize-contrast;
 
-
-    span {
-      color: white;
-      font-size: 10rem;
-      font-family: 'Raleway', cursive;
-      text-shadow: 1px 1px #f4d2d1, 4px 4px black;
-    }
+    img {
+      width: 28%;
+      filter: drop-shadow(2px 4px 6px black);
+    };
   }
 }
 

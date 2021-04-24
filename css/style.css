@@ -114,8 +114,15 @@ body section.sticky {
   font-size: 26px;
   transition: background-color 1s;
 }
-body section.sticky .fa-bars, body section.sticky .logo {
+body section.sticky .fa-bars, body section.sticky .happy-eyes {
   transition: color 0.2s;
+  width: 30px;
+}
+body section.sticky .happy-eyes {
+  transition: fill 0.2s;
+  fill: #42406c;
+  position: relative;
+  top: -3px;
 }
 body section.sticky.stuck {
   background: #e3effc;
@@ -124,8 +131,11 @@ body.mobile-menu-open section.sticky {
   background-color: #42406c;
   transition: background-color 0.2s;
 }
-body.mobile-menu-open section.sticky .fa-bars, body.mobile-menu-open section.sticky .logo {
+body.mobile-menu-open section.sticky .fa-bars {
   color: white;
+}
+body.mobile-menu-open section.sticky .happy-eyes {
+  fill: white;
 }
 
 body section.banner {
@@ -302,11 +312,9 @@ body .footer {
   height: 320px;
   image-rendering: -webkit-optimize-contrast;
 }
-body .footer span {
-  color: white;
-  font-size: 10rem;
-  font-family: "Raleway", cursive;
-  text-shadow: 1px 1px #f4d2d1, 4px 4px black;
+body .footer img {
+  width: 28%;
+  filter: drop-shadow(2px 4px 6px black);
 }
 
 @media (min-width: 768px) {
