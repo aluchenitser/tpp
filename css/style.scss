@@ -21,7 +21,7 @@ body {
 /* ------ GENERAL ------ */
 /* ------ GENERAL ------ */
 
-.head-bar {
+.shadow-caps {
   margin-bottom: 12px;
   background-color: #f2f2f2;
   background: linear-gradient(90deg,#f2f2f2, white);
@@ -32,16 +32,7 @@ body {
   text-transform: uppercase;
   text-shadow: 5px 3px darkgrey;
   padding-right: 10px;
-}
 
-blockquote {
-  font-family: 'Cormorant Upright', sans-serif;
-  font-size: 3rem;
-  font-style: italic;
-  letter-spacing: -1.5px;
-  font-weight: lighter;
-  margin: 0;
-  padding: 0 15px;
 }
 
 img {
@@ -53,9 +44,7 @@ img {
   white-space: nowrap;
 }
 
-/* ------ SECTIONS ------ */
-/* ------ SECTIONS ------ */
-/* ------ SECTIONS ------ */
+
 
 body {
   .vertical-bookends {
@@ -76,7 +65,18 @@ body {
     }
    }
 
-  section.mobile-menu {
+
+  #menu-toggle {
+    position: absolute;
+    visibility: hidden;
+    z-index: 10;
+
+    &:checked + nav.mobile-menu {
+      transform: translate(0, 0);
+    }
+  }
+
+  nav.mobile-menu {
     width: 100%;
     height: 100vh;
     transform: translate(100%, 0);
@@ -99,17 +99,7 @@ body {
     }
   }
 
-  #toggler {
-    position: absolute;
-    visibility: hidden;
-    z-index: 10;
-
-    &:checked + section.mobile-menu {
-      transform: translate(0, 0);
-    }
-  }
-
-  section.sticky {
+  nav.sticky {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
@@ -143,7 +133,7 @@ body {
       background: rgba(227, 239, 252, 1);
     }
 
-    @at-root body.mobile-menu-open section.sticky {
+    @at-root body.mobile-menu-open nav.sticky {
       background-color: #42406c;
       transition: background-color 0.2s;
       .fa-bars {
@@ -156,7 +146,11 @@ body {
     }
   }
 
-  section.banner {
+/* ------ SECTIONS ------ */
+/* ------ SECTIONS ------ */
+/* ------ SECTIONS ------ */
+
+  .intro {
     background: linear-gradient(17deg, #e3efff, #abcfff00, #e3efff);
     margin-top: 0;
     padding: 20px 0 60px 0;
@@ -170,7 +164,7 @@ body {
       text-transform: uppercase;
       text-shadow: 5px 3px darkgrey;
 
-      .head-bar {
+      .shadow-caps {
         display: inline-block;
         margin-bottom: 12px;
         box-shadow: -3px 3px white;
@@ -201,7 +195,7 @@ body {
     }
   }
 
-  section.quote {
+  .quote {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -236,13 +230,13 @@ body {
     }
   }
 
-  section.pacific-pace {
+  .pacific-pace {
     padding: 60px 0 35px 0;
     font-family: 'Raleway', sans-serif;
     font-size: 1.8rem;
     background: linear-gradient(17deg, #e3efff, #abcfff00, #e3efff);
 
-    .head-bar {
+    .shadow-caps {
       text-align: left;
       font-size: 4.5rem;
       display: inline-block;
@@ -276,7 +270,7 @@ body {
     }
   }
 
-  section.services-offered {
+  .services-offered {
     font-family: 'Raleway', sans-serif;
     background-image: url('../img/patterns/dot-grid.png');
 
@@ -316,7 +310,7 @@ body {
     }
   }
 
-  section.say-hello {
+  .say-hello {
     padding: 20px 0 60px 0;
     font-family: 'Raleway', sans-serif;
     line-height: 1.6;
@@ -361,12 +355,12 @@ body {
     align-items: center;
 
     background: url("../img/wet_fall_asphalt.jpg") center/530px;
-    height: 320px;
+    height: 330px;
     image-rendering: -webkit-optimize-contrast;
 
     img {
       width: 28%;
-      filter: drop-shadow(2px 4px 6px black);
+      filter: drop-shadow(2px 2px 2px black);
     };
   }
 }

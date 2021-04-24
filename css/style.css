@@ -16,7 +16,7 @@ body.mobile-menu-open {
 /* ------ GENERAL ------ */
 /* ------ GENERAL ------ */
 /* ------ GENERAL ------ */
-.head-bar {
+.shadow-caps {
   margin-bottom: 12px;
   background-color: #f2f2f2;
   background: linear-gradient(90deg, #f2f2f2, white);
@@ -29,16 +29,6 @@ body.mobile-menu-open {
   padding-right: 10px;
 }
 
-blockquote {
-  font-family: "Cormorant Upright", sans-serif;
-  font-size: 3rem;
-  font-style: italic;
-  letter-spacing: -1.5px;
-  font-weight: lighter;
-  margin: 0;
-  padding: 0 15px;
-}
-
 img {
   max-width: 100%;
   image-rendering: -webkit-optimize-contrast;
@@ -48,9 +38,11 @@ img {
   white-space: nowrap;
 }
 
-/* ------ SECTIONS ------ */
-/* ------ SECTIONS ------ */
-/* ------ SECTIONS ------ */
+body {
+  /* ------ SECTIONS ------ */
+  /* ------ SECTIONS ------ */
+  /* ------ SECTIONS ------ */
+}
 body .vertical-bookends {
   display: flex;
   height: 10px;
@@ -67,7 +59,15 @@ body .vertical-bookends .third-2 {
 body .vertical-bookends .third-3 {
   background-color: #42406c;
 }
-body section.mobile-menu {
+body #menu-toggle {
+  position: absolute;
+  visibility: hidden;
+  z-index: 10;
+}
+body #menu-toggle:checked + nav.mobile-menu {
+  transform: translate(0, 0);
+}
+body nav.mobile-menu {
   width: 100%;
   height: 100vh;
   transform: translate(100%, 0);
@@ -83,20 +83,12 @@ body section.mobile-menu {
   font-size: 3rem;
   font-family: "Raleway", cursive;
 }
-body section.mobile-menu div {
+body nav.mobile-menu div {
   padding: 30px 0;
   position: relative;
   top: -50px;
 }
-body #toggler {
-  position: absolute;
-  visibility: hidden;
-  z-index: 10;
-}
-body #toggler:checked + section.mobile-menu {
-  transform: translate(0, 0);
-}
-body section.sticky {
+body nav.sticky {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
@@ -114,35 +106,35 @@ body section.sticky {
   font-size: 26px;
   transition: background-color 1s;
 }
-body section.sticky .fa-bars, body section.sticky .happy-eyes {
+body nav.sticky .fa-bars, body nav.sticky .happy-eyes {
   transition: color 0.2s;
   width: 30px;
 }
-body section.sticky .logo {
+body nav.sticky .logo {
   transition: fill 0.2s;
   fill: #42406c;
   position: relative;
 }
-body section.sticky.stuck {
+body nav.sticky.stuck {
   background: #e3effc;
 }
-body.mobile-menu-open section.sticky {
+body.mobile-menu-open nav.sticky {
   background-color: #42406c;
   transition: background-color 0.2s;
 }
-body.mobile-menu-open section.sticky .fa-bars {
+body.mobile-menu-open nav.sticky .fa-bars {
   color: white;
 }
-body.mobile-menu-open section.sticky .logo {
+body.mobile-menu-open nav.sticky .logo {
   fill: white;
 }
 
-body section.banner {
+body .intro {
   background: linear-gradient(17deg, #e3efff, #abcfff00, #e3efff);
   margin-top: 0;
   padding: 20px 0 60px 0;
 }
-body section.banner .head {
+body .intro .head {
   font-size: 5rem;
   font-family: "Raleway Dots", cursive;
   font-family: "Montserrat", cursive;
@@ -151,12 +143,12 @@ body section.banner .head {
   text-transform: uppercase;
   text-shadow: 5px 3px darkgrey;
 }
-body section.banner .head .head-bar {
+body .intro .head .shadow-caps {
   display: inline-block;
   margin-bottom: 12px;
   box-shadow: -3px 3px white;
 }
-body section.banner h1 {
+body .intro h1 {
   font-family: "Raleway", sans-serif;
   font-weight: 100;
   font-size: 1.8rem;
@@ -164,17 +156,17 @@ body section.banner h1 {
   left: 2px;
   text-shadow: 1px 1px white;
 }
-body section.banner .grow-your-business {
+body .intro .grow-your-business {
   margin-top: 25px;
   font-family: "Raleway", sans-serif;
   font-size: 1.8rem;
   margin-bottom: 40px;
   text-shadow: 1px 1px white;
 }
-body section.banner .mountain {
+body .intro .mountain {
   max-width: 250px;
 }
-body section.quote {
+body .quote {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -186,11 +178,11 @@ body section.quote {
   image-rendering: -webkit-optimize-contrast;
   text-align: center;
 }
-body section.quote div.line {
+body .quote div.line {
   display: block;
   margin-bottom: 15px;
 }
-body section.quote div.line span {
+body .quote div.line span {
   display: inline-block;
   font-size: 2.6rem;
   background-color: white;
@@ -200,56 +192,56 @@ body section.quote div.line span {
   color: black;
   text-shadow: 1px 1px #ffc9fb;
 }
-body section.quote div.line:last-of-type {
+body .quote div.line:last-of-type {
   margin-bottom: 0;
 }
-body section.pacific-pace {
+body .pacific-pace {
   padding: 60px 0 35px 0;
   font-family: "Raleway", sans-serif;
   font-size: 1.8rem;
   background: linear-gradient(17deg, #e3efff, #abcfff00, #e3efff);
 }
-body section.pacific-pace .head-bar {
+body .pacific-pace .shadow-caps {
   text-align: left;
   font-size: 4.5rem;
   display: inline-block;
 }
-body section.pacific-pace .international-picture {
+body .pacific-pace .international-picture {
   width: 75%;
   margin: 30px auto 35px auto;
   image-rendering: -webkit-optimize-contrast;
 }
-body section.pacific-pace p {
+body .pacific-pace p {
   text-shadow: 1px 1px white;
   text-align: center;
   width: 80%;
 }
-body section.pacific-pace ul {
+body .pacific-pace ul {
   text-shadow: 1px 1px white;
 }
-body section.pacific-pace .pacific-pace-right {
+body .pacific-pace .pacific-pace-right {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-body section.pacific-pace .pacific-pace-right .suggested-industries {
+body .pacific-pace .pacific-pace-right .suggested-industries {
   display: inline-block;
   margin: 20px auto 0 auto;
 }
-body section.services-offered {
+body .services-offered {
   font-family: "Raleway", sans-serif;
   background-image: url("../img/patterns/dot-grid.png");
   padding: 20px 0;
 }
-body section.services-offered .top-h2 {
+body .services-offered .top-h2 {
   margin-top: 20px;
 }
-body section.services-offered h2 {
+body .services-offered h2 {
   font-size: 2.4rem;
   text-align: center;
   margin: 40px 0 20px 0;
 }
-body section.services-offered p {
+body .services-offered p {
   font-size: 1.8rem;
   line-height: 1.6;
   margin-bottom: 16px;
@@ -258,10 +250,10 @@ body section.services-offered p {
   margin-right: auto;
   text-align: center;
 }
-body section.services-offered hr.little-hr {
+body .services-offered hr.little-hr {
   display: none;
 }
-body section.services-offered hr.littler-hr {
+body .services-offered hr.littler-hr {
   width: 15%;
   height: 2px;
   margin-top: 22px;
@@ -269,7 +261,7 @@ body section.services-offered hr.littler-hr {
   border-width: 2px;
   border-color: #7bb3ff;
 }
-body section.say-hello {
+body .say-hello {
   padding: 20px 0 60px 0;
   font-family: "Raleway", sans-serif;
   line-height: 1.6;
@@ -277,21 +269,21 @@ body section.say-hello {
   text-shadow: 1px 1px white;
   text-align: center;
 }
-body section.say-hello h2 {
+body .say-hello h2 {
   font-size: 2.4rem;
   text-align: center;
   margin: 20px 0 30px 0;
 }
-body section.say-hello .buttons-row {
+body .say-hello .buttons-row {
   margin: 20px 0;
 }
-body section.say-hello .buttons-row p {
+body .say-hello .buttons-row p {
   width: 80%;
   text-align: center;
   font-size: 1.8rem;
   margin: 0 auto 24px auto;
 }
-body section.say-hello .buttons-row button {
+body .say-hello .buttons-row button {
   background-color: #42406c;
   color: white;
   padding-top: 8px;
@@ -308,12 +300,12 @@ body .footer {
   justify-content: center;
   align-items: center;
   background: url("../img/wet_fall_asphalt.jpg") center/530px;
-  height: 320px;
+  height: 330px;
   image-rendering: -webkit-optimize-contrast;
 }
 body .footer img {
   width: 28%;
-  filter: drop-shadow(2px 4px 6px black);
+  filter: drop-shadow(2px 2px 2px black);
 }
 
 @media (min-width: 768px) {

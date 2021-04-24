@@ -10,6 +10,7 @@ window.addEventListener("scroll", e => {
   }
 })
 
-document.getElementById('toggler').addEventListener('change', e => {
+document.getElementById('menu-toggle').addEventListener('change', e => {
   document.body.classList.toggle('mobile-menu-open', e.target.checked);
+  console.log('menu toggle?');
 })
