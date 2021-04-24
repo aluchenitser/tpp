@@ -118,11 +118,10 @@ body section.sticky .fa-bars, body section.sticky .happy-eyes {
   transition: color 0.2s;
   width: 30px;
 }
-body section.sticky .happy-eyes {
+body section.sticky .logo {
   transition: fill 0.2s;
   fill: #42406c;
   position: relative;
-  top: -3px;
 }
 body section.sticky.stuck {
   background: #e3effc;
@@ -134,7 +133,7 @@ body.mobile-menu-open section.sticky {
 body.mobile-menu-open section.sticky .fa-bars {
   color: white;
 }
-body.mobile-menu-open section.sticky .happy-eyes {
+body.mobile-menu-open section.sticky .logo {
   fill: white;
 }
 

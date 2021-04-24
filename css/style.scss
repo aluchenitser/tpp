@@ -133,11 +133,10 @@ body {
       width: 30px;
     }
 
-    .happy-eyes {
+    .logo {
       transition: fill 0.2s;
       fill: #42406c;
       position: relative;
-      top: -3px;
     }
 
     &.stuck {
@@ -151,7 +150,7 @@ body {
         color: white;
       }
 
-      .happy-eyes {
+      .logo {
         fill: white;
       }
     }
