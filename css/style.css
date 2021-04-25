@@ -344,6 +344,9 @@ body .footer img {
   body .services-offered .service {
     padding: 0 25px;
   }
+  body .services-offered .service.web {
+    margin-top: 50px;
+  }
   body .services-offered .service:last-of-type {
     max-width: 500px;
     margin-left: auto;

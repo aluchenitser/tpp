@@ -415,6 +415,10 @@ body {
       .service {
         padding: 0 25px;
 
+        &.web {
+          margin-top: 50px;
+        }
+
         &:last-of-type {
           max-width: 500px;
           margin-left: auto;
