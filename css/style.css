@@ -297,7 +297,7 @@ body .footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../img/wet_fall_asphalt.jpg") center/530px;
+  background: linear-gradient(0deg, transparent, black), url("../img/wet_fall_asphalt.jpg") center/cover;
   height: 330px;
   image-rendering: -webkit-optimize-contrast;
 }
@@ -377,6 +377,12 @@ body .footer img {
     margin: 0 0 24px 0 !important;
     font-size: 1.2rem;
     height: 130px;
+  }
+  body .footer {
+    height: 800px;
+  }
+  body .footer img {
+    width: 15%;
   }
 
   html {
