@@ -235,10 +235,10 @@ body .services-offered {
   font-family: "Raleway", sans-serif;
   background-image: url("../img/patterns/dot-grid.png");
   padding: 20px 0;
+  text-align: center;
 }
 body .services-offered h2 {
   font-size: 2.4rem;
-  text-align: center;
   margin: 40px 0 20px 0;
 }
 body .services-offered p {
@@ -248,7 +248,6 @@ body .services-offered p {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
 }
 body .services-offered hr.little-hr {
   display: none;
@@ -268,19 +267,20 @@ body .say-hello {
   background: linear-gradient(17deg, #e3efff, #abcfff00, #e3efff);
   text-shadow: 1px 1px white;
   text-align: center;
+  font-size: 1.8rem;
 }
 body .say-hello h2 {
   font-size: 2.4rem;
-  text-align: center;
   margin: 20px 0 30px 0;
 }
-body .say-hello .buttons-row p {
+body .say-hello .contact-item p {
   width: 80%;
-  text-align: center;
-  font-size: 1.8rem;
   margin: 0 auto 24px auto;
 }
-body .say-hello .buttons-row button {
+body .say-hello .contact-item:not(:first-of-type) p {
+  margin-top: 50px;
+}
+body .say-hello .contact-item button {
   background-color: #42406c;
   color: white;
   padding-top: 8px;
@@ -291,6 +291,7 @@ body .say-hello .buttons-row button {
   width: 90%;
   font-weight: bold;
   cursor: pointer;
+  max-width: 250px;
 }
 body .footer {
   display: flex;
@@ -305,15 +306,40 @@ body .footer img {
   filter: drop-shadow(2px 2px 2px black);
 }
 
+@media (min-width: 500px) {
+  body .intro .contents-wrap {
+    width: 75%;
+    margin: 0 auto;
+  }
+  body .intro .contents-wrap .head {
+    text-align: center;
+  }
+}
 @media (min-width: 768px) {
   body .intro {
-    padding-top: 60px;
+    padding: 60px 0 100px 0;
   }
   body .quote {
     height: 1180px;
   }
+  body .pacific-pace {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  body .pacific-pace .international-picture {
+    width: 85%;
+  }
+  body .pacific-pace .pacific-pace-right {
+    align-items: flex-start;
+    margin-top: 40px;
+  }
+  body .pacific-pace .pacific-pace-right p {
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
   body .services-offered {
-    padding-bottom: 44px;
+    padding: 50px 0 100px 0;
   }
   body .services-offered .service {
     padding: 0 25px;
@@ -333,21 +359,21 @@ body .footer img {
   body .services-offered .service h2 {
     font-size: 2rem;
   }
-  body .pacific-pace {
-    padding-top: 100px;
-    padding-bottom: 100px;
+  body .say-hello {
+    padding: 60px 0 100px 0;
   }
-  body .pacific-pace .international-picture {
-    width: 85%;
+  body .say-hello h2 {
+    margin-bottom: 50px;
   }
-  body .pacific-pace .pacific-pace-right {
-    align-items: flex-start;
-    margin-top: 40px;
+  body .say-hello .contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  body .pacific-pace .pacific-pace-right p {
-    text-align: left;
-    margin-left: 20px;
-    margin-top: 20px;
+  body .say-hello .contact-item p {
+    margin: 0 0 24px 0 !important;
+    font-size: 1.2rem;
+    height: 130px;
   }
 
   html {
