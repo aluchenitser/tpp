@@ -9,13 +9,15 @@ if(window.pageYOffset <= 10) {
 
 window.addEventListener("scroll", e => {
   const isStuck = stickyElement.classList.contains('stuck');
-  const bottomOffset = 100;
 
-  if(window.pageYOffset > 10 && !isStuck) {
+  const bottomOffset = 100;
+  const topOffset = 10;
+
+  if(window.pageYOffset > topOffset && !isStuck) {
     stickyElement.classList.add('stuck')
     ctaTopEl.classList.remove('at-top');
   }
-  else if (window.pageYOffset <= 10 && isStuck) {
+  else if (window.pageYOffset <= topOffset && isStuck) {
     stickyElement.classList.remove('stuck')
     ctaTopEl.classList.add('at-top');
   }

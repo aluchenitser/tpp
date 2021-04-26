@@ -112,6 +112,9 @@ body nav.sticky {
   font-size: 26px;
   transition: background-color 0.2s;
 }
+body nav.sticky label {
+  margin-bottom: 0;
+}
 body nav.sticky .fa-bars, body nav.sticky .happy-eyes {
   transition: color 0.2s;
   width: 30px;
@@ -122,7 +125,7 @@ body nav.sticky .logo {
   position: relative;
 }
 body nav.sticky.stuck {
-  background: #e3effc;
+  background: rgba(227, 239, 252, 0.95);
 }
 body.mobile-menu-open nav.sticky {
   background-color: #42406c;
@@ -143,7 +146,7 @@ body .cta {
   display: inline-block;
   z-index: 1;
   position: fixed;
-  transition: transform 0.5s;
+  transition: transform 0.3s;
   box-shadow: 2px 2px 2px black;
 }
 @keyframes from-right {
@@ -173,7 +176,7 @@ body .intro .cta-top {
   padding: 10px 10px 10px 15px;
   right: 0;
   top: 75px;
-  transform: translate(100%, 0);
+  transform: translate(105%, 0);
 }
 body .intro .cta-top.at-top {
   transform: translate(0, 0);
@@ -308,9 +311,19 @@ body .say-hello {
   text-align: center;
   font-size: 1.8rem;
 }
-body .say-hello h2 {
+body .say-hello .head {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+body .say-hello .head .top, body .say-hello .head .bottom {
+  height: 30px;
+}
+body .say-hello .head h2 {
   font-size: 2.4rem;
-  margin: 20px 0 30px 0;
+  margin: 15px 0;
+}
+body .say-hello .head .bottom {
+  transform: rotateX(180deg);
 }
 body .say-hello .contact-item p {
   width: 80%;
@@ -341,8 +354,8 @@ body .footer {
   height: 330px;
   image-rendering: -webkit-optimize-contrast;
 }
-body .footer img {
-  width: 15%;
+body .footer img.logo {
+  width: 40px;
   filter: drop-shadow(2px 2px 2px black);
 }
 body .footer .broken-out-services {
@@ -378,8 +391,20 @@ body .footer .cta-bottom.first-at-bottom {
   }
 }
 @media (min-width: 768px) {
+  body nav.sticky {
+    height: 60px;
+  }
+  body nav.sticky .logo {
+    height: 30px;
+  }
+  body nav.sticky .fa-bars {
+    font-size: 30px;
+  }
   body .intro {
     padding: 60px 0 100px 0;
+  }
+  body .intro .cta-top {
+    top: 95px;
   }
   body .quote {
     height: 880px;
@@ -427,8 +452,18 @@ body .footer .cta-bottom.first-at-bottom {
   body .say-hello {
     padding: 60px 0 100px 0;
   }
-  body .say-hello h2 {
-    margin-bottom: 50px;
+  body .say-hello .head {
+    margin-top: 0;
+    margin-bottom: 70px;
+  }
+  body .say-hello .head .top, body .say-hello .head .bottom {
+    height: 50px;
+  }
+  body .say-hello .head h2 {
+    margin: 20px 0;
+  }
+  body .say-hello .head .bottom {
+    transform: rotateX(180deg);
   }
   body .say-hello .contact-item {
     display: flex;
@@ -443,12 +478,17 @@ body .footer .cta-bottom.first-at-bottom {
   body .footer {
     height: 800px;
   }
-  body .footer img {
-    width: 15%;
+  body .footer img.logo {
+    width: 60px;
   }
 
   html {
     font-size: 85%;
+  }
+}
+@media (min-width: 992px) {
+  body .intro .contents-wrap .head {
+    text-align: left;
   }
 }
 

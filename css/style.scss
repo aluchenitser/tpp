@@ -121,6 +121,10 @@ body {
     font-size: 26px;
     transition: background-color 0.2s;
 
+    label {
+      margin-bottom: 0;
+    }
+
     .fa-bars, .happy-eyes {
       transition: color 0.2s;
       width: 30px;
@@ -133,7 +137,7 @@ body {
     }
 
     &.stuck {
-      background: rgba(227, 239, 252, 1);
+      background: rgba(227, 239, 252, 0.95);
     }
 
     @at-root body.mobile-menu-open nav.sticky {
@@ -157,7 +161,7 @@ body {
     display: inline-block;
     z-index: 1;
     position: fixed;
-    transition: transform 0.5s;
+    transition: transform 0.3s;
     box-shadow: 2px 2px 2px black;
   }
 
@@ -195,7 +199,7 @@ body {
       right: 0;
       top: 75px;
 
-      transform: translate(100%, 0);
+      transform: translate(105%, 0);
 
       &.at-top {
         transform: translate(0, 0);
@@ -358,9 +362,22 @@ body {
     text-align: center;
     font-size: 1.8rem;
 
-    h2 {
-      font-size: 2.4rem;
-      margin: 20px 0 30px 0;
+    .head {
+      margin-top: 20px;
+      margin-bottom: 40px;
+
+      .top, .bottom {
+        height: 30px;
+      }
+
+      h2 {
+        font-size: 2.4rem;
+        margin: 15px 0;
+      }
+
+      .bottom {
+        transform: rotateX(180deg);
+      }
     }
 
     .contact-item {
@@ -399,12 +416,9 @@ body {
     height: 330px;
     image-rendering: -webkit-optimize-contrast;
 
-    img {
-      width: 15%;
+    img.logo {
+      width: 40px;
       filter: drop-shadow(2px 2px 2px black);
-      // position: absolute;
-      // right: 15px;
-      // bottom: 15px;
     };
 
     .broken-out-services {
@@ -457,8 +471,25 @@ body {
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   body {
+
+    nav.sticky {
+      height: 60px;
+
+      .logo {
+        height: 30px;
+      }
+
+      .fa-bars {
+        font-size: 30px;
+      }
+    }
+
     .intro {
       padding: 60px 0 100px 0;
+
+      .cta-top {
+        top: 95px;
+      }
     }
 
     .quote {
@@ -519,9 +550,23 @@ body {
     .say-hello {
       padding: 60px 0 100px 0;
 
-      h2 {
-        margin-bottom: 50px;
+      .head {
+        margin-top: 0;
+        margin-bottom: 70px;
+
+        .top, .bottom {
+          height: 50px;
+        }
+
+        h2 {
+          margin: 20px 0;
+        }
+
+        .bottom {
+          transform: rotateX(180deg);
+        }
       }
+
 
       .contact-item {
         display: flex;
@@ -538,9 +583,8 @@ body {
 
     .footer {
       height: 800px;
-
-      img {
-        width: 15%;
+      img.logo {
+        width: 60px;
       }
     }
   }
@@ -550,37 +594,31 @@ body {
   }
 }
 
-// // Large devices (desktops, 992px and up)
-// @media (min-width: 992px) {
-//   body {
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  body {
 
-//     section.banner {
-//       padding: 100px 0;
+    .intro {
+      .contents-wrap {
+        .head {
+          text-align: left;
+        }
+      }
+    }
 
-//       .grow-your-business {
-//         margin-top: 35px;
-//       }
+    .services-offered {
+      .service {
+        p {
 
-//       .mountain {
-//         max-width: 75%;
-//         text-align: center;
-//         // margin-top: 35px;
-//       }
-//     }
+        }
+      }
+    }
 
-//     section.services-offered {
-//       .service {
-//         p {
-//           height: 160px;
-//         }
-//       }
-//     }
+    .quote {
 
-//     section.quote {
-//       padding: 150px 0;
-//     }
-//   }
-// }
+    }
+  }
+}
 
 // // Extra large devices (large desktops, 1200px and up)
 // @media (min-width: 1200px) {
