@@ -112,20 +112,24 @@ body nav.sticky {
   font-size: 26px;
   transition: background-color 0.2s;
 }
-body nav.sticky label {
-  margin-bottom: 0;
-}
-body nav.sticky .fa-bars, body nav.sticky .happy-eyes {
-  transition: color 0.2s;
-  width: 30px;
-}
 body nav.sticky .logo {
   transition: fill 0.2s;
   fill: #42406c;
   position: relative;
 }
+body nav.sticky label[for=menu-toggle] {
+  margin-bottom: 0;
+}
+body nav.sticky .fa-bars {
+  transition: color 0.2s;
+  width: 30px;
+}
 body nav.sticky.stuck {
   background: rgba(227, 239, 252, 0.95);
+}
+body nav.sticky .desktop-links {
+  display: none;
+  font-size: 2rem;
 }
 body.mobile-menu-open nav.sticky {
   background-color: #42406c;
@@ -142,12 +146,12 @@ body .cta {
   background-color: #ff4343;
   color: white;
   font-family: "Raleway", sans-serif;
-  font-size: 2rem;
+  font-size: inherit;
   display: inline-block;
   z-index: 1;
-  position: fixed;
   transition: transform 0.3s;
   box-shadow: 2px 2px 2px black;
+  cursor: pointer;
 }
 @keyframes from-right {
   0% {
@@ -174,8 +178,10 @@ body .intro {
 body .intro .cta-top {
   border-radius: 15px 0 0 15px;
   padding: 10px 10px 10px 15px;
+  font-size: 2rem;
   right: 0;
   top: 75px;
+  position: fixed;
   transform: translate(105%, 0);
 }
 body .intro .cta-top.at-top {
@@ -376,6 +382,7 @@ body .footer .broken-out-services {
 body .footer .cta-bottom {
   position: fixed;
   left: 0;
+  font-size: 2rem;
   border-radius: 0 15px 15px 0;
   padding: 10px 15px 10px 10px;
   bottom: 25px;
@@ -499,8 +506,35 @@ body .footer .cta-bottom.first-at-bottom {
   }
 }
 @media (min-width: 992px) {
+  body nav.sticky label[for=menu-toggle] {
+    display: none;
+  }
+  body nav.sticky .desktop-links {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+  }
+  body nav.sticky .desktop-links > div {
+    margin-left: 50px;
+  }
+  body nav.sticky .desktop-links > div:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  body nav.sticky .desktop-links .cta {
+    box-shadow: none;
+    border-radius: 10px;
+    padding: 3px 20px;
+  }
+  body .intro .contents-wrap .cta {
+    display: none;
+  }
   body .intro .contents-wrap .head {
     text-align: left;
+  }
+  body .intro .contents-wrap .head .shadow-caps {
+    font-size: 4rem;
+    margin-bottom: 0;
   }
 }
 

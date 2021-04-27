@@ -121,23 +121,28 @@ body {
     font-size: 26px;
     transition: background-color 0.2s;
 
-    label {
-      margin-bottom: 0;
-    }
-
-    .fa-bars, .happy-eyes {
-      transition: color 0.2s;
-      width: 30px;
-    }
-
     .logo {
       transition: fill 0.2s;
       fill: #42406c;
       position: relative;
     }
 
+    label[for='menu-toggle'] {
+      margin-bottom: 0;
+    }
+
+    .fa-bars {
+      transition: color 0.2s;
+      width: 30px;
+    }
+
     &.stuck {
       background: rgba(227, 239, 252, 0.95);
+    }
+
+    .desktop-links {
+      display: none;
+      font-size: 2rem;
     }
 
     @at-root body.mobile-menu-open nav.sticky {
@@ -157,12 +162,12 @@ body {
     background-color: #ff4343;
     color: white;
     font-family: 'Raleway', sans-serif;
-    font-size: 2rem;
+    font-size: inherit;
     display: inline-block;
     z-index: 1;
-    position: fixed;
     transition: transform 0.3s;
     box-shadow: 2px 2px 2px black;
+    cursor: pointer;
   }
 
   @keyframes from-right {
@@ -196,8 +201,10 @@ body {
     .cta-top {
       border-radius: 15px 0 0 15px;
       padding: 10px 10px 10px 15px;
+      font-size: 2rem;
       right: 0;
       top: 75px;
+      position: fixed;
 
       transform: translate(105%, 0);
 
@@ -443,6 +450,7 @@ body {
     .cta-bottom {
       position: fixed;
       left: 0;
+      font-size: 2rem;
 
       border-radius: 0 15px 15px 0;
       padding: 10px 15px 10px 10px;
@@ -614,11 +622,44 @@ body {
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   body {
+    nav.sticky {
+      label[for='menu-toggle'] {
+        display: none;
+      }
 
+      .desktop-links {
+        display: flex;
+        align-items: center;
+
+        font-size: 1.4rem;
+        > div {
+          margin-left: 50px;
+          &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+
+        .cta {
+          box-shadow: none;
+          border-radius: 10px;
+          padding: 3px 20px;
+        }
+      }
+    }
     .intro {
       .contents-wrap {
+        .cta {
+          display: none;
+        }
+
         .head {
           text-align: left;
+
+          .shadow-caps {
+            font-size: 4rem;
+            margin-bottom: 0;
+          }
         }
       }
     }
