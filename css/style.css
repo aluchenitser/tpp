@@ -314,9 +314,12 @@ body .say-hello {
 body .say-hello .head {
   margin-top: 20px;
   margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
 }
 body .say-hello .head .top, body .say-hello .head .bottom {
   height: 30px;
+  display: none;
 }
 body .say-hello .head h2 {
   font-size: 2.4rem;
@@ -324,6 +327,10 @@ body .say-hello .head h2 {
 }
 body .say-hello .head .bottom {
   transform: rotateX(180deg);
+}
+body .say-hello .contact-item .fa {
+  display: none;
+  color: #42406c;
 }
 body .say-hello .contact-item p {
   width: 80%;
@@ -410,8 +417,8 @@ body .footer .cta-bottom.first-at-bottom {
     height: 880px;
   }
   body .pacific-pace {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 90px;
+    padding-bottom: 90px;
   }
   body .pacific-pace .international-picture {
     width: 85%;
@@ -457,6 +464,7 @@ body .footer .cta-bottom.first-at-bottom {
     margin-bottom: 70px;
   }
   body .say-hello .head .top, body .say-hello .head .bottom {
+    display: block;
     height: 50px;
   }
   body .say-hello .head h2 {
@@ -474,6 +482,10 @@ body .footer .cta-bottom.first-at-bottom {
     margin: 0 0 24px 0 !important;
     font-size: 1.2rem;
     height: 130px;
+  }
+  body .say-hello .contact-item .fa {
+    display: block;
+    margin-bottom: 30px;
   }
   body .footer {
     height: 800px;

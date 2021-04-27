@@ -365,9 +365,13 @@ body {
     .head {
       margin-top: 20px;
       margin-bottom: 40px;
+      display: flex;
+      flex-direction: column;
 
       .top, .bottom {
         height: 30px;
+
+        display: none;
       }
 
       h2 {
@@ -378,9 +382,15 @@ body {
       .bottom {
         transform: rotateX(180deg);
       }
+
     }
 
     .contact-item {
+      .fa {
+        display: none;
+        color: #42406c;
+      }
+
       p {
         width: 80%;
         margin: 0 auto 24px auto;
@@ -497,8 +507,8 @@ body {
     }
 
     .pacific-pace {
-      padding-top: 100px;
-      padding-bottom: 100px;
+      padding-top: 90px;
+      padding-bottom: 90px;
 
       .international-picture {
         width: 85%;
@@ -555,6 +565,7 @@ body {
         margin-bottom: 70px;
 
         .top, .bottom {
+          display: block;
           height: 50px;
         }
 
@@ -577,6 +588,12 @@ body {
           margin: 0 0 24px 0 !important;
           font-size: 1.2rem;
           height: 130px;
+        }
+
+        .fa {
+          display: block;
+
+          margin-bottom: 30px;
         }
       }
     }
