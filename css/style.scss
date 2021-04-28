@@ -488,6 +488,11 @@ body {
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+
+  @at-root html {
+    font-size: 70%;
+  }
+
   body {
 
     nav.sticky {
@@ -503,10 +508,33 @@ body {
     }
 
     .intro {
-      padding: 60px 0 100px 0;
+      padding: 50px 0 100px 0;
 
       .cta-top {
         top: 95px;
+        font-size: 1.8rem;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+        margin-bottom: 0;
+        margin-top: 20px !important;
+        text-align: center;
+      }
+
+      .grow-your-business {
+        font-size: 1.5rem;
+        margin-top: 15px;
+
+        ul {
+          width: 80%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+      }
+      img {
+        margin-top: 22px;
       }
     }
 
@@ -613,14 +641,14 @@ body {
       }
     }
   }
-
-  @at-root html {
-    font-size: 85%;
-  }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
+  @at-root html {
+    font-size: 85%;
+  }
+
   body {
     nav.sticky {
       label[for='menu-toggle'] {
@@ -664,6 +692,10 @@ body {
       }
     }
 
+    .quote {
+
+    }
+
     .services-offered {
       .service {
         p {
@@ -672,9 +704,12 @@ body {
       }
     }
 
-    .quote {
-
+    .footer {
+      .cta {
+        display: none;
+      }
     }
+
   }
 }
 

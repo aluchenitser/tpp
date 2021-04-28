@@ -405,6 +405,10 @@ body .footer .cta-bottom.first-at-bottom {
   }
 }
 @media (min-width: 768px) {
+  html {
+    font-size: 70%;
+  }
+
   body nav.sticky {
     height: 60px;
   }
@@ -415,10 +419,29 @@ body .footer .cta-bottom.first-at-bottom {
     font-size: 30px;
   }
   body .intro {
-    padding: 60px 0 100px 0;
+    padding: 50px 0 100px 0;
   }
   body .intro .cta-top {
     top: 95px;
+    font-size: 1.8rem;
+  }
+  body .intro h1 {
+    font-size: 1.6rem;
+    margin-bottom: 0;
+    margin-top: 20px !important;
+    text-align: center;
+  }
+  body .intro .grow-your-business {
+    font-size: 1.5rem;
+    margin-top: 15px;
+  }
+  body .intro .grow-your-business ul {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body .intro img {
+    margin-top: 22px;
   }
   body .quote {
     height: 880px;
@@ -500,12 +523,12 @@ body .footer .cta-bottom.first-at-bottom {
   body .footer img.logo {
     width: 60px;
   }
-
+}
+@media (min-width: 992px) {
   html {
     font-size: 85%;
   }
-}
-@media (min-width: 992px) {
+
   body nav.sticky label[for=menu-toggle] {
     display: none;
   }
@@ -535,6 +558,9 @@ body .footer .cta-bottom.first-at-bottom {
   body .intro .contents-wrap .head .shadow-caps {
     font-size: 4rem;
     margin-bottom: 0;
+  }
+  body .footer .cta {
+    display: none;
   }
 }
 
