@@ -463,13 +463,13 @@ body .footer .cta-bottom.first-at-bottom {
     margin-top: 20px;
   }
   body .services-offered {
-    padding: 50px 0 85px 0;
+    padding: 50px 0 92px 0;
   }
   body .services-offered .service {
     padding: 0 25px;
   }
   body .services-offered .service.web {
-    margin-top: 50px;
+    margin-top: 40px;
   }
   body .services-offered .service:last-of-type {
     max-width: 500px;
@@ -487,7 +487,7 @@ body .footer .cta-bottom.first-at-bottom {
     font-size: 2rem;
   }
   body .say-hello {
-    padding: 60px 0 100px 0;
+    padding: 60px 0 110px 0;
   }
   body .say-hello .head {
     margin-top: 0;
