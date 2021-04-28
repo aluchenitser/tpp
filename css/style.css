@@ -330,6 +330,7 @@ body .say-hello .head .top, body .say-hello .head .bottom {
 body .say-hello .head h2 {
   font-size: 2.4rem;
   margin: 15px 0;
+  text-decoration: underline;
 }
 body .say-hello .head .bottom {
   transform: rotateX(180deg);
@@ -499,6 +500,7 @@ body .footer .cta-bottom.first-at-bottom {
   }
   body .say-hello .head h2 {
     margin: 20px 0;
+    text-decoration: none;
   }
   body .say-hello .head .bottom {
     transform: rotateX(180deg);
