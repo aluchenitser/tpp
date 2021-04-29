@@ -742,6 +742,7 @@ body {
 
     .quote {
 
+
     }
 
     .services-offered {
@@ -785,9 +786,21 @@ body {
     .quote {
       flex-direction: row;
       align-items: center;
+      justify-content: center;
+
+      background-image: url('../img/children_1920.jpg');
+      background-image: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.523)), url('../img/children_1920.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      image-rendering: -webkit-optimize-contrast;
 
       .top {
         display: flex;
+
+        .line:first-of-type {
+          margin-bottom: 33px;
+        }
       }
 
       span {
