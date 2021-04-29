@@ -105,12 +105,17 @@ body nav.sticky {
   /* Fallback for older browsers without RGBA-support */
   background: rgba(227, 239, 252, 0.6);
   z-index: 3;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 0 15px;
   font-size: 26px;
   transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+}
+body nav.sticky .wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 body nav.sticky .logo {
   transition: fill 0.2s;
@@ -522,6 +527,15 @@ body .footer .cta-bottom.first-at-bottom {
   body .footer {
     height: 800px;
   }
+  body .footer .broken-out-services {
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-shadow: 1px 1px 1px black;
+    text-align: right;
+    font-size: 2rem;
+  }
   body .footer img.logo {
     width: 60px;
   }
@@ -531,6 +545,12 @@ body .footer .cta-bottom.first-at-bottom {
     font-size: 85%;
   }
 
+  body nav.sticky .wrap {
+    max-width: 1140px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
   body nav.sticky label[for=menu-toggle] {
     display: none;
   }
@@ -551,18 +571,54 @@ body .footer .cta-bottom.first-at-bottom {
     border-radius: 10px;
     padding: 3px 20px;
   }
+  body .intro .contents-wrap {
+    width: auto;
+  }
+  body .intro .contents-wrap h1 {
+    width: auto;
+    font-size: 1.2rem;
+    margin-top: 20px !important;
+  }
+  body .intro .contents-wrap .grow-your-business {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  body .intro .contents-wrap .grow-your-business ul {
+    font-size: 1.2rem;
+  }
   body .intro .contents-wrap .cta {
     display: none;
-  }
-  body .intro .contents-wrap .head {
-    text-align: left;
   }
   body .intro .contents-wrap .head .shadow-caps {
     font-size: 4rem;
     margin-bottom: 0;
   }
+  body .intro .mountain {
+    max-width: 350px;
+  }
   body .footer .cta {
     display: none;
+  }
+}
+@media (min-width: 1200px) {
+  body .intro .contents-wrap h1 {
+    text-align: left;
+  }
+  body .intro .contents-wrap .head {
+    text-align: left;
+  }
+  body .intro .contents-wrap .grow-your-business ul {
+    width: auto;
+  }
+  body .quote {
+    flex-direction: row;
+    align-items: center;
+  }
+  body .quote .top {
+    display: flex;
+  }
+  body .quote span {
+    font-size: 2.8rem !important;
   }
 }
 

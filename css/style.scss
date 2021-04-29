@@ -114,12 +114,21 @@ body {
     background: rgba(227, 239, 252, 0.6);
     z-index: 3;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
     padding: 0 15px;
     font-size: 26px;
     transition: background-color 0.2s;
+
+    display: flex;
+    align-items: center;
+
+
+    .wrap {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
 
     .logo {
       transition: fill 0.2s;
@@ -617,7 +626,6 @@ body {
         }
       }
 
-
       .contact-item {
         display: flex;
         flex-direction: column;
@@ -639,6 +647,17 @@ body {
 
     .footer {
       height: 800px;
+
+      .broken-out-services {
+        color: white;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        text-shadow: 1px 1px 1px black;
+        text-align: right;
+        font-size: 2rem;
+      }
+
       img.logo {
         width: 60px;
       }
@@ -654,6 +673,13 @@ body {
 
   body {
     nav.sticky {
+      .wrap {
+        max-width: 1140px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+      }
+
       label[for='menu-toggle'] {
         display: none;
       }
@@ -680,18 +706,37 @@ body {
     }
     .intro {
       .contents-wrap {
+        width: auto;
+
+        h1 {
+          width: auto;
+          font-size: 1.2rem;
+          margin-top: 20px !important;
+        }
+
+        .grow-your-business {
+          margin-left: 0;
+          margin-right: 0;
+
+          ul {
+            font-size: 1.2rem;
+          }
+        }
+
         .cta {
           display: none;
         }
 
         .head {
-          text-align: left;
-
           .shadow-caps {
             font-size: 4rem;
             margin-bottom: 0;
           }
         }
+      }
+
+      .mountain {
+        max-width: 350px;
       }
     }
 
@@ -716,7 +761,42 @@ body {
   }
 }
 
-// // Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+  body {
+    .intro {
+      .contents-wrap {
+        h1 {
+          text-align: left;
+        }
+
+        .head {
+          text-align: left;
+        }
+
+        .grow-your-business {
+          ul {
+            width: auto;
+          }
+        }
+      }
+    }
+
+    .quote {
+      flex-direction: row;
+      align-items: center;
+
+      .top {
+        display: flex;
+      }
+
+      span {
+        font-size: 2.8rem !important;
+      }
+    }
+  }
+}
+
 // @media (min-width: 1200px) {
 //   @at-root html {
 //     font-size: 100%;
