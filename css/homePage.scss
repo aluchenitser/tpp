@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&family=Poppins:wght@300;400;500&family=Raleway:wght@400;600&display=swap');
+
+// font-family: 'Raleway', sans-serif;
+// font-family: 'Courier Prime', monospace;
+// font-family: 'Poppins', sans-serif;
+
+$pink: #F4D2D1;
+$blue: #B4C6DE;
+$purple: #42406C;
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.book-end {
+  display: flex;
+  height: 8px;
+
+  div {
+    &:nth-child(1) {
+      background-color: $pink;
+      flex: 1;
+    }
+  
+    &:nth-child(2) {
+      background-color: $blue;
+      flex: 1;
+    }
+  
+    &:nth-child(3) {
+      background-color: $purple;
+      flex: 1;
+    }
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  
+  .logo {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    font-size: 24px;
+    color: $purple;
+
+    .nav-text {
+      line-height: 18px;
+      margin-left: 11.2px;
+      font-weight: 500;
+    }
+  }
+  
+  .mobile-menu {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    color: $purple;
+
+    .nav-text {
+      margin-right: 8px;
+      position: relative;
+      top: -1px;
+    }
+  }
+}
+
+section {
+  padding: 0 24px;
+}
+
+section.top {
+  padding-top: 48px;
+  background-image: linear-gradient(to bottom, #E3EFFF 10%, transparent 25%);
+  min-height: 100px;
+
+  .header-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 300;
+
+    span {
+      color: $purple;
+      font-weight: 500;
+    }
+  }
+}
