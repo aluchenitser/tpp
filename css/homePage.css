@@ -36,8 +36,13 @@ img {
 
 button {
   background-color: #42406C;
-  border-radius: 50%;
+  border-radius: 49px;
   color: white;
+  border: none;
+  padding: 16px 32px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .book-end {
@@ -163,6 +168,23 @@ section.about-us .content {
 section.services {
   text-align: center;
 }
+section.services .icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+section.services .icons .service {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 24px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+section.services .icons .service img {
+  margin-bottom: 16px;
+}
 
 section.quote {
   background-color: #42406C;
@@ -178,6 +200,21 @@ section.quote .quote-text {
 }
 section.quote img {
   margin-top: 48px;
+}
+
+section.say-hello {
+  text-align: center;
+}
+section.say-hello .content .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 48px 0;
+}
+
+section.footer .social .group {
+  display: flex;
+  align-items: center;
 }
 
 /* ------- bootstrap-esque, socially acceptable inline padding & margins ------- */
