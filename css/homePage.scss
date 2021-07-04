@@ -38,6 +38,17 @@ h2 {
 p {
   font-family: Raleway, sans-serif;
   font-size: 18px;
+  line-height: 28px;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  background-color: $purple;
+  border-radius: 50%;
+  color: white;
 }
 
 .book-end {
@@ -113,6 +124,11 @@ section {
   font-family: Poppins, sans-serif;
   font-size: 16px;
   font-weight: 600;
+
+  &.centered {
+    display: inline-block;
+    margin: 0 auto;
+  }
 }
 
 section.top {
@@ -167,7 +183,35 @@ section.about-us {
     height: 90%;
     text-align: center;
     background-color: white;
+    border-radius: 12px; 
+    margin: 48px 0;
+    padding: 24px;
+
+    box-shadow: 0 0 16px rgb(0, 0, 0, .15);
   }
+}
+
+section.services {
+  text-align: center;
+}
+
+section.quote {
+  background-color: $purple;
+  color: white;
+  position: relative;
+  padding: 48px 24px 0;
+  text-align: center;
+
+  .quote-text {
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+  }
+
+  img {
+    margin-top: 48px;
+  }
+
 }
 
 
