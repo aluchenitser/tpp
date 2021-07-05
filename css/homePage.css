@@ -89,12 +89,14 @@ button {
   flex: 1;
 }
 
-nav.main-nav {
+nav.main-nav .content {
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   padding: 24px;
+  max-width: 936px;
 }
-nav.main-nav .mobile-menu {
+nav.main-nav .content .mobile-menu {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 18px;
@@ -102,7 +104,7 @@ nav.main-nav .mobile-menu {
   align-items: center;
   color: #42406C;
 }
-nav.main-nav .mobile-menu .nav-text {
+nav.main-nav .content .mobile-menu .nav-text {
   margin-right: 8px;
   position: relative;
   top: -1px;
@@ -110,6 +112,10 @@ nav.main-nav .mobile-menu .nav-text {
 
 section {
   padding: 48px 24px;
+}
+section .content {
+  max-width: 936px;
+  margin: 0 auto;
 }
 
 .accent-box {
@@ -233,7 +239,7 @@ section.quote img {
   margin-top: 36px;
   position: relative;
   top: 12px;
-  width: 90%;
+  max-width: 90%;
 }
 
 section.say-hello {
@@ -283,6 +289,29 @@ section.footer .social .group span {
   font-size: 18px;
 }
 
+/* ------ RESPONSIVE ------ */
+/* ------ RESPONSIVE ------ */
+/* ------ RESPONSIVE ------ */
+@media (min-width: 990px) {
+  section.footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 48px;
+  }
+  section.footer .logo {
+    order: 2;
+  }
+  section.footer .contact {
+    order: 1;
+  }
+  section.footer .social {
+    order: 3;
+  }
+  section.footer > div {
+    margin: 0 !important;
+  }
+}
 /* ------ UTILITY ------ */
 /* ------ UTILITY ------ */
 /* ------ UTILITY ------ */
