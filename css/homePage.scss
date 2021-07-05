@@ -43,6 +43,7 @@ p {
   font-family: Raleway, sans-serif;
   font-size: 18px;
   line-height: 28px;
+  margin: 16px 0;
 }
 
 img {
@@ -232,10 +233,15 @@ section.services {
   text-align: center;
   padding: 48px 24px;
 
+  h2 {
+    font-weight: 300;
+  }
+
   .icons {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: -16px;
 
     .service {
       width: 50%;
