@@ -4,6 +4,10 @@
 // font-family: 'Courier Prime', monospace;
 // font-family: 'Poppins', sans-serif;
 
+/* ------ GLOBAL ------ */
+/* ------ GLOBAL ------ */
+/* ------ GLOBAL ------ */
+
 $pink: #F4D2D1;
 $blue: #B4C6DE;
 $purple: #42406C;
@@ -56,6 +60,32 @@ button {
   font-size: 18px;
 }
 
+/* ------ BY COMPONENT ------ */
+/* ------ BY COMPONENT ------ */
+/* ------ BY COMPONENT ------ */
+
+.logo {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  font-size: 24px;
+  color: $purple;
+  position: relative;
+
+  img {
+    top: 5px;
+    position: relative;
+  }
+
+  .nav-text {
+    margin-left: 11.2px;
+    font-weight: 500;
+  }
+}
+
+/* ------ BY SECTION ------ */
+/* ------ BY SECTION ------ */
+/* ------ BY SECTION ------ */
+
 .book-end {
   display: flex;
   height: 8px;
@@ -82,24 +112,6 @@ nav.main-nav {
   display: flex;
   justify-content: space-between;
   padding: 16px 24px;
-  
-  .logo {
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    font-size: 24px;
-    color: $purple;
-    position: relative;
-
-    img {
-      top: 5px;
-      position: relative;
-    }
-
-    .nav-text {
-      margin-left: 11.2px;
-      font-weight: 500;
-    }
-  }
   
   .mobile-menu {
     font-family: 'Raleway', sans-serif;
@@ -138,13 +150,13 @@ section {
 
 section.top {
   padding-top: 48px;
-  background-image: linear-gradient(to bottom, #E3EFFF, transparent 14%);
+  background-image: linear-gradient(to bottom, #E3EFFF, transparent 5%);
   min-height: 100px;
 
   .header-text {
     font-family: 'Poppins', sans-serif;
-    font-size: 32px;
-    line-height: 48px;
+    font-size: 24px;
+    line-height: 35px;
     font-weight: 300;
 
     span {
@@ -162,6 +174,10 @@ section.top {
       font-weight: 600;
       margin-right: 24px;
     }
+  }
+
+  .description {
+    
   }
 
   .branding {
@@ -252,24 +268,40 @@ section.say-hello {
 }
 
 section.footer {
-  .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  background-color: #F4F4F4;
+  padding: 48px 24px;
 
+  .logo {
+    margin-bottom: 24px;
   }
 
   .contact {
+    text-align: center;
+    margin-bottom: 48px;
 
+    line-height: 28px;
   }
 
   .social {
     .group {
       display: flex;
       align-items: center;
+
+      img {
+        margin-right: 8px;
+      }
     }
   }
 }
 
+/* ------ UTILITY ------ */
+/* ------ UTILITY ------ */
+/* ------ UTILITY ------ */
 
-/* ------- bootstrap-esque, socially acceptable inline padding & margins ------- */
+/* ------- bootstrap-esque padding & margins ------- */
 .mt-0 { margin-top: 0 !important}
 .mr-0 { margin-right: 0 !important}
 .mb-0 { margin-bottom: 0 !important}
