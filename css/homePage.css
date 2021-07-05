@@ -25,7 +25,7 @@ h1, h2, h3 {
 
 h2 {
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 p {
@@ -92,7 +92,7 @@ button {
 nav.main-nav {
   display: flex;
   justify-content: space-between;
-  padding: 16px 24px;
+  padding: 24px;
 }
 nav.main-nav .mobile-menu {
   font-family: "Raleway", sans-serif;
@@ -222,6 +222,7 @@ section.quote {
   position: relative;
   padding: 48px 24px 0;
   text-align: center;
+  overflow: hidden;
 }
 section.quote .quote-text {
   font-family: Poppins, sans-serif;
@@ -229,17 +230,22 @@ section.quote .quote-text {
   font-size: 32px;
 }
 section.quote img {
-  margin-top: 48px;
+  margin-top: 36px;
+  position: relative;
+  top: 12px;
+  width: 90%;
 }
 
 section.say-hello {
   text-align: center;
 }
+section.say-hello h2 {
+  font-weight: 300;
+}
 section.say-hello .content .col {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 48px 0;
 }
 
 section.footer {
