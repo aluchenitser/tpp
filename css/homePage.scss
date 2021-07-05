@@ -305,6 +305,10 @@ section.say-hello {
       flex-direction: column;
       align-items: center;
     }
+
+    button {
+      margin-top: 8px;
+    }
   }
 }
 
@@ -359,6 +363,23 @@ section.footer {
 
 @media (min-width: 990px) {
 
+  h2 {
+    font-size: 32px;
+  }
+
+  section.say-hello .content {
+    display: flex;
+
+    .col {
+      &:first-of-type {
+        margin-right: 24px;
+      }
+      &:last-of-type {
+        margin-left: 24px;
+      }
+    }
+  }
+
   section.footer {
     flex-direction: row;
     justify-content: space-between;
@@ -366,9 +387,18 @@ section.footer {
 
     padding: 24px 48px;
 
-    .logo { order: 2; }
-    .contact { order: 1; }
-    .social { order: 3; }
+    .logo { 
+      text-align: center;
+      order: 2; 
+    }
+    .contact { 
+      order: 1;
+      text-align: left;
+    }
+    .social { 
+      order: 3; 
+      text-align: right;
+    }
 
     > div {
       margin: 0 !important;

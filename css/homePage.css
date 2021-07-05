@@ -253,6 +253,9 @@ section.say-hello .content .col {
   flex-direction: column;
   align-items: center;
 }
+section.say-hello .content button {
+  margin-top: 8px;
+}
 
 section.footer {
   display: flex;
@@ -293,6 +296,20 @@ section.footer .social .group span {
 /* ------ RESPONSIVE ------ */
 /* ------ RESPONSIVE ------ */
 @media (min-width: 990px) {
+  h2 {
+    font-size: 32px;
+  }
+
+  section.say-hello .content {
+    display: flex;
+  }
+  section.say-hello .content .col:first-of-type {
+    margin-right: 24px;
+  }
+  section.say-hello .content .col:last-of-type {
+    margin-left: 24px;
+  }
+
   section.footer {
     flex-direction: row;
     justify-content: space-between;
@@ -300,13 +317,16 @@ section.footer .social .group span {
     padding: 24px 48px;
   }
   section.footer .logo {
+    text-align: center;
     order: 2;
   }
   section.footer .contact {
     order: 1;
+    text-align: left;
   }
   section.footer .social {
     order: 3;
+    text-align: right;
   }
   section.footer > div {
     margin: 0 !important;
