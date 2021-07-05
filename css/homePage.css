@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&family=Poppins:wght@300;400;500&family=Raleway:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&family=Poppins:wght@300;400;500;600&family=Raleway:wght@400;600&display=swap");
 /* ------ GLOBAL ------ */
 /* ------ GLOBAL ------ */
 /* ------ GLOBAL ------ */
@@ -20,6 +20,7 @@ body {
 
 h1, h2, h3 {
   font-family: Poppins, sans-serif;
+  margin: 16px 0;
 }
 
 h2 {
@@ -107,19 +108,25 @@ nav.main-nav .mobile-menu .nav-text {
 }
 
 section {
-  padding: 0 24px;
+  padding: 48px 24px;
 }
 
-.accent-box, .accent-box h1 {
+.accent-box {
   background-color: #F4D2D1;
   color: #42406C;
   padding: 8px 16px;
   margin: 0;
   font-family: Poppins, sans-serif;
   font-size: 16px;
+  text-transform: uppercase;
   font-weight: 600;
 }
-.accent-box.centered, .accent-box h1.centered {
+.accent-box h1 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+.accent-box.centered {
   display: inline-block;
   margin: 0 auto;
 }
@@ -170,13 +177,21 @@ section.about-us .content {
   text-align: center;
   background-color: white;
   border-radius: 12px;
-  margin: 48px 0;
-  padding: 24px;
+  padding: 32px 24px;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
+}
+section.about-us .content h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 300;
+}
+section.about-us .content p {
+  margin: 16px 0;
 }
 
 section.services {
   text-align: center;
+  padding: 48px 24px;
 }
 section.services .icons {
   display: flex;
@@ -232,17 +247,29 @@ section.footer {
 section.footer .logo {
   margin-bottom: 24px;
 }
+section.footer .logo img {
+  top: 9px;
+}
+section.footer .logo span {
+  font-size: 36px;
+  margin-left: 18px;
+}
 section.footer .contact {
   text-align: center;
   margin-bottom: 48px;
   line-height: 28px;
+  font-size: 18px;
 }
 section.footer .social .group {
   display: flex;
   align-items: center;
+  margin: 8px 0;
 }
 section.footer .social .group img {
   margin-right: 8px;
+}
+section.footer .social .group span {
+  font-size: 18px;
 }
 
 /* ------ UTILITY ------ */
