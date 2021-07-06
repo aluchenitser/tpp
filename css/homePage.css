@@ -89,14 +89,14 @@ button {
   flex: 1;
 }
 
-nav.main-nav .content {
+nav.main-nav > .content {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   padding: 24px;
   max-width: 936px;
 }
-nav.main-nav .content .mobile-menu {
+nav.main-nav > .content .mobile-menu {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 18px;
@@ -104,7 +104,7 @@ nav.main-nav .content .mobile-menu {
   align-items: center;
   color: #42406C;
 }
-nav.main-nav .content .mobile-menu .nav-text {
+nav.main-nav > .content .mobile-menu .nav-text {
   margin-right: 8px;
   position: relative;
   top: -1px;
@@ -113,12 +113,15 @@ nav.main-nav .content .mobile-menu .nav-text {
 section {
   padding: 48px 24px;
 }
-section .content {
+section > .content {
   max-width: 936px;
   margin: 0 auto;
 }
 
 .accent-box {
+  display: flex;
+}
+.accent-box .content {
   background-color: #F4D2D1;
   color: #42406C;
   padding: 8px 16px;
@@ -129,46 +132,53 @@ section .content {
   font-weight: 600;
 }
 .accent-box h1 {
+  display: inline-block;
   font-size: 16px;
   font-weight: 600;
   margin: 0;
 }
 .accent-box.centered {
-  display: inline-block;
-  margin: 0 auto;
+  justify-content: center;
 }
 
 section.top {
-  padding-top: 48px;
   background-image: linear-gradient(to bottom, #E3EFFF, transparent 5%);
+}
+section.top > .content {
   min-height: 100px;
 }
-section.top .header-text {
+section.top > .content .headers {
+  margin-bottom: 24px;
+}
+section.top > .content .headers .header-text {
   font-family: "Poppins", sans-serif;
   font-size: 24px;
   line-height: 35px;
   font-weight: 300;
 }
-section.top .header-text span {
+section.top > .content .headers .header-text span {
   color: #42406C;
   font-weight: 500;
 }
-section.top nav.specialties {
+section.top > .content .spacer {
+  margin-top: 48px;
+}
+section.top > .content nav.specialties {
   display: flex;
 }
-section.top nav.specialties div {
+section.top > .content nav.specialties div {
   font-family: Poppins, sans-serif;
   font-size: 16px;
   font-weight: 600;
   margin-right: 24px;
 }
-section.top .branding {
+section.top > .content .branding {
   display: block;
 }
-section.top .social-media {
+section.top > .content .social-media {
   display: none;
 }
-section.top .web {
+section.top > .content .web {
   display: none;
 }
 
@@ -178,7 +188,7 @@ section.about-us {
   justify-content: center;
   align-items: center;
 }
-section.about-us .content {
+section.about-us > .content {
   width: 90%;
   height: 90%;
   text-align: center;
@@ -187,12 +197,12 @@ section.about-us .content {
   padding: 32px 24px;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
 }
-section.about-us .content h2 {
+section.about-us > .content h2 {
   margin-top: 0;
   margin-bottom: 16px;
   font-weight: 300;
 }
-section.about-us .content p {
+section.about-us > .content p {
   margin: 16px 0;
 }
 
@@ -248,12 +258,12 @@ section.say-hello {
 section.say-hello h2 {
   font-weight: 300;
 }
-section.say-hello .content .col {
+section.say-hello > .content .col {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-section.say-hello .content button {
+section.say-hello > .content button {
   margin-top: 8px;
 }
 
@@ -295,26 +305,40 @@ section.footer .social .group span {
 /* ------ RESPONSIVE ------ */
 /* ------ RESPONSIVE ------ */
 /* ------ RESPONSIVE ------ */
+@media (min-width: 768px) and (max-width: 989px) {
+  section.top {
+    padding-top: 64px;
+  }
+  section.top > .content .spacer {
+    margin-top: 72px;
+  }
+}
 @media (min-width: 990px) {
   h2 {
     font-size: 32px;
   }
 
-  section.top .content .headers {
+  section.top {
+    padding-top: 96px;
+  }
+  section.top > .content .headers {
     text-align: center;
   }
-  section.top .content .headers .header-text {
+  section.top > .content .headers .header-text {
     font-size: 42px;
     line-height: 60px;
   }
+  section.top > .content .spacer {
+    margin-top: 96px;
+  }
 
-  section.say-hello .content {
+  section.say-hello > .content {
     display: flex;
   }
-  section.say-hello .content .col:first-of-type {
+  section.say-hello > .content .col:first-of-type {
     margin-right: 24px;
   }
-  section.say-hello .content .col:last-of-type {
+  section.say-hello > .content .col:last-of-type {
     margin-left: 24px;
   }
 
