@@ -96,6 +96,12 @@ nav.main-nav > .content {
   padding: 24px;
   max-width: 936px;
 }
+nav.main-nav > .content .widget {
+  display: none;
+}
+nav.main-nav > .content .desktop-menu {
+  display: none;
+}
 nav.main-nav > .content .mobile-menu {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -313,6 +319,10 @@ section.footer .social .group span {
 /* ------ RESPONSIVE ------ */
 /* ------ RESPONSIVE ------ */
 @media (min-width: 768px) {
+  nav.main-nav > .content .widget {
+    display: block;
+  }
+
   section.top {
     padding-top: 64px;
   }
@@ -327,6 +337,16 @@ section.footer .social .group span {
 @media (min-width: 990px) {
   h2 {
     font-size: 32px;
+  }
+
+  nav.main-nav > .content {
+    padding: 24px 0;
+  }
+  nav.main-nav > .content .mobile-menu {
+    display: none;
+  }
+  nav.main-nav > .content .desktop-menu {
+    display: block;
   }
 
   section.top {
