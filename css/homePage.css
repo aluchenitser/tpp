@@ -350,6 +350,18 @@ section.footer .social .group span {
     flex: 1;
   }
 
+  section.quote > .content {
+    display: flex;
+    align-items: center;
+  }
+  section.quote > .content .col:first-of-type {
+    position: relative;
+    top: -24px;
+  }
+  section.quote > .content .col:first-of-type .accent-box {
+    justify-content: flex-start;
+  }
+
   section.say-hello > .content {
     display: flex;
   }

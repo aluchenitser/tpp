@@ -441,6 +441,20 @@ section.footer {
     }
   }
 
+  section.quote > .content {
+    display: flex;
+    align-items: center;
+
+    .col:first-of-type {
+      position: relative;
+      top: -24px;
+      
+      .accent-box {
+        justify-content: flex-start;
+      }
+    }
+  }
+
   section.say-hello > .content {
     display: flex;
 
