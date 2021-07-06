@@ -300,6 +300,14 @@ section.footer .social .group span {
     font-size: 32px;
   }
 
+  section.top .content .headers {
+    text-align: center;
+  }
+  section.top .content .headers .header-text {
+    font-size: 42px;
+    line-height: 60px;
+  }
+
   section.say-hello .content {
     display: flex;
   }
