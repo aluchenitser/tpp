@@ -307,6 +307,7 @@ section.quote {
 
 section.say-hello {
   text-align: center;
+  background-image: linear-gradient(to bottom, #E3EFFF, transparent 5%);
 
   h2 {
     font-weight: 300;
@@ -374,13 +375,23 @@ section.footer {
 /* ------ RESPONSIVE ------ */
 /* ------ RESPONSIVE ------ */
 
-@media (min-width: 768px) and (max-width: 989px) {
+@media (min-width: 768px) {
   section.top {
     padding-top: 64px;
 
     > .content {
       .spacer {
         margin-top: 72px;
+      }
+    }
+  }
+
+  section.services {
+    > .content {
+      .icons {
+        .service {
+          width: 33.3%;
+        }
       }
     }
   }
