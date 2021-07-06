@@ -209,20 +209,18 @@ section.top {
       }
     }
 
-    .description {
-
-    }
-
-    .branding {
-      display: block;
-    }
-
-    .social-media {
-      display: none;
-    }
-
-    .web {
-      display: none;
+    .descriptions {
+      .branding {
+        display: block;
+      }
+  
+      .social-media {
+        display: none;
+      }
+  
+      .web {
+        display: none;
+      }
     }
   }
 }
@@ -396,6 +394,7 @@ section.footer {
 
   section.top {
     padding-top: 96px;
+    background-image: linear-gradient(to bottom, #E3EFFF, transparent 10%);
 
     > .content {
       .headers {
@@ -409,6 +408,14 @@ section.footer {
 
       .spacer {
         margin-top: 96px;
+      }
+
+      .descriptions  {
+        display: flex;
+
+        .col {
+          flex: 1;
+        }
       }
     }
   }

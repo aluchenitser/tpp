@@ -172,13 +172,13 @@ section.top > .content nav.specialties div {
   font-weight: 600;
   margin-right: 24px;
 }
-section.top > .content .branding {
+section.top > .content .descriptions .branding {
   display: block;
 }
-section.top > .content .social-media {
+section.top > .content .descriptions .social-media {
   display: none;
 }
-section.top > .content .web {
+section.top > .content .descriptions .web {
   display: none;
 }
 
@@ -320,6 +320,7 @@ section.footer .social .group span {
 
   section.top {
     padding-top: 96px;
+    background-image: linear-gradient(to bottom, #E3EFFF, transparent 10%);
   }
   section.top > .content .headers {
     text-align: center;
@@ -330,6 +331,12 @@ section.footer .social .group span {
   }
   section.top > .content .spacer {
     margin-top: 96px;
+  }
+  section.top > .content .descriptions {
+    display: flex;
+  }
+  section.top > .content .descriptions .col {
+    flex: 1;
   }
 
   section.say-hello > .content {
