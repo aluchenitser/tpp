@@ -210,16 +210,26 @@ section.top {
     }
 
     .descriptions {
-      .branding {
-        display: block;
+
+      .col:first-of-type {
+        .branding {
+          display: block;
+        }
+    
+        .social-media {
+          display: none;
+        }
+    
+        .web {
+          display: none;
+        }
       }
-  
-      .social-media {
-        display: none;
-      }
-  
-      .web {
-        display: none;
+
+      .col:last-of-type {
+        text-align: center;
+        img {
+          width: 100%;
+        }
       }
     }
   }

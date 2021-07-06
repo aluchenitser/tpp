@@ -172,14 +172,20 @@ section.top > .content nav.specialties div {
   font-weight: 600;
   margin-right: 24px;
 }
-section.top > .content .descriptions .branding {
+section.top > .content .descriptions .col:first-of-type .branding {
   display: block;
 }
-section.top > .content .descriptions .social-media {
+section.top > .content .descriptions .col:first-of-type .social-media {
   display: none;
 }
-section.top > .content .descriptions .web {
+section.top > .content .descriptions .col:first-of-type .web {
   display: none;
+}
+section.top > .content .descriptions .col:last-of-type {
+  text-align: center;
+}
+section.top > .content .descriptions .col:last-of-type img {
+  width: 100%;
 }
 
 section.about-us {
