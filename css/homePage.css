@@ -418,8 +418,10 @@ section.footer .social .group span {
   }
 
   section.quote {
+    display: flex;
     padding: 0 24px;
     height: 330px;
+    overflow: visible;
   }
   section.quote > .content {
     display: flex;
@@ -428,11 +430,18 @@ section.footer .social .group span {
   section.quote > .content .col:first-of-type {
     position: relative;
   }
+  section.quote > .content .col:first-of-type .quote-text {
+    font-size: 42px;
+    line-height: 60px;
+    text-align: left;
+  }
   section.quote > .content .col:first-of-type .accent-box {
     justify-content: flex-start;
   }
   section.quote > .content .col:last-of-type img {
-    top: 10px;
+    top: -3px;
+    width: 296px;
+    max-width: none;
   }
 
   section.say-hello {

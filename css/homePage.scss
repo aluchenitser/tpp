@@ -528,8 +528,10 @@ section.footer {
   }
 
   section.quote {
+    display: flex;
     padding: 0 24px;
     height: 330px;
+    overflow: visible;
 
     > .content {
       display: flex;
@@ -538,6 +540,12 @@ section.footer {
       .col:first-of-type {
         position: relative;
         
+        .quote-text {
+          font-size: 42px;
+          line-height: 60px;
+          text-align: left;
+        }
+
         .accent-box {
           justify-content: flex-start;
         }
@@ -545,7 +553,9 @@ section.footer {
 
       .col:last-of-type {
         img {
-          top: 10px;
+          top: -3px;
+          width: 296px;
+          max-width: none;
         }
       }
     }
