@@ -288,6 +288,9 @@ section.quote {
   text-align: center;
   overflow: hidden;
 }
+section.quote > .content .col:first-of-type .accent-box {
+  margin-top: 24px;
+}
 section.quote .quote-text {
   font-family: Poppins, sans-serif;
   font-weight: 500;
@@ -437,6 +440,7 @@ section.footer .social .group span {
   }
   section.quote > .content .col:first-of-type .accent-box {
     justify-content: flex-start;
+    margin-top: 34px;
   }
   section.quote > .content .col:last-of-type img {
     top: -4px;

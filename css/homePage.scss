@@ -352,6 +352,14 @@ section.quote {
   text-align: center;
   overflow: hidden;
 
+  > .content {
+    .col:first-of-type {
+      .accent-box {
+        margin-top: 24px;
+      }
+    }
+  }
+
   .quote-text {
     font-family: Poppins, sans-serif;
     font-weight: 500;
@@ -548,6 +556,7 @@ section.footer {
 
         .accent-box {
           justify-content: flex-start;
+          margin-top: 34px;
         }
       }
 
