@@ -109,11 +109,13 @@ nav.main-nav > .content .left-wrap {
   align-items: center;
 }
 nav.main-nav > .content .left-wrap .divider {
+  display: none;
   border-right: 1px solid #B4C6DE;
   height: 30px;
   margin: 0 16px;
 }
 nav.main-nav > .content .left-wrap img.time-of-day {
+  display: none;
   margin-right: 10px;
 }
 nav.main-nav > .content .left-wrap .widget {
@@ -353,7 +355,7 @@ section.footer .social .group span {
 /* ------ RESPONSIVE ------ */
 /* ------ RESPONSIVE ------ */
 @media (min-width: 768px) {
-  nav.main-nav > .content .left-wrap .widget {
+  nav.main-nav > .content .left-wrap .widget, nav.main-nav > .content .left-wrap .divider, nav.main-nav > .content .left-wrap img.time-of-day {
     display: block;
   }
 
