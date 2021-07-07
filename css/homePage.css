@@ -36,6 +36,12 @@ p {
   margin: 16px 0;
 }
 
+a {
+  color: #42406C;
+  font-weight: 600;
+  font-family: Raleway, sans-serif;
+}
+
 img {
   max-width: 100%;
 }
@@ -398,18 +404,38 @@ section.footer .social .group span {
     flex: 1;
   }
 
+  section.about-us {
+    padding: 72px 24px;
+  }
+  section.about-us > .content {
+    padding: 32px 160px;
+  }
+
+  section.services {
+    padding: 72px 24px;
+  }
+
+  section.quote {
+    padding: 0 24px;
+    height: 330px;
+  }
   section.quote > .content {
     display: flex;
     align-items: center;
   }
   section.quote > .content .col:first-of-type {
     position: relative;
-    top: -24px;
   }
   section.quote > .content .col:first-of-type .accent-box {
     justify-content: flex-start;
   }
+  section.quote > .content .col:last-of-type img {
+    top: 10px;
+  }
 
+  section.say-hello {
+    padding: 72px 24px;
+  }
   section.say-hello > .content {
     display: flex;
   }
