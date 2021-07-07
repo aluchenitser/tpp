@@ -439,7 +439,7 @@ section.footer .social .group span {
     justify-content: flex-start;
   }
   section.quote > .content .col:last-of-type img {
-    top: -3px;
+    top: -4px;
     width: 296px;
     max-width: none;
   }
