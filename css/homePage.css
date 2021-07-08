@@ -390,7 +390,8 @@ section.footer .social .group span {
 
   section.top {
     padding-top: 96px;
-    background-image: linear-gradient(to bottom, #E3EFFF, transparent 10%);
+    padding-bottom: 24px;
+    background: linear-gradient(to bottom, #E3EFFF, transparent 10%), url(../assets/hillsSolid.svg) 62.3% 120% no-repeat;
   }
   section.top > .content .headers {
     text-align: center;
