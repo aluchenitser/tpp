@@ -14,15 +14,9 @@
         <linearGradient id="paint0_angular" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1897.5 97.5) rotate(90) scale(97.5 1897.5)">
             <stop stop-color="#E3EFFF"/>
         </linearGradient>
-        <!-- <radialGradient id="paint1_linear" fx="33%" fy="90%" r="100%" gradientUnits="userSpaceOnUse">
-            <stop offset="5%" stop-color="white"/>
-            <stop offset="20%" stop-color="#E3EFFF"/>
-        </radialGradient> -->
-        
         <linearGradient id="paint2_linear" x1="0%" y1="0%" x2="0%" y2="100%" spreadMethod="pad">
-            <!-- <stop stop-color="#E3EFFF"/> -->
             <stop offset="0%" stop-color="white"/>
-            <stop offset="70%" stop-color="#E3EFFF"/>
+            <stop offset="60%" stop-color="#E3EFFF"/>
         </linearGradient>
     </defs>
 </svg>
