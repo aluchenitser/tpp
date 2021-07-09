@@ -182,6 +182,7 @@ nav.main-nav {
         margin-right: 8px;
         position: relative;
         top: -1px;
+        
       }
     }
   }
@@ -252,34 +253,50 @@ section.top {
     nav.specialties {
       display: flex;
 
-      div {
+      > div {
         font-family: Poppins, sans-serif;
         font-size: 16px;
         font-weight: 600;
-        margin-right: 24px;
+        padding-right: 24px;
+        user-select: none;
+
+
+        &.active {
+          font-weight: 600;
+          color: $purple;
+
+          .underline {
+            height: 4px;
+            background-color: $purple;
+          }
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
 
     .descriptions {
 
-      .col:first-of-type {
-        .branding {
-          display: block;
-        }
-    
-        .social-media {
+      .col:last-of-type {
+        text-align: center;
+
+        img {
+          width: 100%;
           display: none;
-        }
-    
-        .web {
-          display: none;
+
+          &.active {
+            display: inline;
+          }
         }
       }
 
-      .col:last-of-type {
-        text-align: center;
-        img {
-          width: 100%;
+      p {
+        display: none;
+
+        &.active {
+          display: block;
         }
       }
     }
@@ -376,7 +393,7 @@ section.quote {
 
 section.say-hello {
   text-align: center;
-  background-image: linear-gradient(to bottom, #E3EFFF, transparent 5%);
+  background-image: linear-gradient(to bottom, #E3EFFF, rgba(255,255,255,0.0001) 13%);
 
   h2 {
     font-weight: 300;
