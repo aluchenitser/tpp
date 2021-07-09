@@ -358,6 +358,10 @@ section.quote {
         margin-top: 24px;
       }
     }
+
+    img {
+      transform: translateZ(0);
+    }
   }
 
   .quote-text {
@@ -407,6 +411,10 @@ section.footer {
   padding: 48px 24px;
 
   .logo {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+
     margin-bottom: 24px;
 
     img {
@@ -502,7 +510,7 @@ section.footer {
     padding-bottom: 24px;
     background:
       linear-gradient(to bottom, #E3EFFF, rgba(255,255,255,0.0001) 10%),
-      url(../assets/hillsSolid.svg) 62.3% 120% no-repeat;
+      url(../assets/hillsSolid.svg) 62.3% 118.9% no-repeat;
 
     > .content {
       .headers {
