@@ -184,7 +184,7 @@ section > .content {
 }
 
 section.top {
-  background-image: linear-gradient(to bottom, #E3EFFF, transparent 5%);
+  background-image: linear-gradient(to bottom, #E3EFFF, rgba(255, 255, 255, 0.0001) 5%);
 }
 section.top > .content {
   min-height: 100px;
@@ -305,7 +305,7 @@ section.quote img {
 
 section.say-hello {
   text-align: center;
-  background-image: linear-gradient(to bottom, #E3EFFF, transparent 5%);
+  background-image: linear-gradient(to bottom, #E3EFFF, rgba(255, 255, 255, 0.0001) 18%);
 }
 section.say-hello h2 {
   font-weight: 300;
@@ -314,6 +314,9 @@ section.say-hello > .content .col {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+section.say-hello > .content .col:first-of-type {
+  margin-bottom: 48px;
 }
 section.say-hello > .content button {
   margin-top: 8px;
@@ -391,7 +394,7 @@ section.footer .social .group span {
   section.top {
     padding-top: 96px;
     padding-bottom: 24px;
-    background: linear-gradient(to bottom, #E3EFFF, transparent 10%), url(../assets/hillsSolid.svg) 62.3% 120% no-repeat;
+    background: linear-gradient(to bottom, #E3EFFF, rgba(255, 255, 255, 0.0001) 10%), url(../assets/hillsSolid.svg) 62.3% 120% no-repeat;
   }
   section.top > .content .headers {
     text-align: center;
@@ -457,6 +460,7 @@ section.footer .social .group span {
   }
   section.say-hello > .content .col:first-of-type {
     margin-right: 24px;
+    margin-bottom: 0;
   }
   section.say-hello > .content .col:last-of-type {
     margin-left: 24px;

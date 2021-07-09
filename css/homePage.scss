@@ -106,12 +106,12 @@ button {
       background-color: $pink;
       flex: 1;
     }
-  
+
     &:nth-child(2) {
       background-color: $blue;
       flex: 1;
     }
-  
+
     &:nth-child(3) {
       background-color: $purple;
       flex: 1;
@@ -120,7 +120,7 @@ button {
 }
 
 nav.main-nav {
-  
+
   > .content {
     margin: 0 auto;
 
@@ -147,16 +147,16 @@ nav.main-nav {
 
       .widget {
         display: none;
-        font-family: 'Courier Prime', monospace;      
+        font-family: 'Courier Prime', monospace;
         font-weight: bold;
-        font-size: 12px;  
+        font-size: 12px;
         color: $purple;
       }
     }
 
     .desktop-menu {
       display: none;
-      
+
       a {
         font-size: 18px;
         font-weight: 600;
@@ -177,7 +177,7 @@ nav.main-nav {
       display: flex;
       align-items: center;
       color: $purple;
-  
+
       .nav-text {
         margin-right: 8px;
         position: relative;
@@ -189,7 +189,7 @@ nav.main-nav {
 
 section {
   padding: 48px 24px;
-  
+
   > .content {
     max-width: 936px;
     margin: 0 auto;
@@ -209,7 +209,7 @@ section {
     text-transform: uppercase;
     font-weight: 600;
   }
-  
+
   h1 {
     display: inline-block;
     font-size: 16px;
@@ -223,7 +223,7 @@ section {
 }
 
 section.top {
-  background-image: linear-gradient(to bottom, #E3EFFF, transparent 5%);
+  background-image: linear-gradient(to bottom, #E3EFFF, rgba(255,255,255,0.0001) 5%);
 
   > .content {
     min-height: 100px;
@@ -236,7 +236,7 @@ section.top {
         font-size: 24px;
         line-height: 35px;
         font-weight: 300;
-    
+
         span {
           color: $purple;
           font-weight: 500;
@@ -244,7 +244,7 @@ section.top {
       }
 
     }
-    
+
     .spacer {
       margin-top: 48px;
     }
@@ -266,11 +266,11 @@ section.top {
         .branding {
           display: block;
         }
-    
+
         .social-media {
           display: none;
         }
-    
+
         .web {
           display: none;
         }
@@ -297,7 +297,7 @@ section.about-us {
     height: 90%;
     text-align: center;
     background-color: white;
-    border-radius: 12px; 
+    border-radius: 12px;
     padding: 32px 24px;
 
     box-shadow: 0 0 16px rgb(0, 0, 0, .15);
@@ -376,7 +376,7 @@ section.quote {
 
 section.say-hello {
   text-align: center;
-  background-image: linear-gradient(to bottom, #E3EFFF, transparent 5%);
+  background-image: linear-gradient(to bottom, #E3EFFF, rgba(255,255,255,0.0001) 18%);
 
   h2 {
     font-weight: 300;
@@ -387,6 +387,10 @@ section.say-hello {
       display: flex;
       flex-direction: column;
       align-items: center;
+
+      &:first-of-type {
+        margin-bottom: 48px;
+      }
     }
 
     button {
@@ -398,7 +402,7 @@ section.say-hello {
 section.footer {
   display: flex;
   flex-direction: column;
-  align-items: center;  
+  align-items: center;
   background-color: #F4F4F4;
   padding: 48px 24px;
 
@@ -446,7 +450,7 @@ section.footer {
 
 @media (min-width: 768px) {
   nav.main-nav > .content {
-    
+
     .left-wrap {
       .widget, .divider, img.time-of-day {
         display: block;
@@ -496,8 +500,8 @@ section.footer {
   section.top {
     padding-top: 96px;
     padding-bottom: 24px;
-    background: 
-      linear-gradient(to bottom, #E3EFFF, transparent 10%), 
+    background:
+      linear-gradient(to bottom, #E3EFFF, rgba(255,255,255,0.0001) 10%),
       url(../assets/hillsSolid.svg) 62.3% 120% no-repeat;
 
     > .content {
@@ -532,8 +536,8 @@ section.footer {
     > .content {
       padding: 32px 160px;
     }
-  } 
-  
+  }
+
   section.services {
     padding: 72px 24px;
   }
@@ -550,7 +554,7 @@ section.footer {
 
       .col:first-of-type {
         position: relative;
-        
+
         .quote-text {
           font-size: 42px;
           line-height: 60px;
@@ -581,6 +585,7 @@ section.footer {
       .col {
         &:first-of-type {
           margin-right: 24px;
+          margin-bottom: 0;
         }
         &:last-of-type {
           margin-left: 24px;
@@ -596,16 +601,16 @@ section.footer {
 
     padding: 24px 48px;
 
-    .logo { 
+    .logo {
       text-align: center;
-      order: 2; 
+      order: 2;
     }
-    .contact { 
+    .contact {
       order: 1;
       text-align: left;
     }
-    .social { 
-      order: 3; 
+    .social {
+      order: 3;
       text-align: right;
     }
 
