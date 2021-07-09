@@ -333,9 +333,6 @@ section.footer {
   padding: 48px 24px;
 }
 section.footer .logo {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
   margin-bottom: 24px;
 }
 section.footer .logo img {
@@ -479,8 +476,10 @@ section.footer .social .group span {
     padding: 24px 48px;
   }
   section.footer .logo {
-    text-align: center;
     order: 2;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
   section.footer .contact {
     order: 1;

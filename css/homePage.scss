@@ -411,10 +411,6 @@ section.footer {
   padding: 48px 24px;
 
   .logo {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
-
     margin-bottom: 24px;
 
     img {
@@ -536,8 +532,6 @@ section.footer {
     }
   }
 
-
-
   section.about-us {
     padding: 72px 24px;
 
@@ -610,8 +604,10 @@ section.footer {
     padding: 24px 48px;
 
     .logo {
-      text-align: center;
       order: 2;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
     }
     .contact {
       order: 1;
