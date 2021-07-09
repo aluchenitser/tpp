@@ -208,26 +208,39 @@ section.top > .content .spacer {
 section.top > .content nav.specialties {
   display: flex;
 }
-section.top > .content nav.specialties div {
+section.top > .content nav.specialties > div {
   font-family: Poppins, sans-serif;
   font-size: 16px;
   font-weight: 600;
-  margin-right: 24px;
+  padding-right: 24px;
+  user-select: none;
 }
-section.top > .content .descriptions .col:first-of-type .branding {
-  display: block;
+section.top > .content nav.specialties > div.active {
+  font-weight: 600;
+  color: #42406C;
 }
-section.top > .content .descriptions .col:first-of-type .social-media {
-  display: none;
+section.top > .content nav.specialties > div.active .underline {
+  height: 4px;
+  background-color: #42406C;
 }
-section.top > .content .descriptions .col:first-of-type .web {
-  display: none;
+section.top > .content nav.specialties > div:hover {
+  cursor: pointer;
 }
 section.top > .content .descriptions .col:last-of-type {
   text-align: center;
 }
 section.top > .content .descriptions .col:last-of-type img {
   width: 100%;
+  display: none;
+}
+section.top > .content .descriptions .col:last-of-type img.active {
+  display: inline;
+}
+section.top > .content .descriptions p {
+  display: none;
+}
+section.top > .content .descriptions p.active {
+  display: block;
 }
 
 section.about-us {
@@ -308,7 +321,7 @@ section.quote img {
 
 section.say-hello {
   text-align: center;
-  background-image: linear-gradient(to bottom, #E3EFFF, rgba(255, 255, 255, 0.0001) 18%);
+  background-image: linear-gradient(to bottom, #E3EFFF, rgba(255, 255, 255, 0.0001) 13%);
 }
 section.say-hello h2 {
   font-weight: 300;

@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/homePage.css">
-    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script> -->
-    <!-- <script src="js/home.js"></script> -->
+    <script defer src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script defer src="js/home.js"></script>
 </head>
 <body>
     <div class="book-end">
@@ -38,7 +38,7 @@
             </div>
         </div>
     </nav>
-    <section class="top">
+    <section id="top" class="top">
         <div class="content">
             <div class="mb-24 headers">
                 <div class="header-text"><span>Raise</span> your visibility online.</div>
@@ -53,30 +53,41 @@
             <div class="spacer"></div>
             <h2 class="mb-16 mt-0">Our specialties</h2>
             <nav class="specialties">
-                <div>BRANDING</div>
-                <div>SOCIAL MEDIA</div>
-                <div>WEB</div>
+                <div @click="selectSpecialty('isBranding')" :class="{ active: isBranding }">
+                    BRANDING
+                    <div class="underline"></div>
+                </div>
+                <div @click="selectSpecialty('isSocialMedia')" :class="{ active: isSocialMedia }">
+                    SOCIAL MEDIA
+                    <div class="underline"></div>
+                </div>
+                <div @click="selectSpecialty('isWeb')" :class="{ active: isWeb }">
+                    WEB
+                    <div class="underline"></div>
+                </div>
             </nav>
             <div class="descriptions">
                 <div class="col">
-                    <p class="branding mt-16">
-                        Branding is more than just a slogan or a logo. It's an idea which is unified amongst various media. Let's take your idea and make it memorable not just today but for keeps.
+                    <p class="branding mt-16" :class="{ active: isBranding }">
+                        Branding is more than just a slogan or a logo. It's an idea which is unified amongst various media. Let's take your idea and make it memorable not just for today, but for keeps!
                         <br><br>
                         Our designers and copywriters want to develop a pitch that's interesting, that works, and that was as enjoyable to make as it is for you to benefit from.
                     </p>
-                    <p class="social-media">
+                    <p class="social-media" :class="{ active: isSocialMedia }">
                         Having a social media presence is a simple notion that's best executed by people who have a natural inclination towards playing on these platforms. It's a lifestyle.
                         <br><br>
                         We hire these goofballs because quite simply, they know how to match your product with what's trending. That means more business for you.
                     </p>
-                    <p class="web">
+                    <p class="web" :class="{ active: isWeb }">
                         Sure, TPP has a technical team. We also know that technical matters, although often necessary, aren't the 'goal' of your product. You want exposure and you want to sell.
                         <br><br>
                         Our people are skilled technologists and skilled communicators - tough to find but worth the search. As a customer, you deserve to know what we're doing.
                     </p>
                 </div>
                 <div class="col">
-                    <img src="assets/pros1.png" alt="">
+                    <img :class="{ active: isWeb }" src="assets/pro-girl.png" alt="">
+                    <img :class="{ active: isSocialMedia }" src="assets/pro-guy.png" alt="">
+                    <img :class="{ active: isBranding }" src="assets/pro-girl-and-guy.png" alt="">
                 </div>
             </div>
         </div>
