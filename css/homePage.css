@@ -261,7 +261,6 @@ section.about-us > .content {
 section.about-us > .content h2 {
   margin-top: 0;
   margin-bottom: 16px;
-  font-weight: 300;
 }
 section.about-us > .content p {
   margin: 16px 0;
@@ -270,9 +269,6 @@ section.about-us > .content p {
 section.services {
   text-align: center;
   padding: 48px 24px;
-}
-section.services h2 {
-  font-weight: 300;
 }
 section.services .icons {
   display: flex;
@@ -322,9 +318,6 @@ section.quote img {
 section.say-hello {
   text-align: center;
   background-image: linear-gradient(to bottom, #E3EFFF, rgba(255, 255, 255, 0.0001) 13%);
-}
-section.say-hello h2 {
-  font-weight: 300;
 }
 section.say-hello > .content .col {
   display: flex;
@@ -404,7 +397,6 @@ section.footer .social .group span {
     font-family: Poppins, sans-serif;
     font-size: 16px;
     font-weight: 600;
-    margin-right: 24px;
   }
 
   section.services > .content .icons .service {
@@ -414,6 +406,7 @@ section.footer .social .group span {
 @media (min-width: 990px) {
   h2 {
     font-size: 32px;
+    font-weight: 400;
   }
 
   nav.main-nav > .content {
@@ -437,6 +430,12 @@ section.footer .social .group span {
   }
   section.top > .content .spacer {
     margin-top: 96px;
+  }
+  section.top > .content h2 {
+    text-align: left;
+  }
+  section.top > .content nav.specialties {
+    justify-content: flex-start;
   }
   section.top > .content .descriptions {
     display: flex;

@@ -322,7 +322,6 @@ section.about-us {
     h2 {
       margin-top: 0;
       margin-bottom: 16px;
-      font-weight: 300;
     }
 
     p {
@@ -334,10 +333,6 @@ section.about-us {
 section.services {
   text-align: center;
   padding: 48px 24px;
-
-  h2 {
-    font-weight: 300;
-  }
 
   .icons {
     display: flex;
@@ -398,10 +393,6 @@ section.quote {
 section.say-hello {
   text-align: center;
   background-image: linear-gradient(to bottom, #E3EFFF, rgba(255,255,255,0.0001) 13%);
-
-  h2 {
-    font-weight: 300;
-  }
 
   > .content {
     .col {
@@ -496,13 +487,6 @@ section.footer {
         margin-top: 72px;
       }
 
-      // .descriptions  {
-      //   display: flex;
-
-      //   .col {
-      //     flex: 1;
-      //   }
-      // }
       h2 {
         text-align: center;
       }
@@ -514,7 +498,6 @@ section.footer {
           font-family: Poppins, sans-serif;
           font-size: 16px;
           font-weight: 600;
-          margin-right: 24px;
         }
       }
     }
@@ -535,6 +518,7 @@ section.footer {
 
   h2 {
     font-size: 32px;
+    font-weight: 400;
   }
 
   nav.main-nav > .content {
@@ -567,6 +551,14 @@ section.footer {
 
       .spacer {
         margin-top: 96px;
+      }
+
+      h2 {
+        text-align: left;
+      }
+
+      nav.specialties {
+        justify-content: flex-start;
       }
 
       .descriptions  {
