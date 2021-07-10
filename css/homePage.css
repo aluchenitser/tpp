@@ -226,6 +226,9 @@ section.top > .content nav.specialties > div.active .underline {
 section.top > .content nav.specialties > div:hover {
   cursor: pointer;
 }
+section.top > .content .descriptions .col:first-of-type {
+  margin-bottom: 48px;
+}
 section.top > .content .descriptions .col:last-of-type {
   text-align: center;
 }
@@ -323,6 +326,9 @@ section.say-hello > .content .col {
   flex-direction: column;
   align-items: center;
 }
+section.say-hello > .content .col:first-of-type {
+  margin-bottom: 48px;
+}
 section.say-hello > .content button {
   margin-top: 8px;
 }
@@ -335,9 +341,6 @@ section.footer {
   padding: 48px 24px;
 }
 section.footer .logo {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
   margin-bottom: 24px;
 }
 section.footer .logo img {
@@ -389,6 +392,9 @@ section.footer .social .group span {
   section.top > .content h2 {
     text-align: center;
   }
+  section.top > .content .descriptions {
+    padding: 0 24px;
+  }
   section.top > .content nav.specialties {
     justify-content: center;
   }
@@ -438,9 +444,13 @@ section.footer .social .group span {
   }
   section.top > .content .descriptions {
     display: flex;
+    padding: 0;
   }
   section.top > .content .descriptions .col {
     flex: 1;
+  }
+  section.top > .content .descriptions .col:first-of-type {
+    margin-bottom: 0;
   }
 
   section.about-us {
@@ -490,6 +500,7 @@ section.footer .social .group span {
   }
   section.say-hello > .content .col:first-of-type {
     margin-right: 24px;
+    margin-bottom: 0;
   }
   section.say-hello > .content .col:last-of-type {
     margin-left: 24px;
@@ -502,8 +513,9 @@ section.footer .social .group span {
     padding: 24px 48px;
   }
   section.footer .logo {
-    text-align: center;
-    order: 2;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
   section.footer .contact {
     order: 1;
