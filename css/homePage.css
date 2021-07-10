@@ -184,7 +184,7 @@ section > .content {
 }
 
 section.top {
-  background-image: linear-gradient(to bottom, #E3EFFF, transparent 5%);
+  background: linear-gradient(to bottom, #E3EFFF, rgba(255, 255, 255, 0.0001) 5%), url(../assets/hillsSolid.svg) 65.1% 100%/2900px no-repeat;
 }
 section.top > .content {
   min-height: 100px;
@@ -378,6 +378,7 @@ section.footer .social .group span {
 
   section.top {
     padding-top: 64px;
+    background: linear-gradient(to bottom, #E3EFFF, rgba(255, 255, 255, 0.0001) 10%), url(../assets/hillsSolid.svg) 66.3% 103.9% no-repeat;
   }
   section.top > .content .headers {
     text-align: center;
@@ -385,6 +386,9 @@ section.footer .social .group span {
   section.top > .content .headers .header-text {
     font-size: 35px;
     line-height: 52px;
+  }
+  section.top > .content .accent-box {
+    justify-content: center;
   }
   section.top > .content .spacer {
     margin-top: 72px;
