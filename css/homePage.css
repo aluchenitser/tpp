@@ -411,6 +411,10 @@ section.footer .social .group span {
   section.services > .content .icons .service {
     width: 33.3%;
   }
+
+  section.say-hello {
+    padding: 72px 48px;
+  }
 }
 @media (min-width: 990px) {
   h2 {
@@ -496,9 +500,6 @@ section.footer .social .group span {
     max-width: none;
   }
 
-  section.say-hello {
-    padding: 72px 24px;
-  }
   section.say-hello > .content {
     display: flex;
   }
