@@ -212,7 +212,6 @@ section.top > .content nav.specialties {
 section.top > .content nav.specialties > div {
   font-family: Poppins, sans-serif;
   font-size: 16px;
-  font-weight: 600;
   padding-right: 24px;
   user-select: none;
 }
@@ -407,7 +406,6 @@ section.footer .social .group span {
   section.top > .content nav.specialties div {
     font-family: Poppins, sans-serif;
     font-size: 16px;
-    font-weight: 600;
   }
 
   section.services > .content .icons .service {
@@ -534,6 +532,12 @@ section.footer .social .group span {
   }
   section.footer > div {
     margin: 0 !important;
+  }
+}
+@media (max-width: 335px) {
+  section.top > .content nav.specialties > div {
+    font-size: 15px;
+    padding-right: 20px;
   }
 }
 /* ------ UTILITY ------ */
