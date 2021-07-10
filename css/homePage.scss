@@ -224,10 +224,11 @@ section {
 }
 
 section.top {
+  padding-bottom: 24px;
 
   background:
     linear-gradient(to bottom, #E3EFFF, rgba(255, 255, 255, 0.0001) 5%), 
-    url(../assets/hillsSolid.svg) 65.1% 100% / 2900px no-repeat;    
+    url(../assets/hillsSolid.svg) 64.2% 100% / 2900px no-repeat;    
 
   > .content {
     min-height: 100px;
@@ -478,10 +479,11 @@ section.footer {
 
   section.top {
     padding-top: 64px;
+    padding-bottom: 48px;
 
     background: 
       linear-gradient(to bottom, #E3EFFF, rgba(255, 255, 255, 0.0001) 10%), 
-      url(../assets/hillsSolid.svg) 66.3% 103.9% no-repeat;
+      url(../assets/hillsSolid.svg) 65.6% 100% no-repeat;
 
     > .content {
       .headers {
@@ -560,7 +562,7 @@ section.footer {
     padding-bottom: 24px;
     background:
       linear-gradient(to bottom, #E3EFFF, rgba(255,255,255,0.0001) 10%),
-      url(../assets/hillsSolid.svg) 62.3% 118.9% no-repeat;
+      url(../assets/hillsSolid.svg) 61.9% 118.9% no-repeat;
 
     > .content {
       .headers {
