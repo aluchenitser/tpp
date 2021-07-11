@@ -91,6 +91,10 @@ button {
   }
 }
 
+a.logo {
+  text-decoration: none;
+}
+
 /* ------ BY SECTION ------ */
 /* ------ BY SECTION ------ */
 /* ------ BY SECTION ------ */
@@ -165,6 +169,16 @@ nav.main-nav {
         &:hover {
           text-decoration: underline;
         }
+      }
+
+      @at-root html.about-page .desktop-menu .about {
+        text-decoration: underline !important;
+      }
+      @at-root html.services-page .desktop-menu .services {
+        text-decoration: underline !important;
+      }
+      @at-root html.contact-page .desktop-menu .contact {
+        text-decoration: underline !important;
       }
     }
 

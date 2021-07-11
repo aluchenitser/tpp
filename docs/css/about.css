@@ -76,6 +76,10 @@ button {
   font-weight: 500;
 }
 
+a.logo {
+  text-decoration: none;
+}
+
 /* ------ BY SECTION ------ */
 /* ------ BY SECTION ------ */
 /* ------ BY SECTION ------ */
@@ -137,6 +141,18 @@ nav.main-nav > .content .desktop-menu a {
 nav.main-nav > .content .desktop-menu a:hover {
   text-decoration: underline;
 }
+html.about-page .desktop-menu .about {
+  text-decoration: underline !important;
+}
+
+html.services-page .desktop-menu .services {
+  text-decoration: underline !important;
+}
+
+html.contact-page .desktop-menu .contact {
+  text-decoration: underline !important;
+}
+
 nav.main-nav > .content .mobile-menu {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
