@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TPP Digital</title>
+    
+    <link rel="icon" type="image/png" href="assets/favicon/logo_16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="assets/favicon/logo_32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/favicon/logo_96.png" sizes="96x96">
+
+    <link rel="stylesheet" href="css/homePage.css">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script defer src="js/home.js"></script>
+</head>
+<body>
+    <div class="book-end">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <nav class="main-nav">
+    <div class="content">
+        <div class="left-wrap">
+            <div class="logo">
+                <img src="assets/tpp logo.svg" width="30" alt="">
+                <span class="nav-text">TPP Digital</span>
+            </div>
+            <div class="divider"></div>
+            <img src="assets/daytime.svg" class="time-of-day" width="20" />
+            <div class="widget">Jakarta, IN<br>14:10.26</div>
+        </div>
+        <div class="desktop-menu">
+            <a href="" class="services">Our services</a>
+            <a href="" class="about">About</a>
+            <a href="" class="contact">Contact</a>
+            <button class="assessment">Get a rapid assessment</button>
+        </div>
+        <div class="mobile-menu">
+            <!-- <span class="nav-text">Menu</span> -->
+            <img src="assets/hamburger.svg" width="24" alt="">
+        </div>
+    </div>
+</nav>
+
+    <!-- <nav class="main-nav">
+        <div class="content">
+            <div class="left-wrap">
+                <div class="logo">
+                    <img src="assets/tpp logo.svg" width="30" alt="">
+                    <span class="nav-text">TPP Digital</span>
+                </div>
+                <div class="divider"></div>
+                <img src="assets/daytime.svg" class="time-of-day" width="20" />
+                <div class="widget">Jakarta, IN<br>14:10.26</div>
+            </div>
+            <div class="desktop-menu">
+                <a href="" class="services">Our services</a>
+                <a href="" class="about">About</a>
+                <a href="" class="contact">Contact</a>
+                <button class="assessment">Get a rapid assessment</button>
+            </div>
+            <div class="mobile-menu">
+                <img src="assets/hamburger.svg" width="24" alt="">
+            </div>
+        </div>
+    </nav> -->
+    <section id="top" class="top">
+        <div class="content">
+            <div class="mb-24 headers">
+                <div class="header-text"><span>Raise</span> your visibility online.</div>
+                <div class="header-text"><span>Interact</span> with sociable technologists.</div>
+                <div class="header-text"><span>Leverage</span> an international perspective.</div>
+            </div>
+            <div class="accent-box">
+                <div class="content">
+                    <h1>TPP – a Digital Marketing Agency in Jakarta, Indonesia</h1>
+                </div>
+            </div>
+            <div class="spacer"></div>
+            <h2 class="mb-16 mt-0">Our specialties</h2>
+            <nav class="specialties">
+                <div @click="selectSpecialty('isBranding')" :class="{ active: isBranding }">
+                    BRANDING
+                    <div class="underline"></div>
+                </div>
+                <div @click="selectSpecialty('isSocialMedia')" :class="{ active: isSocialMedia }">
+                    SOCIAL MEDIA
+                    <div class="underline"></div>
+                </div>
+                <div @click="selectSpecialty('isWeb')" :class="{ active: isWeb }">
+                    WEB
+                    <div class="underline"></div>
+                </div>
+            </nav>
+            <div class="descriptions">
+                <div class="col">
+                    <p class="branding mt-16" :class="{ active: isBranding }">
+                        Branding is more than just a slogan or a logo. It's an idea which is unified amongst various media. Let's take your idea and make it memorable not just for today, but for keeps!
+                        <br><br>
+                        Our designers and copywriters want to develop a pitch that's interesting, that works, and that was as enjoyable to make as it is for you to benefit from.
+                    </p>
+                    <p class="social-media" :class="{ active: isSocialMedia }">
+                        Having a social media presence is a simple notion that's best executed by people who have a natural inclination towards playing on these platforms. It's a lifestyle.
+                        <br><br>
+                        We hire these goofballs because quite simply, they know how to match your product with what's trending. That means more business for you.
+                    </p>
+                    <p class="web" :class="{ active: isWeb }">
+                        Sure, TPP has a technical team. We also know that technical matters, although often necessary, aren't the 'goal' of your product. You want exposure and you want to sell.
+                        <br><br>
+                        Our people are skilled technologists and skilled communicators - tough to find but worth the search. As a customer, you deserve to know what we're doing.
+                    </p>
+                </div>
+                <div class="col">
+                    <img :class="{ active: isWeb }" src="assets/pro-girl.png" alt="">
+                    <img :class="{ active: isSocialMedia }" src="assets/pro-guy.png" alt="">
+                    <img :class="{ active: isBranding }" src="assets/pro-girl-and-guy.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-us">
+        <div class="content">
+            <h2>Who we are</h2>
+            <p><b>TPP is a digital marketing agency here to bring visibility and growth to your business.</b></p>
+            <p>We believe that hard work, clean design, and a clever pitch are the most valuable elements of marketing. Everything else builds on this foundation.</p>
+            <p class="mb-0">
+                <a href="#">Learn more</a>
+            </p>
+        </div>
+    </section>
+    <section class="services">
+        <div class="content">
+            <h2 class="mt-0">Pacific pace</h2>
+            <p class="mb-24">TPP has boots on the ground both in <b>Indonesia</b> and the <b>United States</b>.<br>We also have a variety of domain specific experience:</p>
+            <div class="icons">
+                <div class="service">
+                    <img src="assets/services/ImportExport.svg" width="40" alt="">
+                    <span>Import/Export</span>
+                </div>
+                <div class="service">
+                    <img src="assets/services/Small Biz.svg" width="40" alt="">
+                    <span>Small business</span>
+                </div>
+                <div class="service">
+                    <img src="assets/services/Image Refresh.svg" width="40" alt="">
+                    <span>Image refresh</span>
+                </div>
+                <div class="service">
+                    <img src="assets/services/Finance.svg" width="40" alt="">
+                    <span>Financial product</span>
+                </div>
+                <div class="service">
+                    <img src="assets/services/Cultural.svg" width="40" alt="">
+                    <span>Culturally unique</span>
+                </div>
+                <div class="service">
+                    <img src="assets/services/IT.svg" width="40" alt="">
+                    <span>IT product</span>
+                </div>
+                <div class="service">
+                    <img src="assets/services/Engineering.svg" width="40" alt="">
+                    <span>Engineering service</span>
+                </div>
+                <div class="service">
+                    <img src="assets/services/Healthcare.svg" width="40" alt="">
+                    <span>Healthcare</span>
+                </div>
+                <div class="service">
+                    <img src="assets/services/Multi Language.svg" width="40" alt="">
+                    <span>Multi-lingual</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="quote">
+        <div class="content">
+            <div class="col">
+                <div class="quote-text">Success is a journey, not a destination.</div>
+                <div class="accent-box centered">
+                    <div class="content">
+                        ARTHUR ASHE
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <img src="assets/mountain.png" width="296" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="say-hello">
+        <h2 class="mt-0 mb-48">Say hello!</h2>
+        <div class="content">
+            <div class="col">
+                <img src="assets/services/Open.svg" width="40" alt="">
+                <p class="mb-0"><b>TPP has hit the ground running! We are currently taking new clients.</b></p>
+                <p>If you're interested, feel free to take our rapid assessment or contact us using the button below!</p>
+                <button>Let's chat</button>
+            </div>
+            <div class="col">
+                <img src="assets/services/Careers.svg" width="40" alt="">
+                <p class="mb-0"><b>We're looking for in-house staff and building out our freelance network.</b></p>
+                <p>Are you creative, technically inclined, and enjoy working with people? Tell us why you want to work at TPP!</p>
+                <button>Contact us</button>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="logo">
+            <img src="assets/tpp logo.svg" width="45" alt="">
+            <span class="nav-text">TPP Digital</span>
+        </div>
+        <div class="contact">
+            <div class="mb-16">
+                68 Dream Big Avenue<br>
+                Columbus, OH 43202<br>
+                +123456789<br>
+                info@tpp.com
+            </div>
+            <div class="phone">
+                +628123456789
+            </div>
+        </div>
+        <div class="social">
+            <div class="group">
+                <img src="assets/social/facebook.svg" alt="">
+                <span>Trans Pacific Providence</span>
+            </div>
+            <div class="group">
+                <img src="assets/social/twitter.svg" alt="">
+                <span>Trans Pacific Providence</span>
+            </div>
+            <div class="group">
+                <img src="assets/social/instagram.svg" alt="">
+                <span>Trans Pacific Providence</span>
+            </div>
+            <div class="group">
+                <img src="assets/social/linkedin.svg" alt="">
+                <span>Trans Pacific Providence</span>
+            </div>
+        </div>
+    </section>
+    <div class="book-end">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
