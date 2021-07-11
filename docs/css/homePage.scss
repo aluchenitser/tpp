@@ -4,8 +4,8 @@ section.top {
   padding-bottom: 24px;
 
   background:
-    linear-gradient(to bottom, #E3EFFF, rgba(255, 255, 255, 0.0001) 5%), 
-    url(../assets/hillsSolid.svg) 64.2% 100% / 2900px no-repeat;    
+    linear-gradient(to bottom, #E3EFFF, rgba(255, 255, 255, 0.0001) 5%),
+    url(../assets/hillsSolid.svg) 64.2% 100% / 2900px no-repeat;
 
   > .content {
     min-height: 100px;
@@ -18,7 +18,7 @@ section.top {
         font-size: 24px;
         line-height: 35px;
         font-weight: 300;
-    
+
         span {
           color: $purple;
           font-weight: 500;
@@ -26,7 +26,7 @@ section.top {
       }
 
     }
-    
+
     .spacer {
       margin-top: 48px;
     }
@@ -96,7 +96,7 @@ section.about-us {
     height: 90%;
     text-align: center;
     background-color: white;
-    border-radius: 12px; 
+    border-radius: 12px;
     padding: 32px 24px;
 
     box-shadow: 0 0 16px rgb(0, 0, 0, .15);
@@ -199,21 +199,12 @@ section.say-hello {
 /* ------ RESPONSIVE ------ */
 
 @media (min-width: 768px) {
-  nav.main-nav > .content {
-    
-    .left-wrap {
-      .widget, .divider, img.time-of-day {
-        display: block;
-      }
-    }
-  }
-
   section.top {
     padding-top: 64px;
     padding-bottom: 48px;
 
-    background: 
-      linear-gradient(to bottom, #E3EFFF, rgba(255, 255, 255, 0.0001) 10%), 
+    background:
+      linear-gradient(to bottom, #E3EFFF, rgba(255, 255, 255, 0.0001) 10%),
       url(../assets/hillsSolid.svg) 65.6% 100% no-repeat;
 
     > .content {
@@ -244,7 +235,7 @@ section.say-hello {
 
       nav.specialties {
         justify-content: center;
-  
+
         div {
           font-family: Poppins, sans-serif;
           font-size: 16px;
@@ -264,7 +255,7 @@ section.say-hello {
   }
 
   section.say-hello {
-    padding: 72px 48px;  
+    padding: 72px 48px;
   }
 }
 
@@ -273,18 +264,6 @@ section.say-hello {
   h2 {
     font-size: 32px;
     font-weight: 400;
-  }
-
-  nav.main-nav > .content {
-    padding: 12px 0;
-
-    .mobile-menu {
-      display: none;
-    }
-
-    .desktop-menu {
-      display: block;
-    }
   }
 
   section.top {
@@ -336,8 +315,8 @@ section.say-hello {
     > .content {
       padding: 32px 160px;
     }
-  } 
-  
+  }
+
   section.services {
     padding: 72px 24px;
   }
@@ -354,7 +333,7 @@ section.say-hello {
 
       .col:first-of-type {
         position: relative;
-        
+
         .quote-text {
           font-size: 42px;
           line-height: 60px;

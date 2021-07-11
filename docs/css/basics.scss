@@ -108,12 +108,12 @@ a.logo {
       background-color: $pink;
       flex: 1;
     }
-  
+
     &:nth-child(2) {
       background-color: $blue;
       flex: 1;
     }
-  
+
     &:nth-child(3) {
       background-color: $purple;
       flex: 1;
@@ -122,7 +122,7 @@ a.logo {
 }
 
 nav.main-nav {
-  
+
   > .content {
     margin: 0 auto;
 
@@ -149,16 +149,16 @@ nav.main-nav {
 
       .widget {
         display: none;
-        font-family: 'Courier Prime', monospace;      
+        font-family: 'Courier Prime', monospace;
         font-weight: bold;
-        font-size: 12px;  
+        font-size: 12px;
         color: $purple;
       }
     }
 
     .desktop-menu {
       display: none;
-      
+
       a {
         font-size: 18px;
         font-weight: 600;
@@ -189,12 +189,11 @@ nav.main-nav {
       display: flex;
       align-items: center;
       color: $purple;
-  
+
       .nav-text {
         margin-right: 8px;
         position: relative;
         top: -1px;
-
       }
     }
   }
@@ -202,7 +201,7 @@ nav.main-nav {
 
 section {
   padding: 48px 24px;
-  
+
   > .content {
     max-width: 936px;
     margin: 0 auto;
@@ -222,7 +221,7 @@ section {
     text-transform: uppercase;
     font-weight: 600;
   }
-  
+
   h1 {
     display: inline-block;
     font-size: 16px;
@@ -238,7 +237,7 @@ section {
 section.footer {
   display: flex;
   flex-direction: column;
-  align-items: center;  
+  align-items: center;
   background-color: #F4F4F4;
   padding: 48px 24px;
 
@@ -281,10 +280,29 @@ section.footer {
 }
 
 @media (min-width: 768px) {
+  nav.main-nav > .content {
 
+    .left-wrap {
+      .widget, .divider, img.time-of-day {
+        display: block;
+      }
+    }
+  }
 }
 
 @media (min-width: 990px) {
+  nav.main-nav > .content {
+    padding: 12px 0;
+
+    .mobile-menu {
+      display: none;
+    }
+
+    .desktop-menu {
+      display: block;
+    }
+  }
+
   section.footer {
     flex-direction: row;
     justify-content: space-between;
@@ -292,17 +310,17 @@ section.footer {
 
     padding: 24px 48px;
 
-    .logo { 
+    .logo {
       position: absolute;
       left: 50%;
-      transform: translate(-50%, 0);      
+      transform: translate(-50%, 0);
     }
-    .contact { 
+    .contact {
       order: 1;
       text-align: left;
     }
-    .social { 
-      order: 3; 
+    .social {
+      order: 3;
       text-align: right;
     }
 

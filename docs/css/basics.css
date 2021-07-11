@@ -233,7 +233,22 @@ section.footer .social .group span {
   font-size: 18px;
 }
 
+@media (min-width: 768px) {
+  nav.main-nav > .content .left-wrap .widget, nav.main-nav > .content .left-wrap .divider, nav.main-nav > .content .left-wrap img.time-of-day {
+    display: block;
+  }
+}
 @media (min-width: 990px) {
+  nav.main-nav > .content {
+    padding: 12px 0;
+  }
+  nav.main-nav > .content .mobile-menu {
+    display: none;
+  }
+  nav.main-nav > .content .desktop-menu {
+    display: block;
+  }
+
   section.footer {
     flex-direction: row;
     justify-content: space-between;
