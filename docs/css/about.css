@@ -3912,4 +3912,101 @@ section.footer .social .group span {
   text-align: center;
 }
 
+section.top {
+  background: linear-gradient(to bottom, #E3EFFF, rgba(255, 255, 255, 0.0001) 10%);
+}
+section.top .header-text {
+  font-family: Poppins, sans-serif;
+  color: #42406C;
+  font-size: 42px;
+  line-height: 60px;
+}
+
+section.quote {
+  text-align: center;
+  background-color: #42406C;
+  color: white;
+  font-family: Poppins, sans-serif;
+  font-size: 24px;
+  line-height: 35px;
+  font-weight: 500;
+}
+
+section.how-it-is > .content .started {
+  display: flex;
+  margin-top: 48px;
+}
+section.how-it-is > .content .started .wrap {
+  padding-right: 12px;
+}
+section.how-it-is > .content .started .wrap h2 {
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+section.how-it-is > .content .started img {
+  padding-left: 12px;
+}
+section.how-it-is > .content .going {
+  display: flex;
+  margin-top: 96px;
+}
+section.how-it-is > .content .going img {
+  padding-right: 12px;
+}
+section.how-it-is > .content .going .wrap {
+  padding-left: 12px;
+}
+section.how-it-is > .content .going .wrap h2 {
+  margin-top: 0;
+  font-size: 32px;
+}
+
+section.here-for-you {
+  background-image: linear-gradient(to top, #F4D2D1, #ABCFFF);
+}
+section.here-for-you > .content {
+  padding: 32px 96px;
+  border-radius: 12px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
+  background-color: white;
+}
+section.here-for-you > .content h2 {
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  font-weight: 400;
+}
+section.here-for-you > .content > p {
+  font-weight: 600;
+}
+section.here-for-you > .content .wrap {
+  display: flex;
+  margin-bottom: 16px;
+}
+section.here-for-you > .content .wrap p:first-of-type {
+  padding-right: 8px;
+}
+section.here-for-you > .content .wrap p:last-of-type {
+  padding-left: 8px;
+}
+section.here-for-you > .content .learn-more {
+  text-align: center;
+}
+
+section.mission {
+  background-color: #42406C;
+  color: white;
+}
+section.mission > .content > div {
+  font-family: Poppins, sans-serif;
+  font-size: 42px;
+  line-height: 60px;
+  font-weight: 500;
+  text-align: center;
+}
+section.mission > .content > p {
+  text-align: center;
+}
+
 /*# sourceMappingURL=about.css.map */
