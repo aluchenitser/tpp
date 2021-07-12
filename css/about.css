@@ -3953,6 +3953,7 @@ section.how-it-is > .content .going {
 }
 section.how-it-is > .content .going img {
   padding-right: 12px;
+  align-self: flex-start;
 }
 section.how-it-is > .content .going .wrap {
   padding-left: 12px;
@@ -3963,6 +3964,8 @@ section.how-it-is > .content .going .wrap h2 {
 }
 
 section.here-for-you {
+  padding-top: 72px;
+  padding-bottom: 72px;
   background-image: linear-gradient(to top, #F4D2D1, rgba(171, 207, 255, 0.3) 55%, rgba(255, 255, 255, 0.0001));
 }
 section.here-for-you > .content {
@@ -3997,6 +4000,11 @@ section.here-for-you > .content .learn-more {
 section.mission {
   background-color: #42406C;
   color: white;
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+section.mission > .content .accent-box {
+  margin-bottom: 24px;
 }
 section.mission > .content .header-text {
   font-family: Poppins, sans-serif;
@@ -4004,8 +4012,19 @@ section.mission > .content .header-text {
   line-height: 60px;
   font-weight: 500;
   text-align: center;
+  margin-bottom: 24px;
 }
 section.mission > .content > p {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+section.core > .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.core > .content p {
   text-align: center;
 }
 
