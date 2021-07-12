@@ -1,1 +1,44 @@
 @import './basics.scss';
+@import './secondaries.scss';
+
+section.services {
+    > .content {
+        h2 {
+            text-align: center;
+            margin-bottom: 8px;
+        }
+
+        h3 {
+            margin-top: 0;
+            font-size: 18px;
+            line-height: 28px;
+            text-align: center;
+            font-weight: 400;
+        }
+
+        .wrap {
+            margin-top: 48px;
+            display: flex;
+
+            .left {
+                flex: 1;
+            }
+
+            .right {
+                flex: 1;
+            }
+
+            .service {
+                display: flex;
+
+                .gutter {
+                    flex: 1;
+                }
+
+                p {
+                    flex: 6;
+                }
+            }
+        }
+    }
+}

@@ -3912,4 +3912,66 @@ section.footer .social .group span {
   text-align: center;
 }
 
+h2 {
+  font-weight: 400;
+  font-size: 32px;
+}
+
+section.top {
+  background: linear-gradient(to bottom, #E3EFFF, rgba(255, 255, 255, 0.0001) 30%);
+}
+section.top .header-text {
+  font-family: Poppins, sans-serif;
+  color: #42406C;
+  font-size: 42px;
+  line-height: 60px;
+  font-weight: 500;
+}
+
+section.quote {
+  text-align: center;
+  background-color: #42406C;
+  color: white;
+  font-family: Poppins, sans-serif;
+  font-size: 24px;
+  line-height: 35px;
+  font-weight: 500;
+}
+section.quote > .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section.services > .content h2 {
+  text-align: center;
+  margin-bottom: 8px;
+}
+section.services > .content h3 {
+  margin-top: 0;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  font-weight: 400;
+}
+section.services > .content .wrap {
+  margin-top: 48px;
+  display: flex;
+}
+section.services > .content .wrap .left {
+  flex: 1;
+}
+section.services > .content .wrap .right {
+  flex: 1;
+}
+section.services > .content .wrap .service {
+  display: flex;
+}
+section.services > .content .wrap .service .gutter {
+  flex: 1;
+}
+section.services > .content .wrap .service p {
+  flex: 6;
+}
+
 /*# sourceMappingURL=services.css.map */
