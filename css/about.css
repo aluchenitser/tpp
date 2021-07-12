@@ -3912,14 +3912,20 @@ section.footer .social .group span {
   text-align: center;
 }
 
+h2 {
+  font-weight: 400;
+  font-size: 32px;
+}
+
 section.top {
-  background: linear-gradient(to bottom, #E3EFFF, rgba(255, 255, 255, 0.0001) 10%);
+  background: linear-gradient(to bottom, #E3EFFF, rgba(255, 255, 255, 0.0001) 30%);
 }
 section.top .header-text {
   font-family: Poppins, sans-serif;
   color: #42406C;
   font-size: 42px;
   line-height: 60px;
+  font-weight: 500;
 }
 
 section.quote {
@@ -3980,10 +3986,7 @@ section.here-for-you > .content {
   background-color: white;
 }
 section.here-for-you > .content h2 {
-  font-size: 32px;
-  line-height: 48px;
   text-align: center;
-  font-weight: 400;
 }
 section.here-for-you > .content > p {
   font-weight: 600;
@@ -4027,6 +4030,7 @@ section.mission > .content > p {
 section.core {
   padding-top: 72px;
   padding-bottom: 72px;
+  background: linear-gradient(to bottom, #E3EFFF, rgba(255, 255, 255, 0.0001) 15%);
 }
 section.core > .content {
   display: flex;
