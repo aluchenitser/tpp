@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "sergey": "^0.0.13"
+    "glob-parent": ">=5.1.2",
+    "sergey": "^0.0.4"
   }
 }
