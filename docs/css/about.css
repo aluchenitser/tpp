@@ -3931,6 +3931,10 @@ section.quote {
   line-height: 35px;
   font-weight: 500;
 }
+section.quote > .content {
+  display: flex;
+  justify-content: space-between;
+}
 
 section.how-it-is > .content .started {
   display: flex;
@@ -4019,13 +4023,32 @@ section.mission > .content > p {
   margin-bottom: 0;
 }
 
+section.core {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
 section.core > .content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+section.core > .content h2 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
 section.core > .content p {
   text-align: center;
+  margin-bottom: 0;
+}
+section.core > .content .allan-and-grace {
+  font-family: Raleway, sans-serif;
+  font-weight: 600;
+  font-size: 17.28px;
+  line-height: 26px;
+  margin: 0;
+}
+section.core > .content img {
+  margin: 24px 0;
 }
 
 /*# sourceMappingURL=about.css.map */
