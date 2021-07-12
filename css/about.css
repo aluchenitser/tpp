@@ -188,7 +188,7 @@ section > .content {
   text-transform: uppercase;
   font-weight: 600;
 }
-.accent-box h1 {
+.accent-box h1, .accent-box h2 {
   display: inline-block;
   font-size: 16px;
   font-weight: 600;
@@ -3998,7 +3998,7 @@ section.mission {
   background-color: #42406C;
   color: white;
 }
-section.mission > .content > div {
+section.mission > .content .header-text {
   font-family: Poppins, sans-serif;
   font-size: 42px;
   line-height: 60px;
