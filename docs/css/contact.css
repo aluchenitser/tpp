@@ -3943,4 +3943,8 @@ section.quote > .content {
   align-items: center;
 }
 
+section.quote > .content button {
+  border: 2px solid white;
+}
+
 /*# sourceMappingURL=contact.css.map */
