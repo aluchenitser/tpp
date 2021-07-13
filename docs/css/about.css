@@ -3945,6 +3945,7 @@ section.quote > .content {
 
 section.how-it-is > .content .started {
   display: flex;
+  flex-direction: column;
   margin-top: 48px;
 }
 section.how-it-is > .content .started .wrap {
@@ -3960,6 +3961,7 @@ section.how-it-is > .content .started img {
 }
 section.how-it-is > .content .going {
   display: flex;
+  flex-direction: column;
   margin-top: 96px;
 }
 section.how-it-is > .content .going img {
@@ -3985,15 +3987,13 @@ section.here-for-you > .content {
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
   background-color: white;
 }
-section.here-for-you > .content h2 {
-  text-align: center;
-}
 section.here-for-you > .content > p {
   font-weight: 600;
 }
 section.here-for-you > .content .wrap {
   display: flex;
   margin-bottom: 16px;
+  flex-direction: column;
 }
 section.here-for-you > .content .wrap p:first-of-type {
   padding-right: 8px;
@@ -4054,6 +4054,19 @@ section.core > .content .allan-and-grace {
 }
 section.core > .content img {
   margin: 24px 0;
+}
+
+@media (min-width: 768px) {
+  section.how-it-is > .content .started, section.how-it-is > .content .going {
+    flex-direction: row;
+  }
+
+  section.here-for-you > .content h2 {
+    text-align: center;
+  }
+  section.here-for-you > .content .wrap {
+    flex-direction: row;
+  }
 }
 
 /*# sourceMappingURL=about.css.map */

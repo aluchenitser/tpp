@@ -3955,14 +3955,9 @@ section.services > .content h3 {
   font-weight: 400;
 }
 section.services > .content .wrap {
-  margin-top: 48px;
   display: flex;
-}
-section.services > .content .wrap .left {
-  flex: 1;
-}
-section.services > .content .wrap .right {
-  flex: 1;
+  flex-direction: column;
+  margin-top: 48px;
 }
 section.services > .content .wrap .service {
   display: flex;
@@ -3970,8 +3965,46 @@ section.services > .content .wrap .service {
 section.services > .content .wrap .service .gutter {
   flex: 1;
 }
+section.services > .content .wrap .service .gutter img {
+  position: relative;
+  top: 4px;
+}
 section.services > .content .wrap .service p {
   flex: 6;
+  margin-top: 0;
+}
+
+section.get-started {
+  padding-top: 72px;
+  padding-bottom: 72px;
+  background-image: linear-gradient(to top, #F4D2D1, rgba(171, 207, 255, 0.3) 55%, rgba(255, 255, 255, 0.0001));
+}
+section.get-started > .content {
+  padding: 32px 96px;
+  border-radius: 12px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.get-started > .content button.invert {
+  background-color: white;
+  color: #42406C;
+  border: 2px solid #42406C;
+}
+section.get-started > .content > * {
+  margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  section.services > .content .wrap {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  section.services > .content .wrap .service {
+    width: 50%;
+  }
 }
 
 /*# sourceMappingURL=services.css.map */

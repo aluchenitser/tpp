@@ -5,6 +5,7 @@ section.how-it-is {
   > .content {
     .started {
       display: flex;
+      flex-direction: column;
       margin-top: 48px;
 
       .wrap {
@@ -23,6 +24,7 @@ section.how-it-is {
 
     .going {
       display: flex;
+      flex-direction: column;
       margin-top: 96px;
 
       img {
@@ -52,10 +54,6 @@ section.here-for-you {
     box-shadow: 0 0 16px rgb(0, 0, 0, .15);
     background-color: white;
 
-    h2 {
-      text-align: center;
-    }
-
     > p {
       font-weight: 600;
     }
@@ -63,6 +61,7 @@ section.here-for-you {
     .wrap {
       display: flex;
       margin-bottom: 16px;
+      flex-direction: column;
 
       p {
         &:first-of-type {
@@ -141,4 +140,31 @@ section.core {
       margin: 24px 0;
     }
   }
+}
+
+@media (min-width: 768px) {
+  section.how-it-is {
+    > .content {
+      .started, .going {
+        flex-direction: row;
+      }
+    }
+  }
+
+  section.here-for-you {
+    > .content {
+      h2 {
+        text-align: center;
+      }
+
+      .wrap {
+        flex-direction: row;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 990px) {
+
 }
