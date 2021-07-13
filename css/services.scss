@@ -3,9 +3,11 @@
 
 section.services {
     > .content {
+
         h2 {
             text-align: center;
             margin-bottom: 8px;
+            margin-top: 0;
         }
 
         h3 {
@@ -23,6 +25,7 @@ section.services {
 
             .service {
                 display: flex;
+                margin-bottom: 48px;
 
                 .gutter {
                     flex: 1;
@@ -33,9 +36,19 @@ section.services {
                     }
                 }
 
-                p {
+                .content {
                     flex: 6;
                     margin-top: 0;
+
+                    img {
+                        position: relative;
+                        top: 4px;
+                        margin-right: 8px;
+                    }
+
+                    a span {
+                        text-decoration: underline;
+                    }
                 }
             }
         }
@@ -43,28 +56,37 @@ section.services {
 }
 
 section.get-started {
-    padding-top: 72px;
-    padding-bottom: 72px;
+    padding: 0 24px 48px;
     background-image: linear-gradient(to top, #F4D2D1, rgba(171, 207, 255, 0.3) 55%, rgba(255, 255, 255, 0.0001));
 
     > .content {
-      padding: 32px 96px;
-      border-radius: 12px;
-      box-shadow: 0 0 16px rgb(0, 0, 0, .15);
-      background-color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+        padding: 32px 24px;
+        border-radius: 12px;
+        box-shadow: 0 0 16px rgb(0, 0, 0, .15);
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-      button.invert {
-          background-color: white;
-          color: $purple;
-          border: 2px solid $purple;
-      }
+        h2 {
+            margin-top: 0;
+            margin-bottom: 24px;
+        }
 
-      > * {
-          margin-bottom: 24px;
-      }
+        button {
+            width: 456px;
+            max-width: 100%;
+
+            &.invert {
+                background-color: white;
+                color: $purple;
+                border: 2px solid $purple;
+            }
+
+            &:first-of-type {
+                margin-bottom: 24px;
+            }
+        }
     }
 }
 

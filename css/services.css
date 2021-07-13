@@ -3946,6 +3946,7 @@ section.quote > .content {
 section.services > .content h2 {
   text-align: center;
   margin-bottom: 8px;
+  margin-top: 0;
 }
 section.services > .content h3 {
   margin-top: 0;
@@ -3961,6 +3962,7 @@ section.services > .content .wrap {
 }
 section.services > .content .wrap .service {
   display: flex;
+  margin-bottom: 48px;
 }
 section.services > .content .wrap .service .gutter {
   flex: 1;
@@ -3969,18 +3971,25 @@ section.services > .content .wrap .service .gutter img {
   position: relative;
   top: 4px;
 }
-section.services > .content .wrap .service p {
+section.services > .content .wrap .service .content {
   flex: 6;
   margin-top: 0;
 }
+section.services > .content .wrap .service .content img {
+  position: relative;
+  top: 4px;
+  margin-right: 8px;
+}
+section.services > .content .wrap .service .content a span {
+  text-decoration: underline;
+}
 
 section.get-started {
-  padding-top: 72px;
-  padding-bottom: 72px;
+  padding: 0 24px 48px;
   background-image: linear-gradient(to top, #F4D2D1, rgba(171, 207, 255, 0.3) 55%, rgba(255, 255, 255, 0.0001));
 }
 section.get-started > .content {
-  padding: 32px 96px;
+  padding: 32px 24px;
   border-radius: 12px;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
   background-color: white;
@@ -3988,12 +3997,20 @@ section.get-started > .content {
   flex-direction: column;
   align-items: center;
 }
+section.get-started > .content h2 {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+section.get-started > .content button {
+  width: 456px;
+  max-width: 100%;
+}
 section.get-started > .content button.invert {
   background-color: white;
   color: #42406C;
   border: 2px solid #42406C;
 }
-section.get-started > .content > * {
+section.get-started > .content button:first-of-type {
   margin-bottom: 24px;
 }
 
