@@ -3969,7 +3969,7 @@ section.services > .content .wrap .service .gutter {
 }
 section.services > .content .wrap .service .gutter img {
   position: relative;
-  top: 4px;
+  top: 2px;
 }
 section.services > .content .wrap .service .content {
   flex: 6;
