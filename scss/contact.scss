@@ -9,21 +9,30 @@ section.quote {
 }
 
 section.form {
-  .group {
-    margin-bottom: 24px;
+  > .content {
+    max-width: 616px;
 
-    label {
-      display: block;
-      font-weight: 600;
-      margin-bottom: 4px;
-    }
-
-    input, textarea {
-      width: 100%;
-      border: 1px solid #2d2d2d;
-      font-size: 28px;
-      border-radius: 4px;
-      padding: 8px;
+    .group {
+      margin-bottom: 24px;
+  
+      label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 4px;
+      }
+  
+      input, textarea {
+        width: 100%;
+        border: 1px solid #2d2d2d;
+        font-size: 28px;
+        border-radius: 4px;
+        padding: 8px;
+      }
     }
   }
+}
+
+section.map {
+  background: url('../assets/contact/map.jpg');
+  height: 280px;
 }

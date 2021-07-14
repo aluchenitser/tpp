@@ -3947,20 +3947,28 @@ section.quote > .content button {
   border: 2px solid white;
 }
 
-section.form .group {
+section.form > .content {
+  max-width: 616px;
+}
+section.form > .content .group {
   margin-bottom: 24px;
 }
-section.form .group label {
+section.form > .content .group label {
   display: block;
   font-weight: 600;
   margin-bottom: 4px;
 }
-section.form .group input, section.form .group textarea {
+section.form > .content .group input, section.form > .content .group textarea {
   width: 100%;
   border: 1px solid #2d2d2d;
   font-size: 28px;
   border-radius: 4px;
   padding: 8px;
+}
+
+section.map {
+  background: url("../assets/contact/map.jpg");
+  height: 280px;
 }
 
 /*# sourceMappingURL=contact.css.map */
