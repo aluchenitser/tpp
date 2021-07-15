@@ -3941,8 +3941,14 @@ section.quote > .content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
 }
 
+@media (min-width: 768px) {
+  section.quote > .content {
+    flex-direction: row;
+  }
+}
 section.services > .content h2 {
   text-align: center;
   margin-bottom: 8px;
@@ -4015,6 +4021,10 @@ section.get-started > .content button:first-of-type {
 }
 
 @media (min-width: 768px) {
+  section.quote {
+    padding-top: 33px;
+    padding-bottom: 33px;
+  }
   section.services > .content .wrap {
     flex-direction: row;
     flex-wrap: wrap;

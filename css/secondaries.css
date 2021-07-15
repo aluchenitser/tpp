@@ -3941,6 +3941,13 @@ section.quote > .content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  section.quote > .content {
+    flex-direction: row;
+  }
 }
 
 /*# sourceMappingURL=secondaries.css.map */

@@ -3941,8 +3941,14 @@ section.quote > .content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
 }
 
+@media (min-width: 768px) {
+  section.quote > .content {
+    flex-direction: row;
+  }
+}
 section.how-it-is > .content .started {
   display: flex;
   flex-direction: column;
@@ -4066,6 +4072,11 @@ section.core > .content img {
   }
   section.here-for-you > .content .wrap {
     flex-direction: row;
+  }
+
+  section.quote {
+    padding-top: 33px;
+    padding-bottom: 33px;
   }
 }
 

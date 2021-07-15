@@ -3941,8 +3941,24 @@ section.quote > .content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
 }
 
+@media (min-width: 768px) {
+  section.quote > .content {
+    flex-direction: row;
+  }
+}
+section.quote {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+section.quote > .content {
+  justify-content: center;
+}
+section.quote > .content span {
+  margin-bottom: 16px;
+}
 section.quote > .content button {
   border: 2px solid white;
 }
@@ -3969,6 +3985,22 @@ section.form > .content .group input, section.form > .content .group textarea {
 section.map {
   background: url("../assets/contact/map.jpg");
   height: 280px;
+}
+
+@media (min-width: 768px) {
+  section.quote {
+    padding-top: 23px;
+    padding-bottom: 23px;
+  }
+  section.quote > .content {
+    flex-direction: row;
+  }
+  section.quote > .content span {
+    margin-bottom: 0;
+  }
+  section.quote > .content button {
+    margin-left: 24px;
+  }
 }
 
 /*# sourceMappingURL=contact.css.map */
