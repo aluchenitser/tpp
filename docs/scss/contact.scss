@@ -41,6 +41,7 @@ section.form {
 }
 
 section.map {
+  filter: saturate(1.5);
   background: url('../assets/contact/map.jpg');
   height: 280px;
 }
