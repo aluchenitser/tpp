@@ -3950,6 +3950,21 @@ section.quote > .content {
     flex-direction: row;
   }
 }
+section.quote {
+  padding: 24px;
+}
+section.quote > .content img {
+  position: relative;
+}
+section.quote > .content img:first-of-type {
+  margin-bottom: 16px;
+  left: -12px;
+}
+section.quote > .content img:last-of-type {
+  margin-top: 16px;
+  left: 12px;
+}
+
 section.how-it-is > .content .started {
   display: flex;
   flex-direction: column;
@@ -4064,6 +4079,14 @@ section.core > .content img {
 }
 
 @media (min-width: 768px) {
+  section.quote {
+    padding-top: 33px;
+    padding-bottom: 33px;
+  }
+  section.quote > .content img {
+    margin: 0 !important;
+  }
+
   section.how-it-is > .content .started, section.how-it-is > .content .going {
     flex-direction: row;
   }

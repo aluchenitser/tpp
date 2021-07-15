@@ -3950,6 +3950,21 @@ section.quote > .content {
     flex-direction: row;
   }
 }
+section.quote {
+  padding: 24px;
+}
+section.quote > .content img {
+  position: relative;
+}
+section.quote > .content img:first-of-type {
+  margin-bottom: 16px;
+  left: -12px;
+}
+section.quote > .content img:last-of-type {
+  margin-top: 16px;
+  left: 12px;
+}
+
 section.services > .content h2 {
   text-align: center;
   margin-bottom: 8px;
@@ -4026,6 +4041,10 @@ section.get-started > .content button:first-of-type {
     padding-top: 33px;
     padding-bottom: 33px;
   }
+  section.quote > .content img {
+    margin: 0 !important;
+  }
+
   section.services > .content .wrap {
     flex-direction: row;
     flex-wrap: wrap;

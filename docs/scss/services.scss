@@ -1,5 +1,24 @@
 @import './secondaries.scss';
 
+section.quote {
+    padding: 24px;
+    > .content {
+        img {
+            position: relative;
+            &:first-of-type {
+                margin-bottom: 16px;
+                left: -12px;
+            }
+
+            &:last-of-type {
+                margin-top: 16px;
+                left: 12px;
+            }
+        }
+
+    }
+}
+
 section.services {
     > .content {
         h2 {
@@ -94,7 +113,9 @@ section.get-started {
         padding-top: 33px;
         padding-bottom: 33px;
         > .content {
-
+            img {
+                margin: 0 !important;
+            }
         }
     }
 
