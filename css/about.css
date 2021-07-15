@@ -3965,37 +3965,38 @@ section.quote > .content img:last-of-type {
   left: 12px;
 }
 
+section.how-it-is {
+  padding-bottom: 0;
+}
 section.how-it-is > .content .started {
   display: flex;
   flex-direction: column;
-  margin-top: 48px;
 }
 section.how-it-is > .content .started .wrap {
-  padding-right: 12px;
+  order: 2;
 }
 section.how-it-is > .content .started .wrap h2 {
   font-size: 32px;
-  margin-top: 0;
-  margin-bottom: 24px;
+  margin: 24px 0;
 }
 section.how-it-is > .content .started img {
-  padding-left: 12px;
+  order: 1;
 }
 section.how-it-is > .content .going {
   display: flex;
   flex-direction: column;
-  margin-top: 96px;
+  margin-top: 32px;
 }
 section.how-it-is > .content .going img {
-  padding-right: 12px;
   align-self: flex-start;
-}
-section.how-it-is > .content .going .wrap {
-  padding-left: 12px;
+  width: 100%;
 }
 section.how-it-is > .content .going .wrap h2 {
-  margin-top: 0;
+  margin: 24px 0;
   font-size: 32px;
+}
+section.how-it-is > .content .going .wrap p {
+  margin-bottom: 0;
 }
 
 section.here-for-you {
@@ -4004,7 +4005,7 @@ section.here-for-you {
   background-image: linear-gradient(to top, #F4D2D1, rgba(171, 207, 255, 0.3) 55%, rgba(255, 255, 255, 0.0001));
 }
 section.here-for-you > .content {
-  padding: 32px 96px;
+  padding: 32px;
   border-radius: 12px;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
   background-color: white;
@@ -4087,10 +4088,39 @@ section.core > .content img {
     margin: 0 !important;
   }
 
-  section.how-it-is > .content .started, section.how-it-is > .content .going {
+  section.how-it-is {
+    padding-bottom: 48px;
+  }
+  section.how-it-is > .content h2 {
+    margin-top: 0;
+  }
+  section.how-it-is > .content .started {
+    margin-top: 48px;
     flex-direction: row;
   }
+  section.how-it-is > .content .started .wrap {
+    order: 1;
+    padding-right: 12px;
+  }
+  section.how-it-is > .content .started img {
+    order: 2;
+    padding-left: 12px;
+  }
+  section.how-it-is > .content .going {
+    flex-direction: row;
+    margin-top: 96px;
+  }
+  section.how-it-is > .content .going .wrap {
+    padding-left: 12px;
+  }
+  section.how-it-is > .content .going img {
+    padding-right: 12px;
+    width: auto;
+  }
 
+  section.here-for-you > .content {
+    padding: 32px 96px;
+  }
   section.here-for-you > .content h2 {
     text-align: center;
   }
