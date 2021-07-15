@@ -55,6 +55,7 @@ button {
   font-weight: bold;
   font-size: 18px;
   cursor: pointer;
+  min-width: 144px;
 }
 
 /* ------ BY COMPONENT ------ */

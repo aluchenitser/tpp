@@ -20,6 +20,20 @@ section.form {
   > .content {
     max-width: 616px;
 
+    > .wrap {
+      text-align: center;
+
+      h2 {
+        margin-top: 0;
+        margin-bottom: 8px;
+      }
+
+      p {
+        margin-top: 0;
+        margin-bottom: 32px;
+      }
+    }
+
     .group {
       margin-bottom: 24px;
 
@@ -47,6 +61,11 @@ section.map {
 }
 
 @media (min-width: 768px) {
+  section.form {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
   section.quote {
     padding-top: 23px;
     padding-bottom: 23px;

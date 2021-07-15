@@ -55,6 +55,7 @@ button {
   font-weight: bold;
   font-size: 18px;
   cursor: pointer;
+  min-width: 144px;
 }
 
 /* ------ BY COMPONENT ------ */
@@ -3966,6 +3967,17 @@ section.quote > .content button {
 section.form > .content {
   max-width: 616px;
 }
+section.form > .content > .wrap {
+  text-align: center;
+}
+section.form > .content > .wrap h2 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+section.form > .content > .wrap p {
+  margin-top: 0;
+  margin-bottom: 32px;
+}
 section.form > .content .group {
   margin-bottom: 24px;
 }
@@ -3989,6 +4001,11 @@ section.map {
 }
 
 @media (min-width: 768px) {
+  section.form {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
   section.quote {
     padding-top: 23px;
     padding-bottom: 23px;
