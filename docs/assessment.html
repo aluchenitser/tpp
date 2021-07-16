@@ -14,6 +14,7 @@
 
     <title>TPP Digital</title>
     <link rel="stylesheet" href="css/assessment.css">
+    <script defer src="js/assessment.js"></script>
 </head>
 <body>
     <div class="book-end">
@@ -48,7 +49,7 @@
 
     <div class="back-drop">
 
-        <section class="form">
+        <section id="form" class="form">
             <div class="content">
                 <div class="accent-box centered">
                     <div class="content">
@@ -72,11 +73,58 @@
                         <textarea rows="4"></textarea>
                     </div>        
                 </div>
+                <div class="form2">
+                    <div class="form-group">
+                        <label for="">What is the geographic area of your business?</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Are you looking to expand?</label>
+                        <input type="radio" name="isExpanding">
+                        <div class="pill">Yes</div>
+                        <input type="radio" name="isExpanding">
+                        <div class="pill">Yes</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Is there any existing ad campaign or website that you find inspirational? Something to emulate?</label>
+                        <textarea rows="4"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Can you tell us something about your typical customer?</label>
+                        <textarea rows="4"></textarea>
+                    </div>        
+                </div>
+                <div class="form3">
+                    <div class="form-group">
+                        <label for="">What type of business are you in?</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Have you attempted any marketing of your own? How did it go?</label>
+                        <textarea rows="4"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Can you tell us something about your typical customer?</label>
+                        <textarea rows="4"></textarea>
+                    </div>        
+                </div>
+                <div class="form4">
+                    <div class="form-group">
+                        <label for="">What type of business are you in?</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Have you attempted any marketing of your own? How did it go?</label>
+                        <textarea rows="4"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Can you tell us something about your typical customer?</label>
+                        <textarea rows="4"></textarea>
+                    </div>        
+                </div>
                 <div class="footer">
-                    <span class="page-number">1 / 4</span>
-                    <a href="">
-                        <button>Next</button>
-                    </a>
+                    <span class="page-number">{{ page }} / 4</span>
+                    <button @click="next">Next</button>
                 </div>
             </div>
         </section>
