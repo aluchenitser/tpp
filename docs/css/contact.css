@@ -81,6 +81,22 @@ a.logo {
   text-decoration: none;
 }
 
+.form-group {
+  margin-bottom: 24px;
+}
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.form-group input, .form-group textarea {
+  width: 100%;
+  border: 1px solid #2d2d2d;
+  font-size: 28px;
+  border-radius: 4px;
+  padding: 8px;
+}
+
 /* ------ BY SECTION ------ */
 /* ------ BY SECTION ------ */
 /* ------ BY SECTION ------ */
@@ -3977,21 +3993,6 @@ section.form > .content > .wrap h2 {
 section.form > .content > .wrap p {
   margin-top: 0;
   margin-bottom: 32px;
-}
-section.form > .content .group {
-  margin-bottom: 24px;
-}
-section.form > .content .group label {
-  display: block;
-  font-weight: 600;
-  margin-bottom: 4px;
-}
-section.form > .content .group input, section.form > .content .group textarea {
-  width: 100%;
-  border: 1px solid #2d2d2d;
-  font-size: 28px;
-  border-radius: 4px;
-  padding: 8px;
 }
 
 section.map {
