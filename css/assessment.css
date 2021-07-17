@@ -209,6 +209,9 @@ nav.main-nav > .content .mobile-menu .nav-text {
   position: relative;
   top: -1px;
 }
+nav.main-nav.simple-nav > .content {
+  justify-content: center;
+}
 
 section {
   padding: 48px 24px;
@@ -3955,18 +3958,11 @@ section.footer .social .group span {
   text-align: center;
 }
 
-div.back-drop {
-  background-color: #42406C;
-}
-
 section.form {
-  padding: 72px 0;
+  padding: 0 24px;
 }
 section.form > .content {
   background-color: white;
-  max-width: 776px;
-  padding: 48px 80px;
-  border-radius: 4px;
   animation: slide-in 0.3s;
 }
 section.form > .content > h1 {
@@ -4006,6 +4002,20 @@ section.form > .content .footer .page-number {
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+@media (min-width: 768px) {
+  div.back-drop {
+    background-color: #42406C;
+  }
+
+  section.form {
+    padding: 72px 0;
+  }
+  section.form > .content {
+    border-radius: 4px;
+    padding: 48px 80px;
+    max-width: 776px;
   }
 }
 

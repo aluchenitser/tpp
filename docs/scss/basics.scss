@@ -246,6 +246,12 @@ nav.main-nav {
       }
     }
   }
+
+  &.simple-nav {
+    > .content {
+      justify-content: center;
+    }
+  }
 }
 
 section {

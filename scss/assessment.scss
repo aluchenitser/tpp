@@ -1,16 +1,9 @@
 @import './basics.scss';
 
-div.back-drop {
-    background-color: $purple;
-}
-
 section.form {
-    padding: 72px 0;
+    padding: 0 24px;
     > .content {
         background-color: white;
-        max-width: 776px;
-        padding: 48px 80px;
-        border-radius: 4px;
 
         animation: slide-in .3s;
 
@@ -60,4 +53,23 @@ section.form {
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+@media (min-width: 768px) {
+    div.back-drop {
+        background-color: $purple;
+    }
+
+    section.form {
+        padding: 72px 0;
+        > .content {
+            border-radius: 4px;
+            padding: 48px 80px;
+            max-width: 776px;
+        }
+    }
+}
+  
+@media (min-width: 990px) {
+
 }

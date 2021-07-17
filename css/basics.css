@@ -209,6 +209,9 @@ nav.main-nav > .content .mobile-menu .nav-text {
   position: relative;
   top: -1px;
 }
+nav.main-nav.simple-nav > .content {
+  justify-content: center;
+}
 
 section {
   padding: 48px 24px;
