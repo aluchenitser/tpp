@@ -23,7 +23,7 @@
                 <h1>Help us understand you + your needs!</h1>
                 <p>(Don't worry, this won't take long)</p>
 
-                <div class="form1">
+                <div class="form1" v-if="page === 1">
                     <div class="form-group">
                         <label for="">What type of business are you in?</label>
                         <input type="text">
@@ -35,19 +35,19 @@
                     <div class="form-group">
                         <label for="">Can you tell us something about your typical customer?</label>
                         <textarea rows="4"></textarea>
-                    </div>        
+                    </div>
                 </div>
-                <div class="form2">
+                <div class="form2" v-if="page === 2">
                     <div class="form-group">
                         <label for="">What is the geographic area of your business?</label>
                         <input type="text">
                     </div>
                     <div class="form-group">
                         <label for="">Are you looking to expand?</label>
-                        <input type="radio" name="isExpanding">
-                        <div class="pill">Yes</div>
-                        <input type="radio" name="isExpanding">
-                        <div class="pill">Yes</div>
+                        <input id="isExpandingYes" type="radio" name="isExpanding">
+                        <label for="isExpandingYes" class="pill">Yes</div>
+                        <input id="isExpandingNo" type="radio" name="isExpanding">
+                        <label for="isExpandingNo" class="pill">No</label>
                     </div>
                     <div class="form-group">
                         <label for="">Is there any existing ad campaign or website that you find inspirational? Something to emulate?</label>
@@ -56,9 +56,9 @@
                     <div class="form-group">
                         <label for="">Can you tell us something about your typical customer?</label>
                         <textarea rows="4"></textarea>
-                    </div>        
+                    </div>
                 </div>
-                <div class="form3">
+                <div class="form3" v-if="page === 3">
                     <div class="form-group">
                         <label for="">What type of business are you in?</label>
                         <input type="text">
@@ -70,9 +70,9 @@
                     <div class="form-group">
                         <label for="">Can you tell us something about your typical customer?</label>
                         <textarea rows="4"></textarea>
-                    </div>        
+                    </div>
                 </div>
-                <div class="form4">
+                <div class="form4" v-if="page === 4">
                     <div class="form-group">
                         <label for="">What type of business are you in?</label>
                         <input type="text">
@@ -84,7 +84,7 @@
                     <div class="form-group">
                         <label for="">Can you tell us something about your typical customer?</label>
                         <textarea rows="4"></textarea>
-                    </div>        
+                    </div>
                 </div>
                 <div class="footer">
                     <span class="page-number">{{ page }} / 4</span>

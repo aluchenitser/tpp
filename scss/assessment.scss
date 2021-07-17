@@ -10,8 +10,9 @@ section.form {
         background-color: white;
         max-width: 776px;
         padding: 48px 80px;
-        
         border-radius: 4px;
+
+        animation: slide-in .3s;
 
         > h1 {
             font-size: 32px;
@@ -37,5 +38,17 @@ section.form {
                 margin-right: 24px;
             }
         }
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateY(-20px);
+        opacity: .7;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
     }
 }

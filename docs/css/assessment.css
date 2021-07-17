@@ -3941,6 +3941,7 @@ section.form > .content {
   max-width: 776px;
   padding: 48px 80px;
   border-radius: 4px;
+  animation: slide-in 0.3s;
 }
 section.form > .content > h1 {
   font-size: 32px;
@@ -3962,6 +3963,17 @@ section.form > .content .footer .page-number {
   font-weight: 600;
   font-size: 16px;
   margin-right: 24px;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=assessment.css.map */
