@@ -99,7 +99,8 @@
                 </div>
                 <div class="form3" v-if="page === 3">
                     <div class="form-group">
-                        <label for="">What type of business are you in?</label>
+                        <label for="">Is there any specific technical or marketing service that you’re
+                            looking for? It’s ok not to be sure.</label>
                         <input type="text">
                     </div>
                     <div class="form-group">
@@ -113,15 +114,20 @@
                 </div>
                 <div class="form4" v-if="page === 4">
                     <div class="form-group">
-                        <label for="">What type of business are you in?</label>
-                        <input type="text">
+                        <label for="">How would you like us to contact you?</label>
+                        <input id="call-me" type="radio" name="contact">
+                        <label for="call-me" class="pill">Call</label>
+                        <input id="text-me" type="radio" name="contact">
+                        <label for="text-me" class="pill">Text</label>
+                        <input id="email-me" type="radio" name="contact">
+                        <label for="email-me" class="pill">Email</label>
                     </div>
                     <div class="form-group">
-                        <label for="">Have you attempted any marketing of your own? How did it go?</label>
+                        <label for="">Contact me at</label>
                         <textarea rows="4"></textarea>
                     </div>
                     <div class="form-group">
-                        <label for="">Can you tell us something about your typical customer?</label>
+                        <label for="">Anything else you'd like us to know?</label>
                         <textarea rows="4"></textarea>
                     </div>
                 </div>

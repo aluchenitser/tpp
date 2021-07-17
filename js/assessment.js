@@ -2,6 +2,9 @@ var app = new Vue({
   el: '#form',
   data: {
     page: 1,
+    fields: {
+
+    }
   },
   methods: {
     next() {
