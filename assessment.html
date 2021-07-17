@@ -5,6 +5,9 @@
 
     <title>TPP Digital</title>
     <link rel="stylesheet" href="css/assessment.css">
+
+
+    <script defer src="js/utility.js"></script>
     <script defer src="js/assessment.js"></script>
 </head>
 <body>
@@ -45,7 +48,7 @@
                     <div class="form-group">
                         <label for="">Are you looking to expand?</label>
                         <input id="isExpandingYes" type="radio" name="isExpanding">
-                        <label for="isExpandingYes" class="pill">Yes</div>
+                        <label for="isExpandingYes" class="pill">Yes</label>
                         <input id="isExpandingNo" type="radio" name="isExpanding">
                         <label for="isExpandingNo" class="pill">No</label>
                     </div>
@@ -87,8 +90,16 @@
                     </div>
                 </div>
                 <div class="footer">
-                    <span class="page-number">{{ page }} / 4</span>
-                    <button @click="next">Next</button>
+                    <button class="bare-button" 
+                        :class="{ hide: page === 1 }"
+                        @click="back"
+                        >back</button>
+                    <div class="right">
+                        <span class="page-number">{{ page }} / 4</span>
+                        <button @click="next">
+                            {{ page === 4 ? 'Submit' : 'Next' }}
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
