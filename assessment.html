@@ -23,8 +23,8 @@
                         RAPID ASSESSMENT
                     </div>
                 </div>
-                <h1>Help us understand you + your needs!</h1>
-                <p>(Don't worry, this won't take long)</p>
+                <h1>{{ headerText }}</h1>
+                <p>{{ subHeaderText }}</p>
 
                 <div class="form1" v-if="page === 1">
                     <div class="form-group">
@@ -95,13 +95,14 @@
                         <textarea rows="4"></textarea>
                     </div>
                 </div>
-                <div class="footer">
+                <div class="form5" v-if="page === 5"></div>
+                <div class="footer" v-if="page !== 5">
                     <button class="bare-button" 
                         :class="{ hide: page === 1 }"
                         @click="back"
                         >back</button>
                     <div class="right">
-                        <span class="page-number">{{ page }} / 4</span>
+                        <span class="page-number">{{ page }} / 5</span>
                         <button @click="next">
                             {{ page === 4 ? 'Submit' : 'Next' }}
                         </button>
