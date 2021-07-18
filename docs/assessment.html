@@ -43,8 +43,8 @@
                         RAPID ASSESSMENT
                     </div>
                 </div>
-                <h1>{{ headerText }}</h1>
-                <p>{{ subHeaderText }}</p>
+                <h1 v-cloak>{{ headerText }}</h1>
+                <p v-cloak>{{ subHeaderText }}</p>
 
                 <div class="form1" v-if="page === 1">
                     <div class="form-group">
@@ -117,7 +117,7 @@
                 </div>
                 <div class="form5" v-if="page === 5"></div>
                 <div class="footer" v-if="page !== 5">
-                    <button class="bare-button" 
+                    <button class="bare-button"
                         :class="{ hide: page === 1 }"
                         @click="back"
                         >back</button>

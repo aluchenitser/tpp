@@ -63,6 +63,10 @@ button.bare-button {
   color: #42406C;
 }
 
+[v-cloak] {
+  visibility: hidden;
+}
+
 /* ------ BY COMPONENT ------ */
 /* ------ BY COMPONENT ------ */
 /* ------ BY COMPONENT ------ */
