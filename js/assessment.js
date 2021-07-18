@@ -2,14 +2,15 @@ var app = new Vue({
   el: '#form',
   data: {
     page: 1,
+    lastPage: 5,
   },
   methods: {
     next() {
       scroller(0, () => {
         this.page++;
-      });        
+      });
 
-      if(this.page === 5) {
+      if(this.page === this.lastPage) {
         this.submit();
       }
     },
@@ -23,12 +24,12 @@ var app = new Vue({
   },
   computed: {
     headerText() {
-      return this.page < 5
+      return this.page < this.lastPage
         ? 'Help us understand you + your needs'
         : 'Thanks!';
     },
     subHeaderText() {
-      return this.page < 5
+      return this.page < this.lastPage
         ? '(don\'t worry, this won\'t take long)'
         : 'You will hear from us soon.';
     }

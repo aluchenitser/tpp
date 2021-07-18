@@ -5,6 +5,16 @@
 html, body {
   margin: 0;
   padding: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+html body > .content {
+  flex: 1 0 auto;
 }
 
 *,
@@ -246,6 +256,10 @@ section > .content {
 }
 .accent-box.centered {
   justify-content: center;
+}
+
+.footer-wrap {
+  flex-shrink: 0;
 }
 
 section.footer {
@@ -3963,7 +3977,7 @@ section.footer .social .group span {
 }
 
 section.form {
-  padding: 0 24px;
+  padding: 0 24px 24px 24px;
 }
 section.form > .content {
   background-color: white;
@@ -4011,6 +4025,7 @@ section.form > .content .footer .page-number {
 @media (min-width: 768px) {
   div.back-drop {
     background-color: #42406C;
+    height: 100%;
   }
 
   section.form {
@@ -4020,6 +4035,14 @@ section.form > .content .footer .page-number {
     border-radius: 4px;
     padding: 48px 80px;
     max-width: 776px;
+  }
+}
+@media (max-width: 420px) {
+  section.form > .content .footer button.bare-button {
+    min-width: auto;
+  }
+  section.form > .content .footer .right .page-number {
+    margin-right: 10px;
   }
 }
 

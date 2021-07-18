@@ -1,7 +1,7 @@
 @import './basics.scss';
 
 section.form {
-    padding: 0 24px;
+    padding: 0 24px 24px 24px;
     > .content {
         background-color: white;
 
@@ -58,6 +58,7 @@ section.form {
 @media (min-width: 768px) {
     div.back-drop {
         background-color: $purple;
+        height: 100%;
     }
 
     section.form {
@@ -69,7 +70,21 @@ section.form {
         }
     }
 }
-  
+
 @media (min-width: 990px) {
 
 }
+
+@media (max-width: 420px) {
+    section.form > .content {
+      .footer {
+        button.bare-button {
+            min-width: auto;
+        }
+
+        .right .page-number {
+            margin-right: 10px;
+        }
+      }
+    }
+  }
