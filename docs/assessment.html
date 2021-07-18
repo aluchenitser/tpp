@@ -44,8 +44,8 @@
                             RAPID ASSESSMENT
                         </div>
                     </div>
-                    <h1 v-cloak>{{ headerText }}</h1>
-                    <p v-cloak :class="{ 'mb-0': page === lastPage }">{{ subHeaderText }}</p>
+                    <h1 v-text="headerText"></h1>
+                    <p v-text="subHeaderText" :class="{ 'mb-0': page === lastPage }"></p>
 
                     <div class="form1" v-if="page === 1">
                         <div class="form-group">
