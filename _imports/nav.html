@@ -1,8 +1,14 @@
-<nav id="main-nav" class="main-nav">
+<nav id="main-nav" class="main-nav" :class="{ invert: isOpen }">
     <div class="content">
         <div class="left-wrap">
             <a href="./index.html" class="logo">
-                <img src="assets/tpp logo.svg" width="30" alt="">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.4639 10.4396C15.4639 14.6725 12.0022 18.104 7.73196 18.104C5.62464 18.104 3.71424 17.2683 2.31959 15.9131V29.524H0V10.4396C0 6.20664 3.46172 2.77515 7.73196 2.77515C12.0022 2.77515 15.4639 6.20664 15.4639 10.4396ZM7.73196 15.8047C4.74277 15.8047 2.31959 13.4026 2.31959 10.4396C2.31959 7.4765 4.74277 5.07449 7.73196 5.07449C10.7211 5.07449 13.1443 7.4765 13.1443 10.4396C13.1443 13.4026 10.7211 15.8047 7.73196 15.8047Z" fill="#42406C"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M29.9991 10.4396C29.9991 14.6725 26.5374 18.104 22.2671 18.104C17.2478 18.104 14.5352 14.6725 14.5352 10.4396C14.5352 6.20664 17.9969 2.77515 22.2671 2.77515C26.5374 2.77515 29.9991 6.20664 29.9991 10.4396ZM22.2671 15.8047C19.278 15.8047 16.8548 13.4026 16.8548 10.4396C16.8548 7.4765 19.278 5.07449 22.2671 5.07449C25.2563 5.07449 27.6795 7.4765 27.6795 10.4396C27.6795 13.4026 25.2563 15.8047 22.2671 15.8047Z" fill="#42406C"/>
+                    <path d="M30 2.77516H0V0.47583H30V2.77516Z" fill="#42406C"/>
+                    <path d="M0.78125 10.5532H14.0802C14.0802 10.5532 10.9694 17.1531 7.27611 17.068C3.66865 16.9848 0.78125 10.5532 0.78125 10.5532Z" fill="#42406C"/>
+                    <path d="M15.3184 10.5532H28.6173C28.6173 10.5532 25.5065 17.1531 21.8132 17.068C18.2057 16.9848 15.3184 10.5532 15.3184 10.5532Z" fill="#42406C"/>
+                </svg>
                 <span class="nav-text">TPP Digital</span>
             </a>
             <div class="divider"></div>
@@ -18,7 +24,13 @@
             </a>
         </div>
         <div class="mobile-menu" @click="slide">
-            <img src="assets/hamburger.svg" width="24" alt="">
+            <!-- <img src="assets/hamburger.svg" width="24" alt=""> -->
+            <svg class="hamburger" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1H19" stroke="#42406C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M1 7H19" stroke="#42406C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M1 13H19" stroke="#42406C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+
         </div>
     </div>
     <div class="slide-menu" :class="{ 'is-open': isOpen }">

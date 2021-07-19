@@ -257,12 +257,40 @@ nav.main-nav {
         position: relative;
         top: -1px;
       }
+
+      .logo svg path {
+        transition: fill .3s;
+      }
+
+      svg.hamburger {
+        width: 24px;
+        height: 24px;
+
+        transition: stroke .3s;
+      }
     }
   }
 
   &.simple-nav {
     > .content {
       justify-content: center;
+    }
+  }
+
+  &.invert {
+    background-color: $purple;
+
+    > .content {
+      .nav-text {
+        color: white;
+      }
+
+      .logo svg path {
+        fill: white;
+      }
+      .mobile-menu svg.hamburger path {
+        stroke: white;
+      }
     }
   }
 }

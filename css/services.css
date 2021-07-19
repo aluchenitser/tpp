@@ -222,8 +222,28 @@ nav.main-nav > .content .mobile-menu .nav-text {
   position: relative;
   top: -1px;
 }
+nav.main-nav > .content .mobile-menu .logo svg path {
+  transition: fill 0.3s;
+}
+nav.main-nav > .content .mobile-menu svg.hamburger {
+  width: 24px;
+  height: 24px;
+  transition: stroke 0.3s;
+}
 nav.main-nav.simple-nav > .content {
   justify-content: center;
+}
+nav.main-nav.invert {
+  background-color: #42406C;
+}
+nav.main-nav.invert > .content .nav-text {
+  color: white;
+}
+nav.main-nav.invert > .content .logo svg path {
+  fill: white;
+}
+nav.main-nav.invert > .content .mobile-menu svg.hamburger path {
+  stroke: white;
 }
 
 nav.main-nav .slide-menu {
