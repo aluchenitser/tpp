@@ -4137,13 +4137,11 @@ section.get-started > .content {
   flex-direction: column;
   align-items: center;
 }
-section.get-started > .content h2 {
-  margin-top: 0;
-  margin-bottom: 24px;
+section.get-started > .content a {
+  width: 100%;
 }
 section.get-started > .content button {
-  width: 456px;
-  max-width: 100%;
+  width: 100%;
 }
 section.get-started > .content button.invert {
   background-color: white;
@@ -4151,6 +4149,10 @@ section.get-started > .content button.invert {
   border: 2px solid #42406C;
 }
 section.get-started > .content button:first-of-type {
+  margin-bottom: 24px;
+}
+section.get-started > .content h2 {
+  margin-top: 0;
   margin-bottom: 24px;
 }
 
@@ -4179,6 +4181,14 @@ section.get-started > .content button:first-of-type {
   }
   section.services > .content .wrap .service:nth-of-type(2n) {
     padding-left: 24px;
+  }
+
+  section.get-started > .content a {
+    width: auto;
+  }
+  section.get-started > .content button {
+    width: 456px;
+    max-width: 100%;
   }
 }
 

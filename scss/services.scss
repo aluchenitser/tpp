@@ -86,14 +86,12 @@ section.get-started {
         flex-direction: column;
         align-items: center;
 
-        h2 {
-            margin-top: 0;
-            margin-bottom: 24px;
+        a {
+            width: 100%;
         }
 
         button {
-            width: 456px;
-            max-width: 100%;
+            width: 100%;
 
             &.invert {
                 background-color: white;
@@ -104,6 +102,12 @@ section.get-started {
             &:first-of-type {
                 margin-bottom: 24px;
             }
+        }
+
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 24px;
         }
     }
 }
@@ -133,11 +137,24 @@ section.get-started {
                     &:nth-of-type(2n - 1) {
                         padding-right: 24px;
                     }
-    
+
                     &:nth-of-type(2n) {
                         padding-left: 24px;
-                    }                    
+                    }
                 }
+            }
+        }
+    }
+
+    section.get-started {
+        > .content {
+            a {
+                width: auto;
+            }
+
+            button {
+                width: 456px;
+                max-width: 100%;
             }
         }
     }
