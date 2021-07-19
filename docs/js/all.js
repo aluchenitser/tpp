@@ -13,5 +13,11 @@ var app = new Vue({
         ? document.body.classList.add('freeze')
         : document.body.classList.remove('freeze')
     }
+  },
+  mounted() {
+    // prevents initial fire of transitions
+    setTimeout(() => {
+      document.body.classList.remove('preload');
+    }, 100);
   }
 })

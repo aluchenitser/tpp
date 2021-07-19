@@ -40,6 +40,10 @@ html body > .content {
   box-sizing: border-box; // 1
 }
 
+.preload * {
+  transition: none !important;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
   color: $black-text;

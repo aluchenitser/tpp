@@ -27,6 +27,10 @@ html body > .content {
   box-sizing: border-box;
 }
 
+.preload * {
+  transition: none !important;
+}
+
 body {
   font-family: "Raleway", sans-serif;
   color: #2D2D2D;
