@@ -213,6 +213,9 @@ nav.main-nav > .content .mobile-menu {
   display: flex;
   align-items: center;
   color: #42406C;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
 }
 nav.main-nav > .content .mobile-menu .nav-text {
   margin-right: 8px;
@@ -221,6 +224,29 @@ nav.main-nav > .content .mobile-menu .nav-text {
 }
 nav.main-nav.simple-nav > .content {
   justify-content: center;
+}
+
+nav.main-nav .slide-menu {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: #42406C;
+  transform: translate(100%, 0);
+  transition: transform 0.3s;
+  padding-top: 72px;
+}
+nav.main-nav .slide-menu .menu-item {
+  text-align: center;
+  margin-bottom: 48px;
+}
+nav.main-nav .slide-menu .menu-item a {
+  color: white;
+  font-size: 38px;
+  text-decoration: none;
+  font-weight: 500;
+}
+nav.main-nav .slide-menu.is-open {
+  transform: translate(0, 0);
 }
 
 section {

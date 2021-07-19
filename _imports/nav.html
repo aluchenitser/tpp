@@ -1,4 +1,4 @@
-<nav class="main-nav">
+<nav id="main-nav" class="main-nav">
     <div class="content">
         <div class="left-wrap">
             <a href="./index.html" class="logo">
@@ -17,8 +17,19 @@
                 <button class="assessment">Get a rapid assessment</button>
             </a>
         </div>
-        <div class="mobile-menu">
+        <div class="mobile-menu" @click="slide">
             <img src="assets/hamburger.svg" width="24" alt="">
+        </div>
+    </div>
+    <div class="slide-menu" :class="{ 'is-open': isOpen }">
+        <div class="menu-item">
+            <a href="./services.html">Our services</a>
+        </div>
+        <div class="menu-item">
+            <a href="./about.html">About</a>
+        </div>
+        <div class="menu-item">
+            <a href="./contact.html">Contact</a>
         </div>
     </div>
 </nav>

@@ -16,7 +16,6 @@ var app = new Vue({
     },
     back() {
       this.page--;
-      window.scrollTo(0, 0);
     },
     submit() {
       console.log('submit');

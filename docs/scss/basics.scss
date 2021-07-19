@@ -248,6 +248,9 @@ nav.main-nav {
       display: flex;
       align-items: center;
       color: $purple;
+      padding-left: 10px;
+      padding-right: 10px;
+      cursor: pointer;
 
       .nav-text {
         margin-right: 8px;
@@ -261,6 +264,33 @@ nav.main-nav {
     > .content {
       justify-content: center;
     }
+  }
+}
+
+nav.main-nav .slide-menu {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: $purple;
+
+  transform: translate(100%, 0);
+  transition: transform .3s;
+  padding-top: 72px;
+
+  .menu-item {
+    text-align: center;
+    margin-bottom: 48px;
+
+    a {
+      color: white;
+      font-size: 38px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+  }
+
+  &.is-open {
+    transform: translate(0, 0);
   }
 }
 

@@ -10,6 +10,7 @@
 <link rel="icon" type="image/png" href="assets/favicon/logo_96.png" sizes="96x96">
 
 <script defer src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<script defer src="js/all.js"></script>
 
 
     <title>TPP Digital</title>
@@ -23,7 +24,7 @@
     <div></div>
     <div></div>
 </div>
-        <nav class="main-nav">
+        <nav id="main-nav" class="main-nav">
     <div class="content">
         <div class="left-wrap">
             <a href="./index.html" class="logo">
@@ -42,8 +43,19 @@
                 <button class="assessment">Get a rapid assessment</button>
             </a>
         </div>
-        <div class="mobile-menu">
+        <div class="mobile-menu" @click="slide">
             <img src="assets/hamburger.svg" width="24" alt="">
+        </div>
+    </div>
+    <div class="slide-menu" :class="{ 'is-open': isOpen }">
+        <div class="menu-item">
+            <a href="./services.html">Our services</a>
+        </div>
+        <div class="menu-item">
+            <a href="./about.html">About</a>
+        </div>
+        <div class="menu-item">
+            <a href="./contact.html">Contact</a>
         </div>
     </div>
 </nav>
