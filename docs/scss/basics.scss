@@ -23,6 +23,11 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
+
+  &.freeze {
+    overflow: hidden;
+    position: fixed;
+  }
 }
 
 html body > .content {

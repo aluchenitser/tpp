@@ -9,9 +9,9 @@ var app = new Vue({
     slide() {
       this.isOpen = !this.isOpen;
 
-      document.body.style.overflow = this.isOpen
-        ? 'hidden'
-        : 'visible';
+      this.isOpen
+        ? document.body.classList.add('freeze')
+        : document.body.classList.remove('freeze')
     }
   }
 })
