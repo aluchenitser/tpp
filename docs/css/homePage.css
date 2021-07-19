@@ -261,6 +261,7 @@ nav.main-nav .slide-menu {
   transform: translate(100%, 0);
   transition: transform 0.3s;
   padding-top: 72px;
+  z-index: 1;
 }
 nav.main-nav .slide-menu .menu-item {
   text-align: center;
