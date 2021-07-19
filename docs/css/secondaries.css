@@ -139,6 +139,7 @@ a.logo {
 .book-end {
   display: flex;
   height: 8px;
+  z-index: 1;
 }
 .book-end div:nth-child(1) {
   background-color: #F4D2D1;
@@ -153,6 +154,10 @@ a.logo {
   flex: 1;
 }
 
+nav.main-nav {
+  z-index: 1;
+  transition: background-color 0.3s;
+}
 nav.main-nav > .content {
   margin: 0 auto;
   display: flex;
@@ -180,6 +185,9 @@ nav.main-nav > .content .left-wrap .widget {
   font-weight: bold;
   font-size: 12px;
   color: #42406C;
+}
+nav.main-nav > .content .left-wrap .nav-text {
+  transition: color 0.3s;
 }
 nav.main-nav > .content .desktop-menu {
   display: none;
@@ -216,11 +224,6 @@ nav.main-nav > .content .mobile-menu {
   padding-left: 10px;
   padding-right: 10px;
   cursor: pointer;
-}
-nav.main-nav > .content .mobile-menu .nav-text {
-  margin-right: 8px;
-  position: relative;
-  top: -1px;
 }
 nav.main-nav > .content .mobile-menu .logo svg path {
   transition: fill 0.3s;

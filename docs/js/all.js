@@ -8,7 +8,10 @@ var app = new Vue({
   methods: {
     slide() {
       this.isOpen = !this.isOpen;
-      console.log('slide');
+
+      document.body.style.overflow = this.isOpen
+        ? 'hidden'
+        : 'visible';
     }
   }
 })
