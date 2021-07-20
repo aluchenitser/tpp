@@ -17,6 +17,9 @@ var app = new Vue({
   },
   mounted() {
     const vm = this;
+    const bookEl = document.querySelector('.book-end');
+    const bookRect = bookEl.getBoundingClientRect();
+
 
     // prevents initial fire of transitions
     setTimeout(() => {
@@ -26,6 +29,7 @@ var app = new Vue({
     // sticky header box-shadow
 
     function sticky() {
+      // console.log(bookRect.top, bookEl.getBoundingClientRect().top);
       vm.isStuck = window.scrollY > 8;
     }
 
