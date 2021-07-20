@@ -96,7 +96,7 @@ button.bare-button {
   position: relative;
 }
 .logo .nav-text {
-  margin-left: 11.2px;
+  margin-left: 12px;
   font-weight: 500;
 }
 
@@ -196,6 +196,10 @@ nav.main-nav > .content .left-wrap .widget {
 }
 nav.main-nav > .content .left-wrap .nav-text {
   transition: color 0.3s;
+}
+nav.main-nav > .content .left-wrap .logo svg {
+  position: relative;
+  top: 9px;
 }
 nav.main-nav > .content .desktop-menu {
   display: none;

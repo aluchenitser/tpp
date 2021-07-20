@@ -112,7 +112,7 @@ button {
   }
 
   .nav-text {
-    margin-left: 11.2px;
+    margin-left: 12px;
     font-weight: 500;
   }
 }
@@ -228,6 +228,11 @@ nav.main-nav {
 
       .nav-text {
         transition: color .3s;
+      }
+
+      .logo svg {
+        position: relative;
+        top: 9px;
       }
     }
 
