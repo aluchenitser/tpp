@@ -3,6 +3,7 @@ var app = new Vue({
   data() {
     return {
       isOpen: false,
+      isStuck: false,
     };
   },
   methods: {
@@ -15,9 +16,19 @@ var app = new Vue({
     }
   },
   mounted() {
+    const vm = this;
+
     // prevents initial fire of transitions
     setTimeout(() => {
       document.body.classList.remove('preload');
     }, 100);
+
+    // sticky header box-shadow
+
+    function sticky() {
+      vm.isStuck = window.scrollY > 8;
+    }
+
+    window.addEventListener('scroll', sticky);
   }
 })
