@@ -28,11 +28,25 @@ var app = new Vue({
 
     // sticky header box-shadow
 
-    function sticky() {
-      // console.log(bookRect.top, bookEl.getBoundingClientRect().top);
-      vm.isStuck = window.scrollY > 8;
-    }
+    // function sticky() {
+    //   console.log(bookRect.top, bookEl.getBoundingClientRect().top);
+    //   vm.isStuck = window.scrollY > 8;
+    // }
 
-    window.addEventListener('scroll', sticky);
+    // window.addEventListener('scroll', sticky);
+
+    const el = this.$refs.mainNav;
+    console.log(el)
+    const observer = new IntersectionObserver( 
+      ([e]) => {
+        console.log(e);
+        e.target.classList.toggle("stuck", e.intersectionRatio < 1)
+      },
+      { threshold: [1] }
+    );
+    
+    console.log(observer);
+
+    observer.observe(el);    
   }
 })
