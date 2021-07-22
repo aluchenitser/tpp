@@ -435,20 +435,17 @@ section.footer {
 
     position: -webkit-sticky; /* Safari */
     position: sticky;
-    top: 0;
+    top: -0.1px;
     transition: background-color $transition-length;
 
     &.stuck {
       background-color: #f5f5f5;
       box-shadow: 0 1px 0px 0px #eaeaea;
-
-      // > .content {
-      //   padding-top: 6px;
-      //   padding-bottom: 6px;
-      // }
     }
 
     > .content {
+      transition: padding .15s;
+
       .left-wrap {
         .widget, .divider, img.time-of-day {
           display: block;

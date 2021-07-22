@@ -16,37 +16,26 @@ var app = new Vue({
     }
   },
   mounted() {
-    const vm = this;
-    const bookEl = document.querySelector('.book-end');
-    const bookRect = bookEl.getBoundingClientRect();
-
 
     // prevents initial fire of transitions
     setTimeout(() => {
       document.body.classList.remove('preload');
     }, 100);
 
-    // sticky header box-shadow
-
-    // function sticky() {
-    //   console.log(bookRect.top, bookEl.getBoundingClientRect().top);
-    //   vm.isStuck = window.scrollY > 8;
-    // }
-
-    // window.addEventListener('scroll', sticky);
-
+    // sticky nav shrink
     const el = this.$refs.mainNav;
-    console.log(el)
-    const observer = new IntersectionObserver( 
-      ([e]) => {
-        console.log(e);
-        e.target.classList.toggle("stuck", e.intersectionRatio < 1)
-      },
-      { threshold: [1] }
-    );
-    
-    console.log(observer);
+    if(!el) return;
 
-    observer.observe(el);    
+    const observer = new IntersectionObserver((entries, observer) => {
+        console.log('intersect!')
+        el.classList.toggle("stuck", entries[0].intersectionRatio < 1)
+      },
+      {
+        root: null,
+        threshold: [1],
+      }
+    );
+
+    observer.observe(el);
   }
 })
