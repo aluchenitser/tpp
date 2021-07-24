@@ -274,13 +274,6 @@ nav.main-nav {
       padding-right: 10px;
       cursor: pointer;
 
-      // .nav-text {
-      //   margin-right: 8px;
-      //   position: relative;
-      //   top: -1px;
-      //   transition: color .3s;
-      // }
-
       .logo svg path {
         transition: fill .3s;
       }
@@ -452,6 +445,10 @@ section.footer {
         }
       }
     }
+  }
+
+  @at-root body.freeze nav.main-nav .left-wrap .logo ~ * {
+    display: none;
   }
 }
 

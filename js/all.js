@@ -9,20 +9,17 @@ var app = new Vue({
   methods: {
     slide() {
       this.isOpen = !this.isOpen;
-
-      this.isOpen
-        ? document.body.classList.add('freeze')
-        : document.body.classList.remove('freeze')
+      document.body.classList.toggle('freeze', this.isOpen);
     }
   },
   mounted() {
 
-    // prevents initial fire of transitions
+    /* --- transitions --- */
     setTimeout(() => {
       document.body.classList.remove('preload');
-    }, 100);
+    }, 150);
 
-    // sticky nav shrink
+    /* --- sticky nav --- */
     const el = this.$refs.mainNav;
     if(!el) return;
 
@@ -37,5 +34,15 @@ var app = new Vue({
     );
 
     observer.observe(el);
+
+    /* --- slide menu --- */
+    let mm = matchMedia('(min-width: 990px)');
+
+    mm.addEventListener('change', () => {
+      if(mm.matches) {
+        this.isOpen = false;
+        document.body.classList.remove('freeze');
+      }
+    });
   }
 })

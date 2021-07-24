@@ -373,6 +373,10 @@ section.footer .social .group span {
   nav.main-nav > .content .left-wrap .widget, nav.main-nav > .content .left-wrap .divider, nav.main-nav > .content .left-wrap img.time-of-day {
     display: block;
   }
+
+  body.freeze nav.main-nav .left-wrap .logo ~ * {
+    display: none;
+  }
 }
 @media (min-width: 990px) {
   nav.main-nav > .content {
