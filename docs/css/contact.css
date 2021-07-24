@@ -15,6 +15,7 @@ body {
 body.freeze {
   overflow: hidden;
   position: fixed;
+  width: 100%;
 }
 
 html body > .content {

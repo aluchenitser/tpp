@@ -17,7 +17,7 @@ var app = new Vue({
     /* --- transitions --- */
     setTimeout(() => {
       document.body.classList.remove('preload');
-    }, 200);
+    }, 250);
 
     /* --- sticky nav --- */
     const el = this.$refs.mainNav;
