@@ -4,7 +4,6 @@
  * @param callback - callback function
  */
  function scroller(offset, callback) {
-    console.log('scrollTo!');
     const fixedOffset = offset.toFixed();
     const onScroll = function () {
             if (window.pageYOffset.toFixed() === fixedOffset) {

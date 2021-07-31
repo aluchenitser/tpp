@@ -24,7 +24,6 @@ var app = new Vue({
     if(!el) return;
 
     const observer = new IntersectionObserver((entries, observer) => {
-        console.log('intersect!')
         el.classList.toggle("stuck", entries[0].intersectionRatio < 1)
       },
       {

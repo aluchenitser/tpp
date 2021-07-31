@@ -1,8 +1,39 @@
+const fields = {
+  "What type of business are you in": null,
+  "Have you attempted any marketing of your own? How did it go?": null,
+
+}
+
+
+
 var app = new Vue({
   el: '#form',
   data: {
     page: 1,
     lastPage: 5,
+
+    fields: {
+      // page 1
+      typeOfBusiness: '',
+      ownMarketing: '',
+      typicalCustomer: '',
+
+      // page 2
+      geographicArea: '',
+      isExpanding: '',
+      existingAd: '',
+      existingSocial: '',
+
+      // page 3
+      exactService: '',
+      currentPerception: '',
+      futurePerception: '',
+
+      // page 4
+      contactPreference: '',
+      contactText: '',
+      anythingElse: '',
+    }
   },
   methods: {
     next() {
