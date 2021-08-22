@@ -36,11 +36,7 @@ const validatorMixin = {
       return false;
     },
     formChangeEvents(e) { // once submit has failed, this will validate per field
-      console.log('formChangeEvents');
-      console.log(e);
       const field = this.fields[e.target.name];
-
-      console.log(field);
 
       if (field && field.isValid === false) {
         this.validateField(field);
