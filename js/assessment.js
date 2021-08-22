@@ -1,10 +1,7 @@
 const fields = {
   "What type of business are you in": null,
   "Have you attempted any marketing of your own? How did it go?": null,
-
 }
-
-
 
 var app = new Vue({
   el: '#form',

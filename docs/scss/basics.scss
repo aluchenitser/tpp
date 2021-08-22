@@ -21,6 +21,10 @@ html, body {
   height: 100%;
 }
 
+[v-cloak] {
+  display: none;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -162,6 +166,14 @@ a.logo {
   input[type=radio]:checked + .pill {
     background-color: rgba(180, 198, 222, .4);
     border: 2px solid $purple;
+  }
+
+  .hint {
+    color: red;
+    font-weight: lighter;
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 2px;
   }
 }
 
