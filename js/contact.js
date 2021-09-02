@@ -1,6 +1,6 @@
 
 var app = new Vue({
-    el: '#form',
+    el: '#vue-contact-page',
     mixins: [validatorMixin],
     data: {
       page: 1,
@@ -33,13 +33,18 @@ var app = new Vue({
     },
     methods: {
       async success() {
-        let response = await fetch('https://xc03285k6c.execute-api.us-east-1.amazonaws.com/contactPage', {
-          method: 'POST',
-          body: this.payload,
-        });
-
-        console.log('response');
-        console.log(response);
+        try {
+          let response = await fetch('https://xc03285k6c.execute-api.us-east-1.amazonaws.com/contactPage', {
+            method: 'POST',
+            // mode: 'cors',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(this.payload),
+          });
+        } catch(e) {
+          console.log('send failed', e);
+        }
       },
       failure() {
         console.log('cb failure!');
