@@ -1,9 +1,5 @@
 @import './secondaries.scss';
 
-.modal-overlay {
-
-}
-
 section.quote {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -20,11 +16,11 @@ section.quote {
   }
 }
 
-section.form {
+section.form-section {
   > .content {
     max-width: 616px;
 
-    > .wrap {
+    > .text-wrap {
       text-align: center;
 
       h2 {
@@ -36,6 +32,11 @@ section.form {
         margin-top: 0;
         margin-bottom: 32px;
       }
+
+    }
+
+    .controls-wrap.fade {
+      filter: opacity(0.3);
     }
   }
 }

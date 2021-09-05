@@ -3,11 +3,9 @@ var app = new Vue({
     el: '#vue-contact-page',
     mixins: [validatorMixin],
     data: {
-      page: 1,
-      lastPage: 5,
-
+      isSuccess: false,
+      // uses validator
       fields: {
-        // page 1
         name: {
           value: '',
           required: true,
@@ -33,6 +31,10 @@ var app = new Vue({
     },
     methods: {
       async success() {
+        if (this.isSuccess) {
+          return;
+        }
+
         try {
           let response = await fetch('https://xc03285k6c.execute-api.us-east-1.amazonaws.com/contactPage', {
             method: 'POST',
@@ -45,6 +47,21 @@ var app = new Vue({
         } catch(e) {
           console.log('send failed', e);
         }
+
+        console.log('lambda response');
+        console.log(response);
+
+        this.successUI();
+      },
+      successUI() {
+        document.querySelectorAll('input, textarea')
+          .forEach((control) => control.setAttribute('readonly', 'true'));
+
+        const scrollLocation = this.$refs.quote.getBoundingClientRect().top + window.scrollY + 30;
+
+        scroller(scrollLocation, () => {
+          this.isSuccess = true;
+        });
       },
       failure() {
         console.log('cb failure!');
@@ -59,6 +76,16 @@ var app = new Vue({
         });
 
         return payload;
+      },
+      headerText() {
+        return this.isSuccess
+          ? 'Thanks!'
+          : 'Contact Us';
+      },
+      subHeaderText() {
+        return this.isSuccess
+          ? 'You will hear from us soon.'
+          : 'Have a project in mind or looking for a job? Fill out the form below!';
       }
     }
   });

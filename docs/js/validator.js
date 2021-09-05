@@ -11,7 +11,7 @@ function isValidPhone(phone) {
 const validatorMixin = {
   data() {
     return {
-      notYetSubmitted: true, // hasn't had a submit attmep
+      firstSubmit: false, // hasn't had a submit attmep
     };
   },
   methods: {
@@ -20,7 +20,7 @@ const validatorMixin = {
       const form = e.target;
 
       this.validateAll();
-      this.notYetSubmitted = false;
+      this.firstSubmit = true;
 
       // valid form with custom finale
       if (this.isFormValid && successCB) {

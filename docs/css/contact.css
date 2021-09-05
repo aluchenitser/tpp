@@ -4115,19 +4115,22 @@ section.quote > .content button {
   border: 2px solid white;
 }
 
-section.form > .content {
+section.form-section > .content {
   max-width: 616px;
 }
-section.form > .content > .wrap {
+section.form-section > .content > .text-wrap {
   text-align: center;
 }
-section.form > .content > .wrap h2 {
+section.form-section > .content > .text-wrap h2 {
   margin-top: 0;
   margin-bottom: 8px;
 }
-section.form > .content > .wrap p {
+section.form-section > .content > .text-wrap p {
   margin-top: 0;
   margin-bottom: 32px;
+}
+section.form-section > .content .controls-wrap.fade {
+  filter: opacity(0.3);
 }
 
 section.map {
