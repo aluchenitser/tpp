@@ -39,14 +39,17 @@ var app = new Vue({
       });
 
       if(this.page === this.lastPage) {
-        this.submit();
+        this.submitGeneral(this.success, this.failure);
       }
     },
     back() {
       this.page--;
     },
-    submit() {
-      console.log('submit');
+    success() {
+      console.log('success');
+    },
+    failure() {
+      console.log('failure');
     }
   },
   computed: {

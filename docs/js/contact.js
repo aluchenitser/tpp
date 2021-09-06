@@ -44,6 +44,9 @@ var app = new Vue({
             },
             body: JSON.stringify(this.payload),
           });
+
+          console.log('success response');
+          console.log(response);
         } catch(e) {
           console.log('send failed');
           console.log(e);

@@ -32,8 +32,21 @@ const validatorMixin = {
       } else if (failureCB) {
         failureCB();
       }
+    },
+    submitGeneral(successCB, failureCB) {
+      if(!successCB && !failureCB) {
+        console.error('submitGeneral needs both callbacks as arguments');
+        return false;
+      }
 
-      return false;
+      this.validateAll();
+      this.firstSubmit = true;
+
+      if(this.isFormValid) {
+        successCB();
+      } else {
+        failureCB();
+      }
     },
     formChangeEvents(e) { // once submit has failed, this will validate per field
       const field = this.fields[e.target.name];

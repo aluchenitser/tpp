@@ -4064,35 +4064,35 @@ section.footer .social .group span {
   text-align: center;
 }
 
-section.form {
+section.form-section {
   padding: 0 24px 24px 24px;
 }
-section.form > .content {
+section.form-section > .content {
   background-color: white;
 }
-section.form > .content > h1 {
+section.form-section > .content > h1 {
   font-size: 32px;
   line-height: 48px;
   text-align: center;
   font-weight: 400;
 }
-section.form > .content > p {
+section.form-section > .content > p {
   text-align: center;
   margin-bottom: 32px;
 }
-section.form > .content .footer {
+section.form-section > .content .footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-section.form > .content .footer > button {
+section.form-section > .content .footer > button {
   text-align: left;
   padding-left: 0;
 }
-section.form > .content .footer > button.hide {
+section.form-section > .content .footer > button.hide {
   visibility: hidden;
 }
-section.form > .content .footer .page-number {
+section.form-section > .content .footer .page-number {
   font-family: Poppins, sans-serif;
   font-weight: 600;
   font-size: 16px;
@@ -4105,20 +4105,20 @@ section.form > .content .footer .page-number {
     height: 100%;
   }
 
-  section.form {
+  section.form-section {
     padding: 72px 0;
   }
-  section.form > .content {
+  section.form-section > .content {
     border-radius: 4px;
     padding: 48px 80px;
     max-width: 776px;
   }
 }
 @media (max-width: 420px) {
-  section.form > .content .footer button.bare-button {
+  section.form-section > .content .footer button.bare-button {
     min-width: auto;
   }
-  section.form > .content .footer .right .page-number {
+  section.form-section > .content .footer .right .page-number {
     margin-right: 10px;
   }
 }
