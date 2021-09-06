@@ -4,6 +4,7 @@ var app = new Vue({
     mixins: [validatorMixin],
     data: {
       isSuccess: false,
+
       // uses validator
       fields: {
         name: {
@@ -31,25 +32,22 @@ var app = new Vue({
     },
     methods: {
       async success() {
-        if (this.isSuccess) {
-          return;
-        }
+        let response = {};
+        if (this.isSuccess) { return; }
 
         try {
-          let response = await fetch('https://xc03285k6c.execute-api.us-east-1.amazonaws.com/contactPage', {
+          response = await fetch('https://xc03285k6c.execute-api.us-east-1.amazonaws.com/contactPage', {
             method: 'POST',
-            // mode: 'cors',
+            mode: 'cors',
             headers: {
               'Content-Type': 'application/json',
             },
             body: JSON.stringify(this.payload),
           });
         } catch(e) {
-          console.log('send failed', e);
+          console.log('send failed');
+          console.log(e);
         }
-
-        console.log('lambda response');
-        console.log(response);
 
         this.successUI();
       },
