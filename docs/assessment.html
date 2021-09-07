@@ -36,7 +36,7 @@
     </div>
 </nav>
 
-        <div id="vue-assessment-page" class="back-drop">
+        <div id="vue-assessment-page" class="back-drop" @change="formChangeEvents">
             <section id="form" class="form-section">
                 <!-- <pre style="color: white; text-align: center;">{{ fields }}</pre> -->
                 <div class="content">
@@ -148,7 +148,7 @@
                               v-model="fields.name.value"
                               name="name"
                               type="text">
-                            <div v-cloak class="hint" v-if="!fields.name.isValid"> {{ fields.email.hint }} </div>
+                            <div v-cloak class="hint" v-if="!fields.name.isValid"> {{ fields.name.hint }} </div>
                         </div>
                         <div class="form-group">
                             <label for="email">Email?</label>
@@ -216,10 +216,10 @@
     </div>
     <div class="footer-wrap">
     <section class="footer">
-        <div class="logo">
+        <a href="./index.html" class="logo">
             <img src="assets/tpp logo.svg" width="45" alt="">
             <span class="nav-text">TPP Digital</span>
-        </div>
+        </a>
         <div class="contact">
             <div class="mb-16">
                 68 Dream Big Avenue<br>

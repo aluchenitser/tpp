@@ -15,7 +15,7 @@ var app = new Vue({
         email: {
           value: '',
           required: true,
-          hint: 'Please enter an email!',
+          hint: 'Please enter a valid email!',
           type: 'email',
         },
         phone: {

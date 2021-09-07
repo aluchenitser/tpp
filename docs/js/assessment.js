@@ -46,12 +46,12 @@ var app = new Vue({
       name: {
         value: '',
         required: true,
-        hint: 'We really do need your name please. :)'
+        hint: 'We really do need your name, please! :)'
       },
       email: {
         value: '',
         required: true,
-        hint: 'Please enter an email!',
+        hint: 'Please enter a valid email!',
         type: 'email',
       },
       contactPreference: {
@@ -63,26 +63,33 @@ var app = new Vue({
       anythingElse: {
         value: ''
       },
+
+      // page 5 has no fields (it's the Thank You page)
     }
   },
   methods: {
     next() {
       scroller(0, () => {
-        this.page++;
+        if(this.page < 4) {
+          this.page++;
+        } else {
+          this.submitGeneral(this.success, this.failure);
+        }
       });
-
-      if(this.page === this.lastPage) {
-        this.submitGeneral(this.success, this.failure);
-      }
     },
     back() {
       this.page--;
     },
     success() {
       console.log('assessment success');
+      this.page = this.lastPage;
     },
     failure() {
       console.log('assessment failure');
+    },
+    seeChange(e) {
+      console.log('seeChange');
+      console.log(e);
     }
   },
   computed: {

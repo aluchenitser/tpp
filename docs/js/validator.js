@@ -40,6 +40,7 @@ const validatorMixin = {
       }
 
       this.validateAll();
+
       this.firstSubmit = true;
 
       if(this.isFormValid) {

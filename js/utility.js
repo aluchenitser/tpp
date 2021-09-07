@@ -9,8 +9,8 @@
         const wFixed = window.pageYOffset.toFixed()
 
         if (fixedOffset - 3 <= wFixed && wFixed <= fixedOffset + 3) {
-            window.removeEventListener('scroll', onScroll)
-            callback()
+            window.removeEventListener('scroll', onScroll);
+            if(callback) callback();
         }
     }
 
