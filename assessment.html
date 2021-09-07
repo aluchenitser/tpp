@@ -6,6 +6,7 @@
     <title>TPP Digital</title>
     <link rel="stylesheet" href="css/assessment.css">
 
+    <script defer src="js/validator.js"></script>
     <script defer src="js/assessment.js"></script>
 </head>
 <body class="preload">
@@ -13,7 +14,7 @@
         <sergey-import src="bookend" />
         <sergey-import src="nav_simple" />
 
-        <div class="back-drop">
+        <div id="vue-assessment-page" class="back-drop">
             <section id="form" class="form-section">
                 <!-- <pre style="color: white; text-align: center;">{{ fields }}</pre> -->
                 <div class="content">
@@ -29,14 +30,14 @@
                         <div class="form-group">
                             <label for="typeOfBusiness">What type of business are you in?</label>
                             <input id="typeOfBusiness"
-                              v-model="fields.typeOfBusiness"
+                              v-model="fields.typeOfBusiness.value"
                               name="typeOfBusiness"
                               type="text">
                         </div>
                         <div class="form-group">
                             <label for="ownMarketing">Have you attempted any marketing of your own? How did it go?</label>
                             <textarea id="ownMarketing"
-                              v-model="fields.ownMarketing"
+                              v-model="fields.ownMarketing.value"
                               name="ownMarketing"
                               rows="4"></textarea>
                         </div>
@@ -44,7 +45,7 @@
                             <label for="typicalCustomer">Can you tell us something about your typical customer?</label>
                             <textarea
                               id="typicalCustomer"
-                              v-model="fields.typicalCustomer"
+                              v-model="fields.typicalCustomer.value"
                               name="typicalCustomer"
                               rows="4"></textarea>
                         </div>
@@ -53,7 +54,7 @@
                         <div class="form-group">
                             <label for="geographicArea">What is the geographic area of your business?</label>
                             <input id="geographicArea"
-                              v-model="fields.geographicArea"
+                              v-model="fields.geographicArea.value"
                               name="geographicArea"
                               type="text">
                         </div>
@@ -61,14 +62,14 @@
                             <label for="">Are you looking to expand?</label>
                             <input
                               id="isExpandingYes"
-                              v-model="fields.isExpanding"
+                              v-model="fields.isExpanding.value"
                               name="isExpanding"
                               :value="true"
                               type="radio">
                             <label for="isExpandingYes" class="pill">Yes</label>
 
                             <input id="isExpandingNo"
-                              v-model="fields.isExpanding"
+                              v-model="fields.isExpanding.value"
                               name="isExpanding"
                               :value="false"
                               type="radio">
@@ -78,7 +79,7 @@
                             <label for="existingAd">Is there any existing ad campaign or website that you find inspirational? Something to emulate?</label>
                             <textarea
                               id="existingAd"
-                              v-model="fields.existingAd"
+                              v-model="fields.existingAd.value"
                               name="existingAd"
                               rows="4"></textarea>
                         </div>
@@ -86,7 +87,7 @@
                             <label for="existingSocial">Do you have any existing social media presence?</label>
                             <textarea
                               id="existingSocial"
-                              v-model="fields.existingSocial"
+                              v-model="fields.existingSocial.value"
                               name="existingSocial"
                             rows="4"></textarea>
                         </div>
@@ -97,7 +98,7 @@
                                 looking for? It’s ok not to be sure.</label>
                             <input
                               id="exactService"
-                              v-model="fields.exactService"
+                              v-model="fields.exactService.value"
                               name="exactService"
                               type="text">
                         </div>
@@ -105,7 +106,7 @@
                             <label for="currentPerception">How do you think your company is perceived, currently? (this is a tough question)</label>
                             <textarea
                               id="currentPerception"
-                              v-model="fields.currentPerception"
+                              v-model="fields.currentPerception.value"
                               name="currentPerception"
                               rows="4"></textarea>
                         </div>
@@ -113,17 +114,30 @@
                             <label for="futurePerception">How would you LIKE your company to be perceived? (this too, is challenging)</label>
                             <textarea
                               id="futurePerception"
-                              v-model="fields.futurePerception"
+                              v-model="fields.futurePerception.value"
                               name="futurePerception"
                               rows="4"></textarea>
                         </div>
                     </div>
                     <div class="form4" v-if="page === 4">
                         <div class="form-group">
+                            <label for="name">What's your name?</label>
+                            <input id="name"
+                              v-model="fields.name.value"
+                              name="name"
+                              type="text">
+                            <div v-cloak class="hint" v-if="!fields.name.isValid"> {{ fields.email.hint }} </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email?</label>
+                            <input id="email" type="text" name="email" v-model="fields.email.value">
+                            <div v-cloak class="hint" v-if="!fields.email.isValid"> {{ fields.email.hint }} </div>
+                        </div>
+                        <div class="form-group">
                             <label for="">How would you like us to contact you?</label>
                             <input
                               id="call-me"
-                              v-model="fields.contactPreference"
+                              v-model="fields.contactPreference.value"
                               type="radio"
                               name="contactPreference"
                               value="phone"
@@ -131,7 +145,7 @@
                             <label for="call-me" class="pill">Call</label>
                             <input
                               id="text-me"
-                              v-model="fields.contactPreference"
+                              v-model="fields.contactPreference.value"
                               type="radio"
                               name="contactPreference"
                               value="text"
@@ -139,25 +153,25 @@
                             <label for="text-me" class="pill">Text</label>
                             <input
                               id="email-me"
-                              v-model="fields.contactPreference"
+                              v-model="fields.contactPreference.value"
                               type="radio"
                               value="email"
                               name="contactPreference">
                             <label for="email-me" class="pill">Email</label>
                         </div>
                         <div class="form-group">
-                            <label for="">Contact me at (you can include more than one)</label>
+                            <label for="contactText">Contact me at (you can include more than one)</label>
                             <textarea
                               id="contactText"
-                              v-model="fields.contactText"
+                              v-model="fields.contactText.value"
                               name="contactText"
                               rows="4"></textarea>
                         </div>
                         <div class="form-group">
-                            <label for="contactText">Anything else you'd like us to know?</label>
+                            <label for="anythingElse">Anything else you'd like us to know?</label>
                             <textarea
                               id="anythingElse"
-                              v-model="fields.anythingElse"
+                              v-model="fields.anythingElse.value"
                               name="anythingElse"
                               rows="4"></textarea>
                         </div>

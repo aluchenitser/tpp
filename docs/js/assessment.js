@@ -1,35 +1,68 @@
-const fields = {
-  "What type of business are you in": null,
-  "Have you attempted any marketing of your own? How did it go?": null,
-}
-
 var app = new Vue({
-  el: '#form',
+  el: '#vue-assessment-page',
+  mixins: [validatorMixin],
   data: {
     page: 1,
     lastPage: 5,
 
     fields: {
       // page 1
-      typeOfBusiness: '',
-      ownMarketing: '',
-      typicalCustomer: '',
+      typeOfBusiness: {
+        value: '',
+      },
+      ownMarketing: {
+        value: '',
+      },
+      typicalCustomer: {
+        value: '',
+      },
 
       // page 2
-      geographicArea: '',
-      isExpanding: '',
-      existingAd: '',
-      existingSocial: '',
+      geographicArea: {
+        name: ''
+      },
+      isExpanding: {
+        value: ''
+      },
+      existingAd: {
+        value: ''
+      },
+      existingSocial: {
+        value: ''
+      },
 
       // page 3
-      exactService: '',
-      currentPerception: '',
-      futurePerception: '',
+      exactService: {
+        value: ''
+      },
+      currentPerception: {
+        value: ''
+      },
+      futurePerception: {
+        value: ''
+      },
 
       // page 4
-      contactPreference: '',
-      contactText: '',
-      anythingElse: '',
+      name: {
+        value: '',
+        required: true,
+        hint: 'We really do need your name please. :)'
+      },
+      email: {
+        value: '',
+        required: true,
+        hint: 'Please enter an email!',
+        type: 'email',
+      },
+      contactPreference: {
+        value: ''
+      },
+      contactText: {
+        value: ''
+      },
+      anythingElse: {
+        value: ''
+      },
     }
   },
   methods: {
@@ -39,14 +72,17 @@ var app = new Vue({
       });
 
       if(this.page === this.lastPage) {
-        this.submit();
+        this.submitGeneral(this.success, this.failure);
       }
     },
     back() {
       this.page--;
     },
-    submit() {
-      console.log('submit');
+    success() {
+      console.log('assessment success');
+    },
+    failure() {
+      console.log('assessment failure');
     }
   },
   computed: {
