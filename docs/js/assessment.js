@@ -4,6 +4,7 @@ var app = new Vue({
   data: {
     page: 1,
     lastPage: 5,
+    isLoading: false,
 
     fields: {
       // page 1
@@ -57,7 +58,7 @@ var app = new Vue({
       contactPreference: {
         value: ''
       },
-      contactText: {
+      contactAdditional: {
         value: ''
       },
       anythingElse: {
@@ -69,20 +70,42 @@ var app = new Vue({
   },
   methods: {
     next() {
-      scroller(0, () => {
-        if(this.page < 4) {
-          this.page++;
+      if(this.page < 4) {
+          scroller(0, () => {
+            this.page++;
+          });
         } else {
           this.submitGeneral(this.success, this.failure);
         }
-      });
     },
     back() {
       this.page--;
     },
-    success() {
+    async success() {
       console.log('assessment success');
-      this.page = this.lastPage;
+      this.isLoading = true;
+      let response = {};
+
+      // try {
+      //   response = await fetch('https://xc03285k6c.execute-api.us-east-1.amazonaws.com/contactPage', {
+      //     method: 'POST',
+      //     mode: 'cors',
+      //     headers: {
+      //       'Content-Type': 'application/json',
+      //     },
+      //     body: JSON.stringify(this.payload),
+      //   });
+
+      // } catch(e) {
+      //   console.log('send failed', e);
+      // }
+
+      setTimeout(() => {
+        this.isLoading = false;
+        scroller(0, () => {
+          // this.page = this.lastPage;
+        })
+      }, 2000);
     },
     failure() {
       console.log('assessment failure');

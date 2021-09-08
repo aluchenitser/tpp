@@ -160,12 +160,12 @@
                             <label for="email-me" class="pill">Email</label>
                         </div>
                         <div class="form-group">
-                            <label for="contactText">Contact me at (you can include more than one)</label>
+                            <label for="contactAdditional">Additional contact info.</label>
                             <textarea
-                              id="contactText"
-                              v-model="fields.contactText.value"
-                              name="contactText"
-                              rows="4"></textarea>
+                              id="contactAdditional"
+                              v-model="fields.contactAdditional.value"
+                              name="contactAdditional"
+                              rows="2"></textarea>
                         </div>
                         <div class="form-group">
                             <label for="anythingElse">Anything else you'd like us to know?</label>
@@ -183,8 +183,16 @@
                             >back</button>
                         <div class="right">
                             <span class="page-number">{{ page }} / {{ lastPage - 1 }}</span>
-                            <button @click="next">
-                                {{ page === 4 ? 'Submit' : 'Next' }}
+                            <button class="submit-button" @click="next">
+                                <div v-show="isLoading" class="load-spinner">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <span :style="{ visibility: isLoading ? 'hidden' : 'visible' }">
+                                    {{ page === 4 ? 'Submit' : 'Next' }}
+                                </span>
                             </button>
                         </div>
                     </div>

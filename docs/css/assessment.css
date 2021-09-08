@@ -4064,11 +4064,22 @@ section.footer .social .group span {
   text-align: center;
 }
 
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 section.form-section {
   padding: 0 24px 24px 24px;
 }
 section.form-section > .content {
   background-color: white;
+}
+section.form-section > .content .pill {
+  user-select: none;
 }
 section.form-section > .content > h1 {
   font-size: 32px;
@@ -4085,12 +4096,71 @@ section.form-section > .content .footer {
   justify-content: space-between;
   align-items: center;
 }
+section.form-section > .content .footer .submit-button {
+  position: relative;
+}
+section.form-section > .content .footer .submit-button .load-spinner {
+  border-color: white transparent transparent transparent;
+  position: absolute;
+  left: 60px;
+  top: 14px;
+}
+section.form-section > .content .footer .submit-button .load-spinner div {
+  box-sizing: border-box;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border: 3px solid white;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: white transparent transparent transparent;
+}
+section.form-section > .content .footer .submit-button .load-spinner div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+section.form-section > .content .footer .submit-button .load-spinner div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+section.form-section > .content .footer .submit-button .load-spinner div:nth-child(3) {
+  animation-delay: -0.15s;
+}
 section.form-section > .content .footer > button {
   text-align: left;
   padding-left: 0;
 }
 section.form-section > .content .footer > button.hide {
   visibility: hidden;
+}
+section.form-section > .content .footer > button .load-spinner {
+  border-color: white transparent transparent transparent;
+  display: block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+section.form-section > .content .footer > button .load-spinner.center {
+  margin: 0 auto;
+}
+section.form-section > .content .footer > button .load-spinner div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid white;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: white transparent transparent transparent;
+}
+section.form-section > .content .footer > button .load-spinner div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+section.form-section > .content .footer > button .load-spinner div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+section.form-section > .content .footer > button .load-spinner div:nth-child(3) {
+  animation-delay: -0.15s;
 }
 section.form-section > .content .footer .page-number {
   font-family: Poppins, sans-serif;
